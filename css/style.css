@@ -2,6 +2,52 @@ body{
     font-family: 'Open-Sans', sans-serif;
 }
 
+.navbar-default {
+    background-color: #ffffff !important;
+    border-color: #e7e7e7 !important;
+    border: 0 !important;
+    min-height: 130px !important;
+    padding:  20px 0 10px 0 !important;
+    margin-bottom: 0px !important;
+}
+
+.navbar-default .navbar-brand{
+    margin-top: 25px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #2a2a2a !important;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.social-header {
+    float: right;
+    margin-top: 15px;
+    text-align: right;
+}
+
+.social-header p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    padding-right: 20px;
+}
+
+.social-header a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 21px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    padding: 5px 0px 3px 0px;
+    text-align: center;
+    margin-left: 10px;
+    color: #000;
+}
+
 .carousel-inner{
     min-height: 580px;
 }
@@ -619,4 +665,75 @@ p.tweet-text {
 .tweet-media video, .tweet-media video {
     width: 100%;
     height: auto;
+}
+
+
+.footer-gray {
+    padding: 45px;
+    background-color: #232323;
+    color: #fff;
+}
+
+.footer-gray p {
+    margin: 20px 0;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+}
+
+.footer-gray a {
+    color: #fff;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 21px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: 5px 0px 3px 0px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.footer-black {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-black ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-black ul li {
+    display: inline-block;
+    margin: 15px 35px;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.footer-black ul li a {
+    color: #fff;
+}
+
+
+@media (min-width: 768px){
+.navbar-nav {
+    float: right !important;
+    
+}
+    
+    .nav>li:last-child a {
+    padding: 15px 0;
+}
+    
+    .navbar-nav>li {
+    float: left;
+    margin-left: 85px;
+    margin-top: 15px;
+}
 }
