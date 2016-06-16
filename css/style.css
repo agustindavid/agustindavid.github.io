@@ -25,6 +25,43 @@ body{
     background: transparent;
 }
 
+.control-containers {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 50%;
+}
+
+#carousel-home .carousel-control, #carousel-videos .carousel-control {
+    cursor: pointer;
+    position: absolute;
+    top: auto;
+    bottom: -50px;
+    left: 0;
+    width: 40px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    background-color: #000;
+    height: 40px;
+    color:#fbd500; 
+    opacity: 1;
+    border: 7px solid;
+    z-index: 1;
+    border-top: 0;
+    border-left: 0;
+}
+
+#carousel-home .carousel-control.right , #carousel-videos .carousel-control.right {
+    right: 0;
+    left: auto;
+    border: 7px solid;
+    z-index: 1;
+    border-top: 0;
+    border-right: 0;
+}
+
 .tagline {
     width: 100%;
     position: absolute;
@@ -308,8 +345,63 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     z-index: 5;
 }
 
+
+#carousel-videos .carousel-inner{
+    min-height: 1px;
+}
+
+#carousel-videos .carousel-inner>.active {
+    left: 0;
+    min-height: 1px;
+}
+
+#carousel-videos .carousel-inner>.item {
+    background-size: cover;
+    min-height: 1px;
+    width: 100%;
+    background-position: center;
+    margin: 0;
+}
+
+#carousel-videos .item-container {
+    min-height: 1px !important;
+    padding: 0 !important;
+    background: transparent;
+}
+
+
+#carousel-videos .carousel-control.right {
+    right: 30%;
+}
+
+#carousel-videos .carousel-control {
+    left: 30%;
+}
+
+.videos{
+    margin-bottom: 45px;
+}
+
+.video-thumb img {
+    border-bottom: 10px solid #fbd500;
+}
+
+p.video-title {
+    font-family: 'Open Sans';
+    padding: 7px 0 10px 0;
+    margin: 0;
+    font-size: 13px;
+}
+
+p.main-video-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    margin: 0;
+    padding: 20px 0;
+}
+
 section.parallax-1 {
-    height: 415px;
+    height: 320px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -341,11 +433,11 @@ section.parallax-1 h3 span b {
     font-style: italic;
 }
 
-section.gallery {
+section.gallery, section.videos {
     padding: 60px 0;
 }
 
-.gallery h3 {
+.gallery h3, .videos h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
@@ -359,7 +451,7 @@ section.gallery {
 #carousel-gallery .carousel-control {
     position: absolute;
     top: auto;
-    bottom: -50px;
+    bottom: -10px;
     left: 0;
     width: 40px;
     font-size: 20px;
@@ -420,8 +512,30 @@ section.gallery {
     font-size: 14px;
 }
 
+.social-feed {
+    padding: 60px 0 30px 0;
+}
 
+.social-feed h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
 
+.social-feed h2 {
+    color: #fbd500;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.social-feed hr {
+    border-top: 8px solid #eee;
+    margin-bottom: 50px;
+}
 
 .masonry { /* Masonry container */
     column-count: 3;
@@ -429,9 +543,56 @@ section.gallery {
 }
 
 .item { /* Masonry bricks or child elements */
-    background-color: #eee;
+    background-color: #fff;
     display: inline-block;
     margin: 0 0 1em;
     width: 100%;
+    margin-bottom: 45px;
 }
 
+.profile-pic {
+    padding-top: 45px;
+}
+
+.tweet-content i {
+    color: #666;
+    font-size: 28px;
+}
+.tweet-content p {
+    margin: 0;
+}
+
+span.username {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #666;
+    font-size: 18px;
+}
+
+.tw-account{
+        font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: #666;
+    font-size: 18px;
+}
+
+p.tweet-text {
+    color: #484848;
+    font-size: 14px;
+    margin-top: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tweet-text a{
+    color: #0492b9;
+}
+
+.tweet-media {
+    margin-top: 25px;
+}
+
+.tweet-media video, .tweet-media video {
+    width: 100%;
+    height: auto;
+}
