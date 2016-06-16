@@ -13,7 +13,8 @@
     <script src="js/jquery-2.2.4.min.js" ></script>
 
     <link href="css/bootstrap.min.css" rel="stylesheet"  >
-    <script src="js/bootstrap.min.js" ></script>    
+    <script src="js/bootstrap.min.js" ></script> 
+    <script src="js/scripts.js" ></script> 
     <script src="https://use.fontawesome.com/c70b78400b.js"></script>
     <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300' rel='stylesheet' type='text/css'>
@@ -92,25 +93,27 @@
   	     </a>
     </div>
 </div>
+    
+
 <section class="news-section">
     <div class="container">
-        <div class="row">
-            <div class="col-md-3 new-item">
+        <div class="row ">
+            <div class="col-md-3 new-item active" data-target="#carousel-news" data-slide-to="0">
                 <h2>Con auditorio lleno Caracol Internacional exhibió su robusto portafolio de producciones</h2>
                 <p class="new-date">4 de Junio, 2016</p>
                 <a href="#"  class="read-more"><span>Leer Más</span></a>
             </div>
-            <div class="col-md-3 new-item">
+            <div class="col-md-3 new-item" data-target="#carousel-news" data-slide-to="1">
                 <h2>Con auditorio lleno Caracol Internacional exhibió su robusto portafolio de producciones</h2>
                 <p class="new-date">4 de Junio, 2016</p>
                 <a href="#"  class="read-more"><span>Leer Más</span></a>
             </div>
-            <div class="col-md-3 new-item">
+            <div class="col-md-3 new-item" data-target="#carousel-news" data-slide-to="2">
                 <h2>Con auditorio lleno Caracol Internacional exhibió su robusto portafolio de producciones</h2>
                 <p class="new-date">4 de Junio, 2016</p>
                 <a href="#" class="read-more"><span>Leer Más</span></a>
             </div>
-            <div class="col-md-3 new-item">
+            <div class="col-md-3 new-item" data-target="#carousel-news" data-slide-to="3">
                 <h2>Con auditorio lleno Caracol Internacional exhibió su robusto portafolio de producciones</h2>
                 <p class="new-date">4 de Junio, 2016</p>
                 <a href="#"  class="read-more"><span>Leer Más</span></a>
@@ -120,6 +123,9 @@
         <div class="row new-content">
             <div class="close-content"><span></span><span></span></div>
             <div class="clearfix"></div>
+                <div id="carousel-news" class="carousel slide" data-interval='300000' data-ride='carousel' data-pause='hover'>
+<div class="carousel-inner">
+		<div class=" item active ">
             <div class="col-md-5">
                <img src="images/news-1.jpg" class="img-responsive"> 
                 <div class="img-description">
@@ -147,7 +153,106 @@
 
                     <p>El evento tuvo como show principal a la cantante Fanny Lú y la agrupación Gente de Zona.</p>
                 </div>
+            </div>    
+		</div>
+        <div class="item">
+			            <div class="col-md-5">
+               <img src="images/news-1.jpg" class="img-responsive"> 
+                <div class="img-description">
+                    <p>Lisette Osorio, Paulina Vega, Ana María Estupiñán y Dago García durante screening de Caracol Internacional</p>
+                </div>
+                <div class="share-new-home">
+                    <div class="col-md-6">
+                        Compartir en<span class="yellow-font"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="col-md-6 share-icons text-right">
+                        <a><i class="fa fa-facebook" aria-hidden="true"></i></a><a><i class="fa fa-twitter" aria-hidden="true"></i></a><a><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
             </div>
+            <div class="col-md-7">
+                <h2>Con auditorio lleno Caracol Internacional exhibió su robusto portafolio de producciones</h2>
+                <p class="new-date">4 de Junio, 2016</p>
+                <hr class="new-divider">
+                <div class="new-text"><p>Caracol Internacional realizó su screening en el hotel Intercontinental de la ciudad de Los Ángeles, presentando sus producciones originales A otro nivel, La niña, La esclava blanca, El tesoro, El héroe discreto, El abrazo de la serpiente.</p>
+
+                    <p>Lisette Osorio, VP de Ventas Internacionales de Caracol TV dijo a PRODU sentirse feliz por estar respaldada por producciones tan fuertes que están siendo bien recibidas en los diferentes mercados.</p>
+
+                    <p>Junto a la ejecutiva asistieron Juan Esteban Sampedro, gerente de Entretenimiento de Caracol TV, Dago García, VP de Producción y Contenido de Caracol TV, la Miss Universo 2014, Paulina Vega, Ana María Estupiñán, protagonista de La niña (80x60') y Nerea Camacho, protagonista de La esclava blanca (60x60').</p>
+
+                    <p>El evento tuvo como show principal a la cantante Fanny Lú y la agrupación Gente de Zona.</p>
+                </div>
+            </div>
+		</div>
+        <div class="item">
+			            <div class="col-md-5">
+               <img src="images/news-1.jpg" class="img-responsive"> 
+                <div class="img-description">
+                    <p>Lisette Osorio, Paulina Vega, Ana María Estupiñán y Dago García durante screening de Caracol Internacional</p>
+                </div>
+                <div class="share-new-home">
+                    <div class="col-md-6">
+                        Compartir en<span class="yellow-font"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="col-md-6 share-icons text-right">
+                        <a><i class="fa fa-facebook" aria-hidden="true"></i></a><a><i class="fa fa-twitter" aria-hidden="true"></i></a><a><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h2>Con auditorio lleno Caracol Internacional exhibió su robusto portafolio de producciones</h2>
+                <p class="new-date">4 de Junio, 2016</p>
+                <hr class="new-divider">
+                <div class="new-text"><p>Caracol Internacional realizó su screening en el hotel Intercontinental de la ciudad de Los Ángeles, presentando sus producciones originales A otro nivel, La niña, La esclava blanca, El tesoro, El héroe discreto, El abrazo de la serpiente.</p>
+
+                    <p>Lisette Osorio, VP de Ventas Internacionales de Caracol TV dijo a PRODU sentirse feliz por estar respaldada por producciones tan fuertes que están siendo bien recibidas en los diferentes mercados.</p>
+
+                    <p>Junto a la ejecutiva asistieron Juan Esteban Sampedro, gerente de Entretenimiento de Caracol TV, Dago García, VP de Producción y Contenido de Caracol TV, la Miss Universo 2014, Paulina Vega, Ana María Estupiñán, protagonista de La niña (80x60') y Nerea Camacho, protagonista de La esclava blanca (60x60').</p>
+
+                    <p>El evento tuvo como show principal a la cantante Fanny Lú y la agrupación Gente de Zona.</p>
+                </div>
+            </div>
+		</div>	
+        <div class="item">
+			            <div class="col-md-5">
+               <img src="images/news-1.jpg" class="img-responsive"> 
+                <div class="img-description">
+                    <p>Lisette Osorio, Paulina Vega, Ana María Estupiñán y Dago García durante screening de Caracol Internacional</p>
+                </div>
+                <div class="share-new-home">
+                    <div class="col-md-6">
+                        Compartir en<span class="yellow-font"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="col-md-6 share-icons text-right">
+                        <a><i class="fa fa-facebook" aria-hidden="true"></i></a><a><i class="fa fa-twitter" aria-hidden="true"></i></a><a><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h2>Con auditorio lleno Caracol Internacional exhibió su robusto portafolio de producciones</h2>
+                <p class="new-date">4 de Junio, 2016</p>
+                <hr class="new-divider">
+                <div class="new-text"><p>Caracol Internacional realizó su screening en el hotel Intercontinental de la ciudad de Los Ángeles, presentando sus producciones originales A otro nivel, La niña, La esclava blanca, El tesoro, El héroe discreto, El abrazo de la serpiente.</p>
+
+                    <p>Lisette Osorio, VP de Ventas Internacionales de Caracol TV dijo a PRODU sentirse feliz por estar respaldada por producciones tan fuertes que están siendo bien recibidas en los diferentes mercados.</p>
+
+                    <p>Junto a la ejecutiva asistieron Juan Esteban Sampedro, gerente de Entretenimiento de Caracol TV, Dago García, VP de Producción y Contenido de Caracol TV, la Miss Universo 2014, Paulina Vega, Ana María Estupiñán, protagonista de La niña (80x60') y Nerea Camacho, protagonista de La esclava blanca (60x60').</p>
+
+                    <p>El evento tuvo como show principal a la cantante Fanny Lú y la agrupación Gente de Zona.</p>
+                </div>
+            </div>
+		</div>	
+    </div>
+
+  	<!-- Controls -->
+<div class="container control-containers">
+
+    </div>
+</div>
+            
         
         </div>
     </div>
@@ -451,10 +556,10 @@
             <div class="masonry">
                 <div class="item">
                     <div class="tweet">
-                        <div class="profile-pic col-md-3">
+                        <div class="profile-pic col-xs-3">
                             <img src="images/profile-pic.png">
                         </div>
-                        <div class="tweet-content col-md-9">
+                        <div class="tweet-content col-xs-9">
                             <p><a href="https://twitter.com/produnews" class="network-logo"><i class="fa fa-twitter" aria-hidden="true"></i></a></p>
                             <p><span class="username">Produ</span></p>
                             <a href="https://twitter.com/produnews" class="tw-account">@Produnews</a>
@@ -469,10 +574,10 @@
                 </div>
                 <div class="item">
                     <div class="tweet">
-                        <div class="profile-pic col-md-3">
+                        <div class="profile-pic col-xs-3">
                             <img src="images/profile-pic.png">
                         </div>
-                        <div class="tweet-content col-md-9">
+                        <div class="tweet-content col-xs-9">
                             <p><a href="https://twitter.com/produnews" class="network-logo"><i class="fa fa-instagram" aria-hidden="true"></i></a></p>
                             <a href="https://twitter.com/produnews" class="tw-account">@produnews_</a>
                             <p class="tweet-text"><a href="https://twitter.com/hashtag/PRODUenLAScreenings">#PRODUenLAScreenings</a> @CaracolTV #CaracolEstáAOtroNivel con portafolio de producciones 2017 http://ow.ly/YXhj300n806 </p>
@@ -487,10 +592,10 @@
                 </div>
                 <div class="item">
                     <div class="tweet">
-                        <div class="profile-pic col-md-3">
+                        <div class="profile-pic col-xs-3">
                             <img src="images/profile-pic.png">
                         </div>
-                        <div class="tweet-content col-md-9">
+                        <div class="tweet-content col-xs-9">
                             <p><a href="https://twitter.com/produnews" class="network-logo"><i class="fa fa-instagram" aria-hidden="true"></i></a></p>
                             <a href="https://twitter.com/produnews" class="tw-account">@produnews_</a>
                             <p class="tweet-text"><a href="https://twitter.com/hashtag/PRODUenLAScreenings">#PRODUenLAScreenings</a> @CaracolTV #CaracolEstáAOtroNivel con portafolio de producciones 2017 http://ow.ly/YXhj300n806 </p>
@@ -505,10 +610,10 @@
                 </div>
                 <div class="item">
                     <div class="tweet">
-                        <div class="profile-pic col-md-3">
+                        <div class="profile-pic col-xs-3">
                             <img src="images/profile-pic.png">
                         </div>
-                        <div class="tweet-content col-md-9">
+                        <div class="tweet-content col-xs-9">
                             <p><a href="https://twitter.com/produnews" class="network-logo"><i class="fa fa-twitter" aria-hidden="true"></i></a></p>
                             <p><span class="username">Produ</span></p>
                             <a href="https://twitter.com/produnews" class="tw-account">@Produnews</a>
@@ -523,10 +628,10 @@
                 </div>
                 <div class="item">
                     <div class="tweet">
-                        <div class="profile-pic col-md-3">
+                        <div class="profile-pic col-xs-3">
                             <img src="images/profile-pic.png">
                         </div>
-                        <div class="tweet-content col-md-9">
+                        <div class="tweet-content col-xs-9">
                             <p><a href="https://twitter.com/produnews" class="network-logo"><i class="fa fa-twitter" aria-hidden="true"></i></a></p>
                             <p><span class="username">Produ</span></p>
                             <a href="https://twitter.com/produnews" class="tw-account">@Produnews</a>
@@ -541,10 +646,10 @@
                 </div>
                 <div class="item">
                     <div class="tweet">
-                        <div class="profile-pic col-md-3">
+                        <div class="profile-pic col-xs-3">
                             <img src="images/profile-pic.png">
                         </div>
-                        <div class="tweet-content col-md-9">
+                        <div class="tweet-content col-xs-9">
                             <p><a href="https://twitter.com/produnews" class="network-logo"><i class="fa fa-instagram" aria-hidden="true"></i></a></p>
                             <a href="https://twitter.com/produnews" class="tw-account">@produnews_</a>
                             <p class="tweet-text"><a href="https://twitter.com/hashtag/PRODUenLAScreenings">#PRODUenLAScreenings</a> @CaracolTV #CaracolEstáAOtroNivel con portafolio de producciones 2017 http://ow.ly/YXhj300n806 </p>

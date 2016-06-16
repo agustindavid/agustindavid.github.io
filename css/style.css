@@ -132,6 +132,11 @@ body{
 section.news-section {
     background-color: #f9f8f8;
     padding: 30px 0;
+    padding-bottom: 60px;
+}
+
+.new-item{
+    cursor: pointer;
 }
 
 .new-item h2 {
@@ -145,14 +150,19 @@ section.news-section {
     line-height: 1.5;
 }
 
-.new-item h2:after {
-    position: absolute;
+.new-item h2:after{
+        position: absolute;
     content: '';
     background-color: #fcd501;
-    width: 100%;
+    width: 0%;
     height: 5px;
     left: 0;
     bottom: -5px;
+    transition: 0.25s all;
+}
+
+.new-item.active  h2:after {
+    width: 100%;
 }
 
 p.new-date {
@@ -219,9 +229,15 @@ a.read-more:hover::before, a.read-more:hover::after {
     width: 50%;
 }
 
+.active a.read-more{
+    color: #000;
+    text-decoration: none;
+}
+
 .new-content {
     margin-top: 45px;
     position: relative;
+    display: none;
 }
 
 .new-content:before {
@@ -240,6 +256,7 @@ a.read-more:hover::before, a.read-more:hover::after {
     height: 50px;
     position: relative;
     margin-bottom: 35px;
+    cursor: pointer;
 }
 
 .close-content span{
@@ -392,16 +409,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 }
 
 
-#carousel-videos .carousel-inner{
+#carousel-news .carousel-inner, #carousel-videos .carousel-inner{
     min-height: 1px;
 }
 
-#carousel-videos .carousel-inner>.active {
+#carousel-news .carousel-inner>.active, #carousel-videos .carousel-inner>.active {
     left: 0;
     min-height: 1px;
 }
 
-#carousel-videos .carousel-inner>.item {
+#carousel-news .carousel-inner>.item, #carousel-videos .carousel-inner>.item {
     background-size: cover;
     min-height: 1px;
     width: 100%;
@@ -409,7 +426,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     margin: 0;
 }
 
-#carousel-videos .item-container {
+#carousel-news .item-container, #carousel-videos .item-container {
     min-height: 1px !important;
     padding: 0 !important;
     background: transparent;
@@ -601,7 +618,7 @@ section.gallery, section.videos {
 }
 
 .item { /* Masonry bricks or child elements */
-    background-color: #fff;
+    background-color: transparent;
     display: inline-block;
     margin: 0 0 1em;
     width: 100%;
