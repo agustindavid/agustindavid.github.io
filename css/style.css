@@ -1,0 +1,437 @@
+body{
+    font-family: 'Open-Sans', sans-serif;
+}
+
+.carousel-inner{
+    min-height: 580px;
+}
+
+.carousel-inner>.active {
+    left: 0;
+    min-height: 580px;
+}
+
+.carousel-inner>.item {
+    background-size: cover;
+    min-height: 580px;
+    width: 100%;
+    background-position: center;
+    margin: 0;
+}
+
+.item-container {
+    min-height: 580px !important;
+    padding: 0 !important;
+    background: transparent;
+}
+
+.tagline {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+    text-align: center;
+    padding: 30px 0 50px 0;
+    color: #fff;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.0) 0%,rgba(0,0,0,0.9) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+}
+
+.tagline h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+section.news-section {
+    background-color: #f9f8f8;
+    padding: 30px 0;
+}
+
+.new-item h2 {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    display: block;
+    background-color: #fff;
+    padding: 15px 10px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.new-item h2:after {
+    position: absolute;
+    content: '';
+    background-color: #fcd501;
+    width: 100%;
+    height: 5px;
+    left: 0;
+    bottom: -5px;
+}
+
+p.new-date {
+    padding-left: 15px;
+    font-size: 11px;
+    font-family: 'Tahoma', sans-serif;
+    padding: 5px 15px;
+    color: #000;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.new-content .new-date{
+    padding-left: 0;
+    margin-bottom: 0px;
+}
+
+a.read-more {
+    background: #fbd500;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 15px;
+    color: #000;
+    font-family: 'open sans', sans-serif;
+    border:1px solid #fbd500;
+    position: relative;
+    z-index: 1;
+    transition: 0.6s all ease-in-out;
+   
+}
+
+a.read-more:before, a.read-more:after{
+    position: absolute;
+    content: '';
+    width: 1px;
+    top: 0;
+    height: 100%;
+    background-color: #fff;
+    transition: 0.6s all ease-in-out;
+
+    border:1px solid #fbd500;
+    z-index: -1;
+    
+}
+
+a.read-more:before{
+    left: 0;
+    border-right: 0;
+}
+
+a.read-more:after{
+    right: 0;
+    border-left: 0;
+}
+
+a.read-more:hover{
+    background: transparent;
+    color: #000;
+    text-decoration: none;
+}
+
+a.read-more:hover::before, a.read-more:hover::after {
+    width: 50%;
+}
+
+.new-content {
+    margin-top: 45px;
+    position: relative;
+}
+
+.new-content:before {
+    content: '';
+    width: 90%;
+    height: 1px;
+    background-color: #cdcdcd;
+    position: absolute;
+    top: 25px;
+    left: 15px;
+}
+
+.close-content {
+    float: right;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.close-content span{
+    width: 100%;
+    height: 2px;
+    background: #000;
+    display: block;
+    top: 25px;
+    position: absolute;
+}
+
+.close-content span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.close-content span:nth-child(2) {
+    transform: rotate(-45deg);
+}
+
+.new-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #000;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+hr.new-divider {
+    border-top: 2px solid #aaa;
+    margin-top: 10px;
+}
+
+.new-text {
+    font-family: 'Open Sans' ,sans-serif;
+    line-height: 1.5;
+    color: #303030;
+}
+
+.new-text p {
+    margin-bottom: 20px;
+}
+
+.img-description {
+    background: #000;
+    color: #fff;
+    font-family: 'Open Sans';
+    padding: 10px 40px;
+    font-size: 13px;
+    position: relative;
+}
+
+.img-description p {
+    margin: 0;
+}
+
+.img-description:before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 27px 0 27px 27px;
+    border-color: transparent transparent transparent #fbd500;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.share-new-home {
+    padding: 10px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.yellow-font {
+    color: #fbd500;
+    font-size: 23px;
+    vertical-align: middle;
+    margin-left: 15px;
+}
+
+.share-icons a {
+    color: #000;
+    font-size: 20px;
+    margin-left: 15px;
+    border: 1px solid #000;
+    padding-top: 3px;
+    border-radius: 50%;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    transition: 0.25s all;
+}
+
+.share-icons a:hover{
+    color: #f9f8f8;
+    background: #000;
+}
+
+section.video-bg {
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+}
+
+.video-bg h3 {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    font-family: 'Open Sans', sans-serif;
+    z-index: 6;
+}
+
+.video-bg h3 span{
+    color: #fbd500; 
+}
+.home-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.video-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+    z-index: 5;
+}
+
+section.parallax-1 {
+    height: 415px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+    position: relative;
+}
+
+section.parallax-1 h3 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 50px;
+    color: #fff;
+    z-index: 6;
+    text-align: center;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+section.parallax-1 h3 span {
+    display: block;
+    font-size: 36px;
+}
+
+section.parallax-1 h3 span b {
+    color: #fbd500;
+    font-style: italic;
+}
+
+section.gallery {
+    padding: 60px 0;
+}
+
+.gallery h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+#carousel-gallery .carousel-inner>.item {
+    background: #fff;
+    padding-right: 15px;
+}
+
+#carousel-gallery .carousel-control {
+    position: absolute;
+    top: auto;
+    bottom: -50px;
+    left: 0;
+    width: 40px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    background-color: #000;
+    height: 40px;
+    color:#fbd500; 
+    opacity: 1;
+    border: 7px solid;
+    z-index: 1;
+    border-top: 0;
+    border-left: 0;
+}
+
+#carousel-gallery .carousel-control.right {
+    right: 0;
+    left: auto;
+    border: 7px solid;
+    z-index: 1;
+    border-top: 0;
+    border-right: 0;
+}
+
+.gallery-image {
+    margin-bottom: 60px;
+    z-index: 1;
+    position: relative;
+}
+
+.image-wrapper{
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.image-wrapper:after {
+    content: '';
+    background: #fbd500;
+    width: 85%;
+    height: 85%;
+    position: absolute;
+    z-index: 5;
+    bottom: -14px;
+    right: -13px;
+}
+
+.gallery-image img{
+    position: relative;
+    z-index: 6;
+    width: 100%;
+}
+
+.img-title{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #303030;
+    font-size: 14px;
+}
+
+
+
+
+.masonry { /* Masonry container */
+    column-count: 3;
+    column-gap: 1em;
+}
+
+.item { /* Masonry bricks or child elements */
+    background-color: #eee;
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
+}
+
