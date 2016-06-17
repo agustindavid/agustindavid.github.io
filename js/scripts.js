@@ -49,9 +49,13 @@ $(document).ready(function(){
         }
     });
     
-    $('.play-btn').click(function(){
-        var embed_src=$('frame', this).attr('src');
+    $('.video-thumb').click(function(){
+        
+        var embed_src=$('iframe', this).attr('src');
+        var title_video=$(this).next('.video-title').text();
+        //alert(title_video);
         $('.playing-video iframe').attr('src', embed_src);
+        $('.main-video-title').text(title_video);
     });
     
 });
