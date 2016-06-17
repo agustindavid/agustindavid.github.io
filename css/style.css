@@ -89,7 +89,32 @@ body{
 }
 
 .item-container {
-    min-height: 580px !important;
+    min-height: 580px;
+    padding: 0 !important;
+    background: transparent;
+}
+
+
+
+#carousel-home .carousel-inner{
+    min-height: 220px;
+}
+
+#carousel-home .carousel-inner>.active {
+    left: 0;
+    min-height: 220px;
+}
+
+#carousel-home .carousel-inner>.item {
+    background-size: cover;
+    min-height: 220px;
+    width: 100%;
+    background-position: center;
+    margin: 0;
+}
+
+#carousel-home .item-container {
+    min-height: 220px;
     padding: 0 !important;
     background: transparent;
 }
@@ -151,7 +176,7 @@ body{
     transform: translate(-50%);
     z-index: 2;
     text-align: center;
-    padding: 30px 0 50px 0;
+    padding: 30px 0 5px 0;
     color: #fff;
     background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
     background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
@@ -161,8 +186,8 @@ body{
 
 .tagline h3{
     font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 18px;
+    font-weight: 100;
+    font-size: 12px;
 }
 
 section.news-section {
@@ -324,7 +349,7 @@ a.read-more:after{
 
 hr.new-divider {
     border-top: 2px solid #aaa;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .new-text {
@@ -864,6 +889,47 @@ p.tweet-text {
     column-count: 3;
     column-gap: 1em;
 }
+    
+    #carousel-home .carousel-inner{
+    min-height: 580px;
+}
+
+#carousel-home .carousel-inner>.active {
+    left: 0;
+    min-height: 580px;
+}
+
+#carousel-home .carousel-inner>.item {
+    background-size: cover;
+    min-height: 580px;
+    width: 100%;
+    background-position: center;
+    margin: 0;
+}
+
+#carousel-home .item-container {
+    min-height: 580px;
+    padding: 0 !important;
+    background: transparent;
+}
+    
+.tagline h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.control-containers {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 50%;
+    width: 100%;
+}
+    .tagline{
+        padding: 30px 0 50px 0;
+    }
+
 
 }
 
