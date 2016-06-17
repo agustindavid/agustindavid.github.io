@@ -55,6 +55,21 @@ body{
     font-size: 14px;
 }
 
+.navbar-default .navbar-nav>li>a:after{
+    position: absolute;
+    content: '';
+    background-color: #fcd501;
+    width: 0%;
+    height: 5px;
+    left: 0;
+    bottom: 5px;
+    transition: 0.25s all;
+}
+
+.navbar-default .navbar-nav>li>a:hover::after{
+    width: 100%;
+}
+
 .social-header {
     float: right;
     margin-top: 55px;

@@ -70,6 +70,7 @@ $(document).ready(function(){
             $('#inner-collapse').removeClass('carousel-inner');
             $('#carousel-gallery').removeClass('carousel slide');
             $('#inner-collapse').addClass('full-gallery');
+            $('#carousel-gallery .carousel-control').hide();
             $(this).text('Contraer');
         } else {
             $('#inner-collapse').addClass('carousel-inner');
@@ -78,6 +79,7 @@ $(document).ready(function(){
              $('html, body').delay(0).animate({
                 scrollTop: ($('.gallery').offset().top)
             }, 500);
+            $('#carousel-gallery .carousel-control').show(700);
             $(this).text('Ver Todas');
             }
     });
