@@ -1,14 +1,18 @@
 $(document).ready(function(){
+
+    
     $('.new-item').click(function(){
         $('.new-item').removeClass('active');
         $(this).addClass('active');
         if($('.new-content').is(':hidden')){
             $('.new-content').slideToggle();
         }
-        
         if($(window).width()<768){
-            $('html, body').delay(500).animate({
-                scrollTop: ($('.new-content').offset().top)+20
+            var new_offset=$('#carousel-news .item.active').offset().top;
+            var anchor_offset=$('.anchor-controls').offset().top;
+                $('#carousel-news .carousel-control').css('top', anchor_offset-new_offset-7);
+                $('html, body').delay(500).animate({
+                    scrollTop: ($('.new-content').offset().top)+20
             }, 500);
         }
     });
