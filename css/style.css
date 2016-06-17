@@ -198,10 +198,10 @@ body{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
 }
 
-.tagline h3{
+.tagline h3 {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 100;
-    font-size: 12px;
+    font-weight: 400;
+    font-size: 15px;
 }
 
 section.news-section {

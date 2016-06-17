@@ -56,6 +56,11 @@ $(document).ready(function(){
         //alert(title_video);
         $('.playing-video iframe').attr('src', embed_src);
         $('.main-video-title').text(title_video);
+        if($(window).width()<768){
+            $('html, body').delay(0).animate({
+                scrollTop: ($('.playing-video').offset().top)-30
+            }, 500);   
+        }
     });
     
 });
