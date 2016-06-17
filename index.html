@@ -12,15 +12,26 @@
 <link rel='stylesheet'  href='css/style.css' type='text/css' media='all' />
     <script src="js/jquery-2.2.4.min.js" ></script>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet"  >
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/bootstrap.min.js" ></script> 
     <script src="js/scripts.js" ></script> 
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
     <script src="https://use.fontawesome.com/c70b78400b.js"></script>
     <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
+		<div class="md-modal md-effect-1" id="modal-1">
+			<div class="md-content">
+				<div class="modal-img">
+                    <img src="">
+				</div>
+<!--                <button class="md-close">Close me!</button>-->
+            </div>
+        </div>
+    <div class="md-overlay"></div>
 <nav class="navbar navbar-default">
   <div class="container banner-wrapper">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -97,23 +108,23 @@
 
 <section class="news-section">
     <div class="container">
-        <div class="row ">
-            <div class="col-md-3 new-item active" data-target="#carousel-news" data-slide-to="0">
+        <div class="row ">            
+            <div class="col-sm-3 col-xs-6 new-item" data-target="#carousel-news" data-slide-to="0">
                 <h2>Con auditorio lleno Caracol Internacional exhibió su robusto portafolio de producciones</h2>
                 <p class="new-date">4 de Junio, 2016</p>
                 <a href="#"  class="read-more"><span>Leer Más</span></a>
             </div>
-            <div class="col-md-3 new-item" data-target="#carousel-news" data-slide-to="1">
+            <div class="col-sm-3 col-xs-6 new-item" data-target="#carousel-news" data-slide-to="1">
                 <h2>Con auditorio lleno Caracol Internacional exhibió su robusto portafolio de producciones</h2>
                 <p class="new-date">4 de Junio, 2016</p>
                 <a href="#"  class="read-more"><span>Leer Más</span></a>
             </div>
-            <div class="col-md-3 new-item" data-target="#carousel-news" data-slide-to="2">
+            <div class="col-sm-3 col-xs-6 new-item" data-target="#carousel-news" data-slide-to="2">
                 <h2>Con auditorio lleno Caracol Internacional exhibió su robusto portafolio de producciones</h2>
                 <p class="new-date">4 de Junio, 2016</p>
                 <a href="#" class="read-more"><span>Leer Más</span></a>
             </div>
-            <div class="col-md-3 new-item" data-target="#carousel-news" data-slide-to="3">
+            <div class="col-sm-3 col-xs-6 new-item" data-target="#carousel-news" data-slide-to="3">
                 <h2>Con auditorio lleno Caracol Internacional exhibió su robusto portafolio de producciones</h2>
                 <p class="new-date">4 de Junio, 2016</p>
                 <a href="#"  class="read-more"><span>Leer Más</span></a>
@@ -363,7 +374,7 @@
         <div class="row">
             <div class="col-md-3 gallery-image">
                 <div class="image-wrapper">
-                    <img src="images/galeria1.jpg">
+                    <img class="md-trigger" data-modal="modal-1" data-big="images/slider-img-1.jpg" src="images/galeria1.jpg">
                 </div>
                  <p class="img-title">Caracol Internacional - LA Screenings</p>
             </div>
@@ -695,5 +706,13 @@
             </div>
         </div>
     </footer>
+        <script src="js/classie.js"></script>
+		<script src="js/modalEffects.js"></script>
+		<script>
+			// this is important for IEs
+			var polyfilter_scriptpath = '/js/';
+		</script>
+		<script src="js/cssParser.js"></script>
+
 </body>
 </html>

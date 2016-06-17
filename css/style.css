@@ -20,7 +20,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
 }
 
 .social-header {
@@ -140,7 +140,7 @@ section.news-section {
 }
 
 .new-item h2 {
-    font-size: 14px;
+    font-size: 12px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     display: block;
@@ -219,13 +219,13 @@ a.read-more:after{
     border-left: 0;
 }
 
-a.read-more:hover{
+.active .read-more, a.read-more:hover{
     background: transparent;
     color: #000;
     text-decoration: none;
 }
 
-a.read-more:hover::before, a.read-more:hover::after {
+.active .read-more:before, .active .read-more:after, a.read-more:hover::before, a.read-more:hover::after {
     width: 50%;
 }
 
@@ -750,7 +750,26 @@ p.tweet-text {
     
     .navbar-nav>li {
     float: left;
+    margin-left: 0px;
+    margin-top: 15px;
+}
+@media (min-width: 992px){
+    .new-item h2{
+        font-size: 14px;
+    }
+}
+}
+@media (min-width: 1200px){
+.navbar-nav>li {
+    float: left;
     margin-left: 85px;
     margin-top: 15px;
 }
+    
+    .navbar-default .navbar-nav>li>a{
+        letter-spacing: 2px;
+    }
 }
+
+    
+    
