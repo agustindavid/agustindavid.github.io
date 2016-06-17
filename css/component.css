@@ -43,7 +43,7 @@ perspective effects (not including the modals and the overlay).
 }
 
 .modal-img img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .md-overlay {
