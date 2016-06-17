@@ -101,6 +101,10 @@ body{
     border-left: 0;
 }
 
+#carousel-news .carousel-control{
+top: -210px;
+}
+
 #carousel-news .carousel-control.right, #carousel-home .carousel-control.right , #carousel-videos .carousel-control.right {
     right: 10px;
     left: auto;
@@ -245,7 +249,7 @@ a.read-more:after{
 
 .new-content:before {
     content: '';
-    width: 90%;
+    width: 80%;
     height: 1px;
     background-color: #cdcdcd;
     position: absolute;
@@ -260,6 +264,7 @@ a.read-more:after{
     position: relative;
     margin-bottom: 35px;
     cursor: pointer;
+    margin-right: 15px;
 }
 
 .close-content span{
@@ -348,6 +353,10 @@ hr.new-divider {
 .share-icons{
     text-align: center;
     padding-top: 15px;
+}
+
+.share-icons a:first-child {
+    margin-left: 0;
 }
 
 .share-icons a {
@@ -759,6 +768,8 @@ p.tweet-text {
 
 
 @media (min-width: 768px){
+    
+
     .navbar-nav {
         float: right !important;
     }
@@ -781,6 +792,9 @@ p.tweet-text {
     .share-icons{
         text-align: right;
         padding-top: 0;
+    }
+        #carousel-news .carousel-control{
+        display: none;
     }
 }
 

@@ -5,11 +5,22 @@ $(document).ready(function(){
         if($('.new-content').is(':hidden')){
             $('.new-content').slideToggle();
         }
+        
+        if($(window).width()<768){
+            $('html, body').delay(500).animate({
+                scrollTop: ($('.new-content').offset().top)+20
+            }, 500);
+        }
     });
     
     $('.close-content').click(function(){
         $('.new-content').slideToggle();
         $('.new-item').removeClass('active');
+                if($(window).width()<768){
+            $('html, body').delay(0).animate({
+                scrollTop: ($('.news-section').offset().top)
+            }, 500);
+        }
     });
     
     $('.md-trigger').click(function(){
