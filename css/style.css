@@ -102,6 +102,7 @@ body{
     width: 100%;
 }
 
+
 #carousel-news .carousel-control, #carousel-home .carousel-control, #carousel-videos .carousel-control {
     cursor: pointer;
     position: absolute;
@@ -323,7 +324,7 @@ a.read-more:after{
 
 hr.new-divider {
     border-top: 2px solid #aaa;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .new-text {
