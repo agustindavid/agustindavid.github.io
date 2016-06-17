@@ -48,6 +48,12 @@ $(document).ready(function(){
             $('.play-btn', this).show();
         }
     });
+    
+    $('.play-btn').click(function(){
+        var embed_src=$('frame', this).attr('src');
+        $('.playing-video iframe').attr('src', embed_src);
+    });
+    
 });
 
 
