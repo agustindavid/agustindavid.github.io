@@ -613,7 +613,7 @@ section.gallery, section.videos {
 }
 
 .masonry { /* Masonry container */
-    column-count: 3;
+    column-count: 1;
     column-gap: 1em;
 }
 
@@ -739,26 +739,34 @@ p.tweet-text {
 
 
 @media (min-width: 768px){
-.navbar-nav {
-    float: right !important;
-    
-}
-    
+    .navbar-nav {
+        float: right !important;
+    }
     .nav>li:last-child a {
-    padding: 15px 0;
-}
-    
+        padding: 15px 0;
+    }
     .navbar-nav>li {
-    float: left;
-    margin-left: 0px;
-    margin-top: 15px;
+        float: left;
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+    .masonry { /* Masonry container */
+    column-count: 2;
+    column-gap: 1em;
+    }
 }
+
 @media (min-width: 992px){
     .new-item h2{
         font-size: 14px;
     }
+    .masonry { /* Masonry container */
+    column-count: 3;
+    column-gap: 1em;
 }
+
 }
+
 @media (min-width: 1200px){
 .navbar-nav>li {
     float: left;
