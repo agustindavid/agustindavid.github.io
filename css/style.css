@@ -267,6 +267,7 @@ a.read-more {
     position: relative;
     z-index: 1;
     transition: 0.6s all ease-in-out;
+    cursor: pointer;
    
 }
 
@@ -609,7 +610,7 @@ section.parallax-1 h3 span b {
 }
 
 section.gallery, section.videos {
-    padding: 60px 0;
+    padding: 60px 0 50px 0;
 }
 
 .gallery h3, .videos h3 {
@@ -654,10 +655,34 @@ section.gallery, section.videos {
     border-right: 0;
 }
 
+.full-gallery .gallery-image {
+    margin-bottom: 35px;
+        -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 0.5s;
+}
+
+.full-gallery .item {
+    margin-bottom: 0px;
+}
+
 .gallery-image {
     margin-bottom: 60px;
     z-index: 1;
     position: relative;
+
+}
+
+@-webkit-keyframes example {
+    from {transform: scale(0.1) translate(200%);}
+    to {transform: scale(1) translate(0);}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {transform: scale(0.1) translate(200%);}
+    to {transform: scale(1) translate(0);}
 }
 
 .image-wrapper{

@@ -63,6 +63,25 @@ $(document).ready(function(){
         }
     });
     
+    $('#expand-gallery').click(function(){
+        var full_gallery = $('.full-gallery').length;
+        //alert(full_gallery);
+        if(full_gallery<1){
+            $('#inner-collapse').removeClass('carousel-inner');
+            $('#carousel-gallery').removeClass('carousel slide');
+            $('#inner-collapse').addClass('full-gallery');
+            $(this).text('Contraer');
+        } else {
+            $('#inner-collapse').addClass('carousel-inner');
+            $('#carousel-gallery').addClass('carousel slide');
+            $('#inner-collapse').removeClass('full-gallery');
+             $('html, body').delay(0).animate({
+                scrollTop: ($('.gallery').offset().top)
+            }, 500);
+            $(this).text('Ver Todas');
+            }
+    });
+    
 });
 
 
