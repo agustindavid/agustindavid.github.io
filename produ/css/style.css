@@ -219,7 +219,7 @@ body{
     font-size: 15px;
 }
 
-section.news-section {
+.news-section {
     background-color: #f9f8f8;
     padding: 30px 0;
     padding-bottom: 60px;
@@ -462,7 +462,7 @@ hr.new-divider {
     background: #000;
 }
 
-section.video-bg {
+.video-bg {
     position: relative;
     height: 420px;
     overflow: hidden;
@@ -589,7 +589,7 @@ p.main-video-title {
     padding: 20px 0;
 }
 
-section.parallax-1 {
+.parallax-1 {
     height: 320px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -598,7 +598,7 @@ section.parallax-1 {
     position: relative;
 }
 
-section.parallax-1 h3 {
+.parallax-1 h3 {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -614,17 +614,17 @@ section.parallax-1 h3 {
     max-width: 700px;
 }
 
-section.parallax-1 h3 span {
+.parallax-1 h3 span {
     display: block;
     font-size: 30px;
 }
 
-section.parallax-1 h3 span b {
+.parallax-1 h3 span b {
     color: #fbd500;
     font-style: italic;
 }
 
-section.gallery, section.videos {
+.gallery, .videos {
     padding: 60px 0 50px 0;
 }
 
@@ -906,7 +906,7 @@ p.tweet-text {
         font-size: 35px;
     }
     
-    section.parallax-1 h3 span {
+    .parallax-1 h3 span {
         font-size: 30px;
     }
 
