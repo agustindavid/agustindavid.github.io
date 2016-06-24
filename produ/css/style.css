@@ -464,7 +464,7 @@ hr.new-divider {
 
 .video-bg {
     position: relative;
-    height: 420px;
+    height: 450px;
     overflow: hidden;
 }
 
@@ -489,7 +489,7 @@ hr.new-divider {
 .home-video {
     position: absolute;
     right: 0;
-    bottom: 0;
+    top: 0;
     min-width: 100%;
     min-height: 100%;
     width: auto;
@@ -573,6 +573,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 .video-thumb img {
     border-bottom: 10px solid #fbd500;
+    width: 100%;
+    height: auto;
 }
 
 p.video-title {
@@ -593,7 +595,7 @@ p.main-video-title {
     height: 320px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: local;
     background-position: top center;
     position: relative;
 }
@@ -686,6 +688,7 @@ p.main-video-title {
     margin-bottom: 60px;
     z-index: 1;
     position: relative;
+    padding-left: 0px !important;
 
 }
 
@@ -892,6 +895,10 @@ p.tweet-text {
     .tagline h3{
         font-size: 24px;
     }
+    
+    .gallery-image {
+        padding-left: 15px !important;
+    }
 }
 
 
@@ -950,6 +957,10 @@ p.tweet-text {
 }
 
 @media (min-width: 992px){
+    .parallax-1{
+        background-attachment: fixed;
+    }
+    
     .new-item h2{
         font-size: 14px;
     }
