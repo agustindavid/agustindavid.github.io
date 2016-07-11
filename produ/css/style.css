@@ -666,6 +666,8 @@ p.main-video-title {
     background: #fff;
     right: -10px;
     transform: skewX(-20deg);
+    display: none;
+    top: 0;
 }
 .videos h3 {
     color: #fff;
@@ -1041,6 +1043,10 @@ p.tweet-text {
 }
 
 @media (min-width: 992px){
+    
+    .videos h3:after {
+        display: block;
+    }
     
     .videos {
     padding: 60px 0 50px 0;
