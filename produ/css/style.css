@@ -814,7 +814,8 @@ p.main-video-title {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     color: #303030;
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 1.1;
 }
 
 .social-feed {
