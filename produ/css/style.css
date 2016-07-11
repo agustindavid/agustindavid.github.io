@@ -288,6 +288,10 @@ a.read-more {
     margin-right: auto;
 }
 
+.news-section a.read-more {
+    display: block;
+}
+
 a.read-more:before, a.read-more:after{
     position: absolute;
     content: '';
