@@ -164,15 +164,15 @@ body{
     bottom: -50px;
     left: 10px;
     width: 40px;
-    font-size: 20px;
+    font-size: 27px;
     color: #fff;
     text-align: center;
     text-shadow: 0 1px 2px rgba(0,0,0,.6);
     background-color: #000;
     height: 40px;
-    color:#fbd500; 
-    opacity: 1;
-    border: 7px solid;
+    color: #fff;
+    opacity: 0.7;
+    border: 0;
     z-index: 1;
     border-top: 0;
     border-left: 0;
@@ -191,10 +191,7 @@ body{
 #carousel-news .carousel-control.right, #carousel-home .carousel-control.right , #carousel-videos .carousel-control.right {
     right: 10px;
     left: auto;
-    border: 7px solid;
-    z-index: 1;
-    border-top: 0;
-    border-right: 0;
+
 }
 
 .tagline {
@@ -263,6 +260,7 @@ p.new-date {
     color: #000;
     margin: 0;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .new-content .new-date{
@@ -274,16 +272,20 @@ a.read-more {
     background: #fbd500;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
     padding: 8px 15px;
     color: #000;
     font-family: 'open sans', sans-serif;
-    border:1px solid #fbd500;
+    border: 1px solid #fbd500;
     position: relative;
     z-index: 1;
     transition: 0.6s all ease-in-out;
     cursor: pointer;
-   
+    display: inline-block;
+    max-width: 110px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a.read-more:before, a.read-more:after{
@@ -349,6 +351,7 @@ a.read-more:after{
     margin-bottom: 35px;
     cursor: pointer;
     margin-right: 15px;
+    margin-top: 25px;
 }
 
 .close-content span{
@@ -400,6 +403,7 @@ hr.new-divider {
     padding: 10px 40px;
     font-size: 13px;
     position: relative;
+    min-height: 55px;
 }
 
 .img-description p {
@@ -628,6 +632,22 @@ p.main-video-title {
 
 .gallery, .videos {
     padding: 60px 0 50px 0;
+    background: #f5f5f5;
+}
+
+.videos{
+    padding-bottom: 90px;
+}
+
+.videos-container{
+        background: #fff;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.no-margin{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
 }
 
 .gallery h3, .videos h3 {
@@ -637,8 +657,59 @@ p.main-video-title {
     margin-bottom: 30px;
     padding-left: 15px;
 }
-#carousel-gallery .carousel-inner>.item {
+
+.videos h3:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 20px;
     background: #fff;
+    right: -10px;
+    transform: skewX(-20deg);
+}
+.videos h3 {
+    color: #fff;
+    background: #000;
+    position: relative;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.no-padding{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.more-videos h3 {
+    background: #fff;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.more-videos .yellow-stripe{
+    background: #eee;
+}
+
+.yellow-stripe:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    background: #fff;
+    left: -10px;
+    transform: skewX(-20deg);
+}
+.yellow-stripe {
+    width: 100%;
+    height: 25px;
+    background: #fbd500;
+    position: relative;
+}
+
+
+
+#carousel-gallery .carousel-inner>.item {
+    background: #f5f5f5;
     padding-right: 15px;
     padding-left: 15px;
 }
@@ -649,15 +720,13 @@ p.main-video-title {
     bottom: -10px;
     left: 10%;
     width: 40px;
-    font-size: 20px;
+    font-size: 27px;
     color: #fff;
     text-align: center;
     text-shadow: 0 1px 2px rgba(0,0,0,.6);
     background-color: #000;
-    height: 40px;
-    color:#fbd500; 
+    height: 40px; 
     opacity: 1;
-    border: 7px solid;
     z-index: 1;
     border-top: 0;
     border-left: 0;
@@ -666,7 +735,6 @@ p.main-video-title {
 #carousel-gallery .carousel-control.right {
     right: 10%;
     left: auto;
-    border: 7px solid;
     z-index: 1;
     border-top: 0;
     border-right: 0;
@@ -719,6 +787,10 @@ p.main-video-title {
     right: -5px;
 }
 
+.gallery {
+    background: #f5f5f5;
+}
+
 .gallery-image img{
     position: relative;
     z-index: 6;
@@ -729,7 +801,7 @@ p.main-video-title {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     color: #303030;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .social-feed {
@@ -904,6 +976,18 @@ p.tweet-text {
 
 @media (min-width: 768px){
     
+    a.read-more{
+        margin-left: 0;
+    }
+    
+    p.new-date{
+        text-align: left;
+    }
+    
+    .close-content{
+        margin-top: 0;
+    }
+    
     .navbar-brand>img{
         width: 100%
     }
@@ -918,12 +1002,12 @@ p.tweet-text {
     }
 
     .image-wrapper:after {
-        bottom: -14px;
-        right: -14px;
+        bottom: -5px;
+        right: -5px;
     }
     
     #carousel-gallery .carousel-inner>.item {
-    background: #fff;
+    background: #f5f5f5;
     padding-right: 15px;
 }
     
@@ -962,7 +1046,7 @@ p.tweet-text {
     }
     
     .new-item h2{
-        font-size: 14px;
+        font-size: 16px;
     }
     .masonry { /* Masonry container */
     column-count: 3;
