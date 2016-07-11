@@ -551,7 +551,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 }
 
 .videos{
-    margin-bottom: 45px;
+    margin-bottom: 0px;
 }
 
 .video-thumb{
