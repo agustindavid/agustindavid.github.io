@@ -171,7 +171,7 @@ body{
     background-color: #000;
     height: 40px;
     color: #fff;
-    opacity: 0.7;
+    opacity: 1;
     border: 0;
     z-index: 1;
     border-top: 0;
@@ -691,10 +691,11 @@ p.main-video-title {
 }
 
 .more-videos h3 {
-    background: #fff;
+    background: #eee;
     color: #000;
     margin-bottom: 15px;
     font-size: 18px;
+    padding: 3px;
 }
 
 .more-videos .yellow-stripe{
@@ -1055,6 +1056,9 @@ p.tweet-text {
     
     .videos h3:after {
         display: block;
+    }
+    .more-videos h3{
+        background: #fff;
     }
     
     .videos {
