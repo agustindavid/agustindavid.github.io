@@ -1,0 +1,153 @@
+.especial-banner {
+    text-align: center;
+    background-image: url(../images/especial_ibc/banner.jpg);
+    background-size: cover;
+    padding: 90px 0;
+}
+
+.especial-banner h2 {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
+.especial-news-section {
+    padding: 60px 0;
+    background: #f5f5f5;
+}
+
+.especial-news-wrap {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 340px !important;
+    position: relative;
+}
+
+.news-info-wrap {
+    position: absolute;
+    bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px;
+    z-index: 9;
+}
+
+.news-info-wrap h3 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+a.content-tag {
+    display: inline-block;
+    padding: 3px 15px;
+    background: #fbd500;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    max-width: 100px;
+}
+
+span.fecha {
+    float: right;
+    color: #fff;
+}
+
+.especial-content-wrapper {
+    background-color: #f5f5f5;
+    padding: 0 0 45px 0;
+}
+
+div#carousel-ibc {
+    margin-bottom: 45px;
+}
+
+
+
+#carousel-ibc .carousel-control{
+    cursor: pointer;
+    position: absolute;
+    top: auto;
+    bottom: 0px;
+    left: 40%;
+    width: 40px;
+    font-size: 27px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    background-color: #000;
+    height: 40px;
+    color: #fff;
+    opacity: 1;
+    border: 0;
+    z-index: 1;
+    border-top: 0;
+    border-left: 0;
+}
+
+
+
+#carousel-ibc .carousel-control.right{
+    right: 40%;
+    left: auto;
+}
+
+#carousel-ibc .active a.read-more {
+    color: #000;
+    text-decoration: none;
+    background: #fbd500;
+}
+
+#carousel-ibc .active .read-more:before{
+    width: 0;
+}
+
+#carousel-ibc .active .read-more:after{
+    width: 0;
+}
+
+#carousel-ibc .active .read-more:hover::before{
+    width: 50%;
+}
+
+#carousel-ibc .active .read-more:hover::after{
+    width: 51%;
+}
+
+.especial-item-col {
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.especial-item-info {
+    padding: 15px;
+    background: #fff;
+    border-top: 8px solid #fbd500;
+    position: absolute;
+    bottom: -65px;
+    transition: all 0.3s;
+}
+
+
+.especial-item-col:hover .especial-item-info{
+    bottom: 0;
+    
+}
+
+.link-container {
+    margin-top: 20px;
+}
+
+.sidebar-especial {
+    padding: 15px;
+    background-color: #e5e5e5;
+}
+
+.sidebar-banner{
+    margin: 15px 0;
+}

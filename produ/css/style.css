@@ -157,7 +157,7 @@ body{
 }
 
 
-#carousel-news .carousel-control, #carousel-home .carousel-control, #carousel-videos .carousel-control {
+#carousel-ibc .carousel-control, #carousel-news .carousel-control, #carousel-home .carousel-control, #carousel-videos .carousel-control {
     cursor: pointer;
     position: absolute;
     top: auto;
@@ -188,7 +188,7 @@ body{
     left: auto;
 }
 
-#carousel-news .carousel-control.right, #carousel-home .carousel-control.right , #carousel-videos .carousel-control.right {
+#carousel-ibc .carousel-control.right,#carousel-news .carousel-control.right, #carousel-home .carousel-control.right , #carousel-videos .carousel-control.right {
     right: 10px;
     left: auto;
 
