@@ -1,8 +1,22 @@
 $(document).ready(function(){
     
-    $('.foto-single').click(function(){
-        $(this).addClass('foto-gone');
+    $('.play-btn').click(function(){
+        var video_src=$(this).data('src');
+        $('.picture-overlay').addClass('no-opacity');
+        $('.foto-single').addClass('foto-gone');
         $('.video-frame').addClass('video-frame-visible');
+        $('.player-iframe').attr('src', video_src);
+        $('.single-content').addClass('visible');
+    });
+    
+        $('.close-video').click(function(){
+        $('.foto-single').removeClass('foto-gone');
+        $('.video-frame').removeClass('video-frame-visible');
+        $('.player-iframe').attr('src', '');
+        $('.single-content').removeClass('visible');
+              setTimeout(function(){
+        $('.picture-overlay').removeClass('no-opacity');
+                  },1000);
     });
 
     
