@@ -216,3 +216,36 @@ h3.other-news {
     border-top: 1px solid #000;
     margin-top: 50px;
 }
+
+.big-picture{
+position: relative;
+}
+
+.video-frame {
+    position: absolute;
+    z-index: 9;
+    height: 0;
+    width: 100%;
+    transition: all 1s;
+    height: 100%;
+    transform: scaleY();
+    transform-origin: center;
+    padding-bottom: 0;
+}
+
+.video-frame-visible{
+    padding-bottom: 56.25% !important;
+}
+
+.foto-single{
+     transform: translateY(0);
+    opacity: 1;
+    transition: 1s all;
+}
+
+.foto-gone{
+        opacity: 0 !important;
+    transform: translateY(100%) !important;
+    position: absolute;
+    top: 0;
+}

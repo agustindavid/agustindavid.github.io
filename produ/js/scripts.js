@@ -1,4 +1,9 @@
 $(document).ready(function(){
+    
+    $('.foto-single').click(function(){
+        $(this).addClass('foto-gone');
+        $('.video-frame').addClass('video-frame-visible');
+    });
 
     
     $('.new-item').click(function(){
