@@ -273,7 +273,7 @@ position: relative;
     color: #fff;
 }
 
-.picture-overlay i {
+.picture-overlay a {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -305,4 +305,10 @@ span.close-video:hover {
 
 .no-opacity{
     opacity: 0;
+}
+
+.social-header.single-share {
+    text-align: center;
+    float: none;
+    margin-top: 15px;
 }
