@@ -49,6 +49,7 @@ a.content-tag {
     font-weight: bold;
     text-transform: uppercase;
     max-width: 100px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 span.fecha {
@@ -117,6 +118,10 @@ div#carousel-ibc {
     width: 51%;
 }
 
+#carousel-ibc .item {
+    margin-bottom: 25px;
+}
+
 .especial-item-col {
     height: 320px;
     overflow: hidden;
@@ -150,4 +155,64 @@ div#carousel-ibc {
 
 .sidebar-banner{
     margin: 15px 0;
+}
+
+.sidebar-especial-info {
+    background: #fff;
+    padding: 15px;
+}
+
+.sidebar-especial-info h3 {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.sidebar-especial h4 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.single-content {
+    margin-top: -70px;
+    background: #fff;
+    padding: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+.content-text {
+    padding: 25px 0;
+}
+
+.single-content h2 {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 26px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.light-gray {
+    background: #f5f5f5;
+}
+
+h3.other-news {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 40px 0 40px 0;
+    position: relative;
+}
+
+
+
+.especial-content-wrapper hr {
+    border-top: 1px solid #000;
+    margin-top: 50px;
 }
