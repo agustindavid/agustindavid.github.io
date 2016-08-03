@@ -251,12 +251,12 @@ position: relative;
 
 .foto-single{
      transform: translateY(0);
-    opacity: 1;
+    height: 100%;
     transition: 1s all ease-in-out;
 }
 
 .foto-gone{
-        opacity: 0 !important;
+        height: 0 !important;
     transform: translateY(100%) !important;
     position: absolute;
     top: 0;
