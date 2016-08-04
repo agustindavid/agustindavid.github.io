@@ -334,7 +334,18 @@ span.close-video:hover {
 }
 
 .social-header.single-share {
-    text-align: center;
+    text-align: left;
     float: none;
-    margin-top: 15px;
+    margin-top: 25px;
+}
+
+span.share-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    vertical-align: bottom;
+}
+
+.single-share .yellow-font {
+    margin-right: 25px;
 }
