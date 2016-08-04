@@ -33,6 +33,11 @@
     overflow: hidden;
 }
 
+.play-right {
+    text-align: right;
+    padding: 15px;
+}
+
 .especial-news-wrap:hover .bg-holder{
     transform: scale(1.2);
 }
@@ -61,7 +66,7 @@
     margin-bottom: 30px;
 }
 
-a.content-tag {
+.content-tag {
     display: inline-block;
     padding: 3px 15px;
     background: #fbd500;
@@ -70,6 +75,13 @@ a.content-tag {
     text-transform: uppercase;
     max-width: 100px;
     font-family: 'Open Sans', sans-serif;
+    border: 0;
+}
+a.overlink {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
 }
 
 span.fecha {
