@@ -107,7 +107,6 @@ div#carousel-ibc {
     position: absolute;
     top: auto;
     bottom: 0px;
-    left: 40%;
     width: 40px;
     font-size: 27px;
     color: #fff;
@@ -126,8 +125,13 @@ div#carousel-ibc {
 
 
 #carousel-ibc .carousel-control.right{
-    right: 40%;
+    right: 10%;
     left: auto;
+}
+
+#carousel-ibc .carousel-control.left{
+    right: auto;
+    left: 10%;
 }
 
 #carousel-ibc .active a.read-more {
@@ -361,13 +365,40 @@ span.share-title {
     margin: 25px 0;
 }
 
+p.fecha-especial {
+    font-size: 14px;
+}
+
+.single-share-wrap {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
 @media (min-width: 768px){
+    
+    .single-share-wrap {
+        display: inline;
+        margin-top: 0;
+        text-align: left;
+    }
+    
     .especial-news-wrap:first-child {
         margin-top: 0;
     }
     .especial-news-wrap {
         margin: 0px 0;
     }
+    
+    #carousel-ibc .carousel-control.right{
+        right: 40%;
+        left: auto;
+} 
+    
+        #carousel-ibc .carousel-control.left{
+        right: auto;
+        left: 40%;
+} 
     
 
     
