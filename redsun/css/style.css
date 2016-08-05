@@ -1,0 +1,161 @@
+.menutop {
+    text-transform: uppercase;
+    background-color: #303030;
+    border-color: transparent;
+    padding: 5px 0 5px 0;
+    z-index: 999;
+    margin-bottom: 0px !important;
+    border: 0 !important;
+    position: relative;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    line-height: 1;
+    width: 100%;
+}
+
+.red-stripe {
+    padding: 15px 0;
+    background: #de0029;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    right: 0;
+}
+
+.red-stripe:before {
+    width: 30px;
+    height: 100%;
+    content: '';
+    background: #de0029;
+    left: -20px;
+    position: absolute;
+    top: 0;
+    transform: skew(-10deg);
+}
+.red-stripe:after {
+    position: absolute;
+    content: '';
+    width: 110%;
+    height: 45%;
+    background: #303030;
+    top: 0;
+    right: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.navbar-brand > img {
+    width: 80%;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+@media screen and (min-width: 768px){
+    
+	.navbar-nav {
+	    float: left;
+	    margin: 0;
+	    margin-top: 45px;
+	}
+}
+.captionheader {
+    right: 20%;
+    left: 20%;
+    padding-bottom: 100px;
+}
+
+.boton {
+	border-radius: 0px;
+	border-color: #de0029;
+	background-color: #de0029;
+	color: whitesmoke;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	margin-top: 50px;
+	font-size: 0.7em;
+}
+
+.titulocarousel {
+	text-transform: uppercase;
+	/*font-size: 1.5em;*/
+	margin-bottom: 50px;
+}
+
+.info {
+	margin-top: 50px;
+}
+
+.hrrojo{
+    border-top: 5px solid #de0029;
+    width: 30%;
+}
+
+.slidetestimonial {
+	background-color: #de0029;
+	margin-top: 70px;
+}
+.testimonialimg {
+	width: 50%;
+}
+
+.caption-testimonial {
+	width: 30%;
+	left: 50%;
+	top: 50px;
+	padding-left: 30px;
+}
+
+.indicators-testimonial {
+	width: 30%;
+	left: 50%;
+	bottom: 150px;
+	margin-left: 0;
+}
+
+.servicios {
+	margin-top: 70px;
+	margin-bottom: 70px; 
+}
+
+.hr-serv {
+	border-top: 2px solid #e2d3d0;
+	margin-bottom: 35px;
+}
+
+.footera {
+	background-color: #303030;
+	color: whitesmoke;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+
+.footercont {
+	width: 60%;
+	margin: 20px auto;
+}
+
+.footerb {
+	background-color: #de0029;
+	padding: 50px 0;
+	color: whitesmoke;
+	font-size: 0.9em;
+}
+
+.socialbutton {
+	height: 40px;
+	width: 40px;
+	border-radius: 0px;
+	border: 2px solid whitesmoke;
+	box-sizing: border-box;
+	display: inline-block;
+	background-color: #de0029;
+	/*margin: 20px 10px;*/
+}
