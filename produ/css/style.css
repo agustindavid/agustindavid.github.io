@@ -70,6 +70,14 @@ body{
     width: 100%;
 }
 
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 10px !important;
+}
+
+
 .social-header {
     float: right;
     margin-top: 55px;

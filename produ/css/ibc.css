@@ -76,6 +76,7 @@
     max-width: 100px;
     font-family: 'Open Sans', sans-serif;
     border: 0;
+    font-size: 14px;
 }
 a.overlink {
     position: absolute;
@@ -87,6 +88,7 @@ a.overlink {
 span.fecha {
     float: right;
     color: #fff;
+    font-size: 12px;
 }
 
 .especial-content-wrapper {
@@ -166,7 +168,7 @@ div#carousel-ibc {
     background: #fff;
     border-top: 8px solid #fbd500;
     position: absolute;
-    bottom: -65px;
+    bottom: 0px;
     transition: all 0.3s;
 }
 
@@ -210,7 +212,7 @@ div#carousel-ibc {
 }
 
 .single-content {
-    margin-top: -70px;
+    margin-top: 15px;
     background: #fff;
     padding: 30px;
     font-family: 'Open Sans', sans-serif;
@@ -349,3 +351,35 @@ span.share-title {
 .single-share .yellow-font {
     margin-right: 25px;
 }
+
+
+
+.especial-news-wrap:first-child {
+    margin-top: 0;
+}
+.especial-news-wrap {
+    margin: 25px 0;
+}
+
+@media (min-width: 768px){
+    .especial-news-wrap:first-child {
+        margin-top: 0;
+    }
+    .especial-news-wrap {
+        margin: 0px 0;
+    }
+    
+
+    
+}
+
+@media (min-width: 992px){
+        .single-content {
+        margin-top: -70px;
+    }
+    
+        .especial-item-info {
+        bottom: -65px;
+    }
+}
+
