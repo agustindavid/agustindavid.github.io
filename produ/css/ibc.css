@@ -263,6 +263,7 @@ h3.other-news {
 
 .big-picture{
 position: relative;
+    margin-top: 10px;
 }
 
 .video-frame {
@@ -376,6 +377,12 @@ p.fecha-especial {
 }
 
 @media (min-width: 768px){
+    
+    .big-picture{
+        position: relative;
+        margin-top: 0px;
+}
+
     
     .single-share-wrap {
         display: inline;
