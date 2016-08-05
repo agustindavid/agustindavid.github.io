@@ -376,12 +376,30 @@ p.fecha-especial {
     text-align: center;
 }
 
+.content-text p {
+    font-size: 14px;
+}
+
+.play-btn img {
+    width: 45px;
+    height: 45px;
+}
+
+span.autor {
+    font-size: 14px;
+}
+
+span.fecha-especial {
+    font-size: 12px;
+}
+
 @media (min-width: 768px){
     
-    .big-picture{
-        position: relative;
-        margin-top: 0px;
+    .play-btn img {
+    width: 75px;
+    height: 75px;
 }
+    
 
     
     .single-share-wrap {
@@ -419,5 +437,10 @@ p.fecha-especial {
         .especial-item-info {
         bottom: -65px;
     }
+        .big-picture{
+        position: relative;
+        margin-top: 0px;
+}
+
 }
 
