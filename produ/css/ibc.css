@@ -392,6 +392,10 @@ span.fecha-especial {
     font-size: 12px;
 }
 
+.especial-item-col img, .sidebar-banner img {
+    width: 100%;
+}
+
 .sidebar-especial-info p {
     font-size: 12px;
 }
