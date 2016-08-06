@@ -9,9 +9,11 @@
     position: relative;
 }
 
-#carousel-header .carousel-inner>.item>a>img, .carousel-inner>.item>img {
-    line-height: 1;
-    width: 100%;
+
+
+div#carousel-header {
+    max-height: 330px;
+    overflow: hidden;
 }
 
 .red-stripe {
