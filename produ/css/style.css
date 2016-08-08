@@ -42,6 +42,10 @@ body{
     height: auto !important;
 }
 
+.navbar-brand{
+    width: 60%;
+}
+
 .navbar-brand>img{
     width: 70%
 }

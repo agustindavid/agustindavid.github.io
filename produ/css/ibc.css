@@ -4,6 +4,10 @@
 }
 }
 
+.navbar-brand{
+    width: 75%;
+}
+
 .especial-banner {
     text-align: center;
     background-image: url(../images/especial_ibc/banner.jpg);
@@ -424,6 +428,10 @@ span.fecha-especial {
         margin-top: -70px;
     }
     
+        .navbar-brand{
+    width: 100% !important;
+}
+    
 
 
         .big-picture{
@@ -446,6 +454,14 @@ span.fecha-especial {
 
 
 @media (min-width: 667px) {
+    
+    .container{
+        width: 100%;
+    }
+    
+    .navbar-brand{
+    width: 40%;
+}
 
     
         .especial-news-wrap:first-child {
