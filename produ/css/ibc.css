@@ -439,7 +439,7 @@ span.fecha-especial {
     
 }
 
-@media (min-width: 730px) {
+@media (min-width: 667px) {
     .col-sm-6{
         width: 50% !important;
         float: left;
