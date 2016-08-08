@@ -425,6 +425,7 @@ span.fecha-especial {
     }
     
 
+
         .big-picture{
         position: relative;
         margin-top: 0px;
@@ -439,11 +440,13 @@ span.fecha-especial {
     
 }
 
+@media (min-width: 667px) and (max-width:992) {
+
+}
+
+
 @media (min-width: 667px) {
-    .col-sm-6{
-        width: 50%;
-        float: left;
-    }
+
     
         .especial-news-wrap:first-child {
         margin-top: 0;
