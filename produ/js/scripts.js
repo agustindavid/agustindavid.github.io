@@ -104,7 +104,16 @@ $(document).ready(function(){
     });
     
     $('#view-full-team').click(function(){
-         $('.full-team').slideToggle();    
+         $('.full-team').slideToggle();
+        if ($(this).hasClass('active')){
+            $(this).removeClass('active');
+         $(this).text('Ver equipo completo');
+        } else {
+            $(this).text('Ocultar');
+             $(this).addClass('active');
+        }
+       
+            
     });
     
 });

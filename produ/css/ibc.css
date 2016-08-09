@@ -420,6 +420,75 @@ span.fecha-especial {
 display: none;
 }
 
+
+
+.contacto-height-setter {
+display: block;
+}
+.contacto-height-getter {
+     float: none;
+    display: block;
+    vertical-align: middle;
+}
+
+.wiw>h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    border-top: 2px solid #fbd500;
+    padding: 8px 0;
+    border-bottom: 2px solid #f1f1f1;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+h4.wiw-name {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+h5.charge {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h6.organization {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 5px;
+}
+
+hr.vertical {
+    transform: rotate(90deg);
+    border-top: 3px solid #eee;
+    width: 130%;
+}
+
+.main-member {
+    padding: 5px 0 15px 0;
+}
+
+p.team-member-name {
+    margin-bottom: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p.team-member-charge {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+#view-full-team{
+    margin-top:25px;
+}
+
 @media (min-width: 768px){
 
     
@@ -458,6 +527,16 @@ display: none;
 
 
 @media (min-width: 667px) {
+    
+        .height-setter {
+        display: table;
+        width: 100%
+    }
+    .height-getter {
+        float: none !important;
+        display: table-cell;
+        vertical-align: middle;
+    }
     
     .container{
         width: 100%;
