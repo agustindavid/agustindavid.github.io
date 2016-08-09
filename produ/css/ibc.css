@@ -444,12 +444,14 @@ display: block;
 
 .round {
     border-radius: 50%;
+    margin: auto;
 }
 
 h4.wiw-name {
     font-size: 20px;
     font-weight: bolder;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 h5.charge {
@@ -457,12 +459,14 @@ h5.charge {
     font-family: 'Open Sans', sans-serif;
     margin-top: 0;
     margin-bottom: 0;
+    text-align: center;
 }
 
 h6.organization {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     margin-top: 5px;
+    text-align: center;
 }
 
 hr.vertical {
@@ -478,15 +482,28 @@ hr.vertical {
 p.team-member-name {
     margin-bottom: 0;
     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-align: center;
 }
 
 p.team-member-charge {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
+    font-size: 14px;
+    text-align: center;
 }
 
 #view-full-team{
     margin-top:25px;
+}
+
+    
+    .center-image{
+        margin: auto;
+    }
+
+.padding-25{
+padding-top: 25px;
 }
 
 @media (min-width: 768px){
@@ -527,6 +544,24 @@ p.team-member-charge {
 
 
 @media (min-width: 667px) {
+
+    
+    h4.wiw-name {
+        text-align: left;
+    }
+
+    h5.charge {
+        text-align: left;
+    }
+
+    h6.organization {
+        text-align: left;
+    }
+    
+    .round {
+    border-radius: 50%;
+    margin-left: 0;
+}
     
         .height-setter {
         display: table;

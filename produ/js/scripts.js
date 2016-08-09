@@ -103,7 +103,7 @@ $(document).ready(function(){
             }
     });
     
-    $('#view-full-team').click(function(){
+    $('#view-full-team').click(function(e){
          $('.full-team').slideToggle();
         if ($(this).hasClass('active')){
             $(this).removeClass('active');
