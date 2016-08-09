@@ -483,14 +483,13 @@ p.team-member-name {
     margin-bottom: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    text-align: center;
 }
 
 p.team-member-charge {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 14px;
-    text-align: center;
+
 }
 
 #view-full-team{
