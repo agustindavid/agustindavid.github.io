@@ -103,6 +103,10 @@ $(document).ready(function(){
             }
     });
     
+    $('#view-full-team').click(function(){
+         $('.full-team').slideToggle();    
+    });
+    
 });
 
 
