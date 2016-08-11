@@ -165,8 +165,8 @@ div#carousel-ibc {
 }
 
 .especial-item-col {
-    height: 320px;
-    overflow: hidden;
+    height: 100%;
+    overflow:visible;
     position: relative;
     margin-bottom: 40px;
 }
@@ -175,10 +175,11 @@ div#carousel-ibc {
     padding: 15px;
     background: #fff;
     border-top: 8px solid #fbd500;
-    position: absolute;
+    position: relative;
     bottom: 0px;
     transition: all 0.3s;
     width: 100%;
+    margin-bottom: 0px;
 }
 
 .inline{
@@ -531,8 +532,19 @@ padding-top: 25px;
 }
 
 @media (min-width: 1200px){
-        .especial-item-info {
+    .especial-item-info {
         bottom: -65px;
+        position: absolute;
+    }
+    
+    .link-container {
+        margin-top: 20px;
+    }
+    .especial-item-col {
+        height: 320px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 40px;
     }
     
 }
