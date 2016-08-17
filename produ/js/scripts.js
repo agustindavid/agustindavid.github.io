@@ -1,13 +1,24 @@
+
 $(document).ready(function(){
     
 var $grid = $('.isotope').isotope({
-  layoutMode: 'masonry'
+    layoutMode:'masonry'
+
 });
+    $(window).load(function(){
+$grid.imagesLoaded().done( function() {
+  $grid.isotope('layout');
+});
+    });
+        
 // filter items on button click
-$('.filter-button-group').on( 'click', 'button', function() {
+$('.ficha-header').on( 'click', 'button', function() {
   var filterValue = $(this).attr('data-filter');
   $grid.isotope({ filter: filterValue });
 });
+
+    
+
     
     $('.play-btn').click(function(){
         var video_src=$(this).data('src');
