@@ -193,3 +193,9 @@ input.search-mipcom:focus {
         display: block;
     }
 }
+
+@media (min-width: 667px){
+    .navbar-brand {
+        width: 70%;
+    }
+}
