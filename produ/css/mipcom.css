@@ -152,18 +152,28 @@ input.search-mipcom:focus {
     left: -5px;
     margin-top: -18px;
     top: 50%;
+    display: none;
 }
 
 .ficha-icon span {
-    margin-left: 5px;
+    margin-left: 0px;
     vertical-align: bottom;
     font-weight: 600;
+    margin-top: 5px;
+    display: inline-block;
 }
 
 @media (min-width: 800px){
     .titulo-ficha {
         text-align: left;
     }
+    
+    .ficha-icon span {
+    margin-left: 5px;
+    vertical-align: bottom;
+    font-weight: 600;
+    margin-top: 0;
+}
     
     .titulo-ficha h3{
         margin-top: 0px;
@@ -175,5 +185,11 @@ input.search-mipcom:focus {
     .fichas-wrap .masonry {
         column-count: 3;
         column-gap: 3.3em;
+    }
+}
+
+@media (min-width:667px){
+    .ficha-icon:after {
+        display: block;
     }
 }
