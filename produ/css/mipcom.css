@@ -125,6 +125,31 @@
     margin-top: -15px;
 }
 
+.ficha-icon{
+    padding-top: 6px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.ficha-icon:after {
+    position: absolute;
+    width: 2px;
+    height: 36px;
+    background: #555;
+    content: '';
+    top: 0;
+    left: -5px;
+    margin-top: -18px;
+    top: 50%;
+}
+
+.ficha-icon span {
+    margin-left: 5px;
+    vertical-align: bottom;
+    font-weight: 600;
+}
+
 
 @media (min-width: 992px){
     .fichas-wrap .masonry {
