@@ -179,6 +179,9 @@ input.search-mipcom:focus {
         margin-top: 0px;
     }
 }
+.single-content{
+    font-size: 14px;
+}
 
 .single-content h1 {
     font-weight: bold;
@@ -235,6 +238,29 @@ input.search-mipcom:focus {
 
 .emisiones p {
     margin-left: 10px;
+}
+
+a.back-btn {
+    display: inline-block;
+    border: 2px solid #000;
+    padding: 10px 20px;
+    color: #000;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    line-height: 1;
+}
+a.back-btn:hover{
+    text-decoration: none;
+    color: #000;
+}
+
+.back-btn i {
+    margin-right: 15px;
+    font-size: 30px;
+    color: #666;
+    vertical-align: sub;
 }
 
 .yellow-hr {
