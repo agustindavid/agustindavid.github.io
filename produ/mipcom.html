@@ -24,6 +24,28 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300' rel='stylesheet' type='text/css'>
     <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
     <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+    
+      <script>     
+          
+          $(document).ready(function(){
+      
+var $grid = $('.isotope').isotope({
+    layoutMode:'masonry'
+
+});
+    $(window).load(function(){
+$grid.imagesLoaded().done( function() {
+  $grid.isotope('layout');
+});
+    });
+        
+// filter items on button click
+$('.ficha-header').on( 'click', 'button', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+});
+          });
+    </script>
 
 </head>
 <body>
@@ -94,7 +116,9 @@
                         <p><button data-filter="*">Ver listado completo</button>/<button data-filter=".disney">Disney media</button></p>
                     </div>
                     <div class="img-ficha">
-                        <img src="images/mipcom/juanga.jpg" class="img-responsive">
+                        <a href="single_mipcom.html">
+                            <img src="images/mipcom/juanga.jpg" class="img-responsive">
+                        </a>
                     </div>
                     <div class="titulo-ficha">
                         <div class="row">
@@ -103,7 +127,7 @@
                                 <p>(15x60)</p>
                             </div>
                             <div class="col-sm-4 ficha-icon">
-                                <img src="images/mipcom/icon-ficha.png"> <span>Ficha</span>
+                                <img src="images/mipcom/icon-ficha.png"> <span><a href="single_mipcom.html">Ficha</a></span>
                             </div>
                         </div>
                     </div>
@@ -124,7 +148,9 @@
                         <p><button data-filter="*">Ver listado completo</button>/<button data-filter=".disney">Disney media</button></p>
                     </div>
                     <div class="img-ficha">
-                        <img src="images/mipcom/juanga.jpg" class="img-responsive">
+                        <a href="single_mipcom.html">
+                            <img src="images/mipcom/juanga.jpg" class="img-responsive">
+                        </a>
                     </div>
                     <div class="titulo-ficha">
                         <div class="row">
@@ -133,7 +159,7 @@
                                 <p>(15x60)</p>
                             </div>
                             <div class="col-sm-4 ficha-icon">
-                                <img src="images/mipcom/icon-ficha.png"> <span>Ficha</span>
+                                <img src="images/mipcom/icon-ficha.png"> <span><a href="single_mipcom.html">Ficha</a></span>
                             </div>
                         </div>
                     </div>
@@ -162,7 +188,9 @@
                         <p><button data-filter="*">Ver listado completo</button>/<button data-filter=".disney">Disney media</button></p>
                     </div>
                     <div class="img-ficha">
-                        <img src="images/mipcom/juanga.jpg" class="img-responsive">
+                        <a href="single_mipcom.html">
+                            <img src="images/mipcom/juanga.jpg" class="img-responsive">
+                        </a>
                     </div>
                     <div class="titulo-ficha">
                         <div class="row">
@@ -171,7 +199,7 @@
                                 <p>(15x60)</p>
                             </div>
                             <div class="col-sm-4 ficha-icon">
-                                <img src="images/mipcom/icon-ficha.png"> <span>Ficha</span>
+                                <img src="images/mipcom/icon-ficha.png"> <span><a href="single_mipcom.html">Ficha</a></span>
                             </div>
                         </div>
                     </div>
@@ -201,7 +229,9 @@
                         <p><button data-filter="*">Ver listado completo</button>/<button data-filter=".disney">Disney media</button></p>
                     </div>
                     <div class="img-ficha">
-                        <img src="images/mipcom/juanga.jpg" class="img-responsive">
+                        <a href="single_mipcom.html">
+                            <img src="images/mipcom/juanga.jpg" class="img-responsive">
+                        </a>
                     </div>
                     <div class="titulo-ficha">
                         <div class="row">
@@ -210,7 +240,7 @@
                                 <p>(15x60)</p>
                             </div>
                             <div class="col-sm-4 ficha-icon">
-                                <img src="images/mipcom/icon-ficha.png"> <span>Ficha</span>
+                                <img src="images/mipcom/icon-ficha.png"> <span><a href="single_mipcom.html">Ficha</a></span>
                             </div>
                         </div>
                     </div>
@@ -231,7 +261,9 @@
                         <p><button data-filter="*">Ver listado completo</button>/<button data-filter=".produ">Produ media</button></p>
                     </div>
                     <div class="img-ficha">
-                        <img src="images/mipcom/juanga.jpg" class="img-responsive">
+                        <a href="single_mipcom.html">
+                            <img src="images/mipcom/juanga.jpg" class="img-responsive">
+                        </a>
                     </div>
                     <div class="titulo-ficha">
                         <div class="row">
@@ -240,7 +272,7 @@
                                 <p>(15x60)</p>
                             </div>
                             <div class="col-sm-4 ficha-icon">
-                                <img src="images/mipcom/icon-ficha.png"> <span>Ficha</span>
+                                <img src="images/mipcom/icon-ficha.png"> <span><a href="single_mipcom.html">Ficha</a></span>
                             </div>
                         </div>
                     </div>
@@ -261,7 +293,9 @@
                         <p><button data-filter="*">Ver listado completo</button>/<button data-filter=".disney">Disney media</button></p>
                     </div>
                     <div class="img-ficha">
+                        <a href="single_mipcom.html">
                         <img src="images/mipcom/juanga.jpg" class="img-responsive">
+                        </a>
                     </div>
                     <div class="titulo-ficha">
                         <div class="row">
@@ -270,7 +304,7 @@
                                 <p>(15x60)</p>
                             </div>
                             <div class="col-sm-4 ficha-icon">
-                                <img src="images/mipcom/icon-ficha.png"> <span>Ficha</span>
+                                <img src="images/mipcom/icon-ficha.png"> <span><a href="single_mipcom.html">Ficha</a></span>
                             </div>
                         </div>
                     </div>
@@ -291,7 +325,9 @@
                         <p><button data-filter="*">Ver listado completo</button>/<button data-filter=".produ">Produ media</button></p>
                     </div>
                     <div class="img-ficha">
+                        <a href="single_mipcom.html">
                         <img src="images/mipcom/juanga.jpg" class="img-responsive">
+                        </a>
                     </div>
                     <div class="titulo-ficha">
                         <div class="row">
@@ -300,7 +336,7 @@
                                 <p>(15x60)</p>
                             </div>
                             <div class="col-sm-4 ficha-icon">
-                                <img src="images/mipcom/icon-ficha.png"> <span>Ficha</span>
+                                <img src="images/mipcom/icon-ficha.png"> <span><a href="single_mipcom.html">Ficha</a></span>
                             </div>
                         </div>
                     </div>

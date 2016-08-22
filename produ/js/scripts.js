@@ -1,21 +1,5 @@
 
 $(document).ready(function(){
-    
-var $grid = $('.isotope').isotope({
-    layoutMode:'masonry'
-
-});
-    $(window).load(function(){
-$grid.imagesLoaded().done( function() {
-  $grid.isotope('layout');
-});
-    });
-        
-// filter items on button click
-$('.ficha-header').on( 'click', 'button', function() {
-  var filterValue = $(this).attr('data-filter');
-  $grid.isotope({ filter: filterValue });
-});
 
     
 
