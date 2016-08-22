@@ -104,6 +104,10 @@
     color: #fff;
 }
 
+.ficha-wrap a:hover {
+    color: #fff;
+}
+
 .ficha-header button {
     background-color: transparent;
     border: 0;
