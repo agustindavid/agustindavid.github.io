@@ -22,8 +22,25 @@
     <script src="https://use.fontawesome.com/c70b78400b.js"></script>
     <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300' rel='stylesheet' type='text/css'>
+        <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+    <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
     
+      <script>     
+          
+          $(document).ready(function(){
+      
+var $grid = $('.isotope').isotope({
+    layoutMode:'masonry'
 
+});
+    $(window).load(function(){
+$grid.imagesLoaded().done( function() {
+  $grid.isotope('layout');
+});
+    });
+
+          });
+    </script>
 
 
 </head>
@@ -133,7 +150,7 @@
             <div class="col-sm-6 col-xs-12"><h3 class="other-news">Otras ofertas  <b>DISNEY MEDIA DISTRIBUTION LATIN AMERICA</b></h3></div>
                 <div class="col-sm-6 hidden-xs"><hr class="yellow-hr"></div>
         </div>
-        <div class="row">
+        <div class="row isotope">
                 <div class="col-md-4 col-xs-12 col-sm-6 ficha-wrap disney">
                     <div class="img-ficha">
                         <img src="images/mipcom/juanga.jpg" class="img-responsive">
@@ -154,7 +171,6 @@
                     </div>
                     <div class="content-ficha">
                         <p>Hasta que te conocí es un recorrido basado en testimonios inéditos que devela, como nunca antes, la vida del divo de Juárez: Juan Gabriel.
-                        Hasta que te conocí es un recorrido basado en testimonios inéditos que devela, como nunca antes, la vida del divo de Juárez: Juan Gabriel.
                         </p>
                         <div class="text-center">
                             <a href="#" class="read-more"><i>trailer</i></a>
@@ -168,7 +184,7 @@
                     <div class="titulo-ficha">
                         <div class="row">
                             <div class="col-sm-8">
-                                <h3>Hasta que te conocí</h3>
+                                <h3>Moisés y los diez mandamientos</h3>
                                 <p>(15x60)</p>
                             </div>
                             <div class="col-sm-4 ficha-icon">
@@ -183,6 +199,8 @@
                         <p>Hasta que te conocí es un recorrido basado en testimonios inéditos que devela, como nunca antes, la vida del divo de Juárez: Juan Gabriel.
                         Hasta que te conocí es un recorrido basado en testimonios inéditos que devela, como nunca antes, la vida del divo de Juárez: Juan Gabriel.
                         </p>
+                        <p>Hasta que te conocí es un recorrido basado en testimonios inéditos que devela, como nunca antes, la vida del divo de Juárez: Juan Gabriel.
+                        </p>
                         <div class="text-center">
                             <a href="#" class="read-more"><i>trailer</i></a>
                         </div>
@@ -195,7 +213,7 @@
                     <div class="titulo-ficha">
                         <div class="row">
                             <div class="col-sm-8">
-                                <h3>Hasta que te conocí</h3>
+                                <h3>Gabriela, giros del destino</h3>
                                 <p>(15x60)</p>
                             </div>
                             <div class="col-sm-4 ficha-icon">
@@ -208,18 +226,45 @@
                     </div>
                     <div class="content-ficha">
                         <p>Hasta que te conocí es un recorrido basado en testimonios inéditos que devela, como nunca antes, la vida del divo de Juárez: Juan Gabriel.
-                        Hasta que te conocí es un recorrido basado en testimonios inéditos que devela, como nunca antes, la vida del divo de Juárez: Juan Gabriel.
+                       Juan Gabriel.
                         </p>
                         <div class="text-center">
                             <a href="#" class="read-more"><i>trailer</i></a>
                         </div>
                     </div>
                 </div>
-            <div class="clearfix"></div>
+                <div class="col-md-4 col-xs-12 col-sm-6 ficha-wrap disney">
+                    <div class="img-ficha">
+                        <img src="images/mipcom/juanga.jpg" class="img-responsive">
+                    </div>
+                    <div class="titulo-ficha">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <h3><a href="#"></a>La traición</a></h3>
+                                <p>(15x60)</p>
+                            </div>
+                            <div class="col-sm-4 ficha-icon">
+                                <img src="images/mipcom/icon-ficha.png"> <span>Ficha</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="excerpt-ficha">
+                        <p>Disney Media Distribution Latin America /  SOMOS Distribution</p>
+                    </div>
+                    <div class="content-ficha">
+                        <p>Hasta que te conocí es un recorrido basado en testimonios inéditos que devela, como nunca antes, la vida del divo de Juárez: Juan Gabriel.
+                        </p>
+                        <div class="text-center">
+                            <a href="#" class="read-more"><i>trailer</i></a>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+                    <div class="clearfix"></div>
             <div class="text-center">
                 <a class="back-btn" href="mipcom.html"><i class="fa fa-angle-left" aria-hidden="true"></i>Volver a oferta mipcom</a>
             </div>
-        </div>
 </div>
     </div>
     <footer>
