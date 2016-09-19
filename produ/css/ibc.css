@@ -67,7 +67,7 @@
     color: #fff;
     font-size: 16px;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 .content-tag {
@@ -180,6 +180,10 @@ div#carousel-ibc {
     transition: all 0.3s;
     width: 100%;
     margin-bottom: 0px;
+}
+
+.banner-inner {
+    margin-bottom: 40px;
 }
 
 h4.titulo-especial {
