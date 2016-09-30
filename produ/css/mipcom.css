@@ -1,21 +1,25 @@
 ::-webkit-input-placeholder {
    color: #fff;
     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
 }
 
 :-moz-placeholder { /* Firefox 18- */
    color: #fff;
     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
    color: #fff;
     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
 }
 
 :-ms-input-placeholder {  
    color: #fff;
     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
 }
 
 .sticky-menu {

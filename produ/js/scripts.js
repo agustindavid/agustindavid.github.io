@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
     
-        if($(window).width() > 992){
+
     var waypoint = new Waypoint({
         element: $('.fichas-wrap'),
         handler: function(direction) {
@@ -12,7 +12,7 @@ $(document).ready(function(){
             }
         }
     })
-    }
+    
 
     
 
