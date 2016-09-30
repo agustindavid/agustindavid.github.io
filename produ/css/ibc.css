@@ -35,6 +35,15 @@
     min-height: 340px !important;
     position: relative;
     overflow: hidden;
+    border-right: 2px solid #f5f5f5;
+}
+
+.especial-news-wrap:last-child{
+    border-right: 0;
+}
+
+#carousel-ibc .carousel-inner{
+    margin-bottom: 40px;
 }
 
 .play-right {
@@ -110,7 +119,7 @@ div#carousel-ibc {
     cursor: pointer;
     position: absolute;
     top: auto;
-    bottom: 0px;
+    bottom: -40px;
     width: 40px;
     font-size: 27px;
     color: #fff;

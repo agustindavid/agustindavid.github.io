@@ -1,5 +1,18 @@
 
 $(document).ready(function(){
+    
+        if($(window).width() > 992){
+    var waypoint = new Waypoint({
+        element: $('.fichas-wrap'),
+        handler: function(direction) {
+            if(direction=='down'){
+                $('.sticky-menu').addClass('shown');
+            } else {
+                $('.sticky-menu').removeClass('shown');
+            }
+        }
+    })
+    }
 
     
 
@@ -118,6 +131,13 @@ $(document).ready(function(){
         }
        
             
+    });
+    
+    $('#carousel-ibc .carousel-control').click(function(){
+                $('html, body').delay(1000).animate({
+                scrollTop: ($('body').offset().top)
+            }, 500);  
+    
     });
     
 });

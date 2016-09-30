@@ -1,3 +1,93 @@
+::-webkit-input-placeholder {
+   color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:-ms-input-placeholder {  
+   color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sticky-menu {
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: scaleY(0);
+    transition: 0.3s all ease-in-out;
+    width: 100%;
+    background-color: #17213a;
+    z-index: 999;
+    transform-origin: top;
+}
+
+.shown{
+    transform: scaleY(1);
+    opacity: 0.99;
+}
+
+.sticky-logo {
+    max-width: 100px !important;
+    margin: 8px 0;
+}
+
+
+.sticky-menu h2{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    position: relative;
+}
+
+.sticky-menu h2:after {
+    content: '';
+    background: #fbd500;
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    right: 15px;
+    top: 50%;
+}
+
+
+.sticky-menu input.search-mipcom {
+    width: 100%;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 10px 15px;
+    max-width: 300px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.aux-input{
+    position: relative;
+}
+
+.aux-input:after{
+    position: absolute;
+    content: 'X';
+    right: 15px;
+    top: 50%;
+    font-size: 20px;
+    margin-top: -15px;  
+    color: #fff;
+}
+
+
+
 .header-mipcom{
     background-image: url(../images/mipcom/mipcom-header.jpg);
     padding: 60px 0 120px 0;
