@@ -685,7 +685,7 @@ ul.cat-items li:before {
 }
 
 .sn-sticky li>a{
-    color: #064b77;
+    color: #000;
 }
 
 ul.sn-footer li>a{
@@ -1143,6 +1143,7 @@ h2.tl-fecha:before {
 .lista-reglas ul {
     padding-left: 40px;
     font-size: 16px;
+    padding-right: 15px;
 }
 
 .lista-reglas ul li {
