@@ -507,6 +507,9 @@ a.nominado-btn {
     bottom: 40px;
     font-weight: 700;
     font-family: 'Open Sans' , sans-serif;
+    text-align: center;
+    width: 80%;
+    max-width: 200px;
 }
 
 a.nominado-btn:after {
@@ -1215,33 +1218,19 @@ a.contact-mail {
 
 /*MEDIA QUERIES*/
 
+@media (min-width: 992px) and (max-width:1200px){
 
+.nominado-info-wrap h3 {
+    font-size: 35px;
+}
+
+}
 
 @media (min-width: 667px){
     
 
     
-    .nominado-info-wrap h3 {
-    position: absolute;
-    left: 30px;
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    font-weight: 800;
-    font-size: 45px;
-    text-transform: lowercase;
-    top: 50%;
-    transform: translateY(-50%);
-}
 
-.nominado-info-wrap h3:after {
-    content: '';
-    width: 90px;
-    height: 10px;
-    background-color: #19b9d5;
-    position: absolute;
-    left: 0;
-    bottom: -25px;
-}
 
     .cat-list li{
 
@@ -1287,6 +1276,28 @@ a.contact-mail {
 }
 
 @media (min-width: 667px) and (max-width:992px){
+    
+    .nominado-info-wrap h3 {
+    position: absolute;
+    left: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-weight: 800;
+    font-size: 45px;
+    text-transform: lowercase;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nominado-info-wrap h3:after {
+    content: '';
+    width: 90px;
+    height: 10px;
+    background-color: #19b9d5;
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+}
     
         h4.nombre-jurado {
             font-size: 25px;
@@ -1453,6 +1464,28 @@ a.contact-mail {
         width: 1170px;
         margin-left: -585px;
     }
+    
+    .nominado-info-wrap h3 {
+    position: absolute;
+    left: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-weight: 800;
+    font-size: 45px;
+    text-transform: lowercase;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nominado-info-wrap h3:after {
+    content: '';
+    width: 90px;
+    height: 10px;
+    background-color: #19b9d5;
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+}
 }
 
 

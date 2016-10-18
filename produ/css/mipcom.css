@@ -62,6 +62,7 @@
     height: 3px;
     right: 15px;
     top: 50%;
+    display: none;
 }
 
 
@@ -74,6 +75,7 @@
     max-width: 300px;
     margin-top: 10px;
     color: #fff;
+    font-size: 14px;
 }
 
 .aux-input{
@@ -389,4 +391,11 @@ a.back-btn:hover{
     .navbar-brand {
         width: 70%;
     }
+}
+
+@media (min-width:1200px){
+    
+.sticky-menu h2:after {
+    display: block;
+}
 }
