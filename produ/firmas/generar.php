@@ -5,6 +5,7 @@
     $skype=$_POST['skype'];
     $tlf=$_POST['tlf'];
     $celular=$_POST['celular'];
+    $seccion=$_POST['seccion'];
 
 
 $target_dir = "uploads/";
@@ -66,19 +67,34 @@ if ($uploadOk == 0) {
             <p style=" margin: 0; font-size: 14px; "><?php echo $cargo ?></p>
             <p style="margin-top: 10px;margin-bottom: 0; font-size: 14px;"><a href="mailto:<?php echo $mail ?>"><?php echo $mail ?></a></p>
             <p style="margin-top: 5px;margin-bottom: 0; font-size: 14px;"><b>Skype: </b><?php echo $skype ?></p>
+            <?php if ($tlf) {?>
             <p style="margin-top: 5px;margin-bottom: 0; font-size: 14px;"><b>T: </b><?php echo $tlf ?></p>
+            <?php } ?>
+            <?php if ($celular) { ?>
             <p style="margin-top: 5px;margin-bottom: 0; font-size: 14px;"><b>C: </b><?php echo $celular ?></p>
+            <?php } ?>
         </td>
     </tr>
     <tr>
         <td colspan="2" style="text-align:center">
             <img src="images/stripe.png">
-            <p><a style="font-weight:bold;">produ.com</a><span style="margin:0px 5px;">|</span><a style="font-weight:bold; margin-right:15px">produ.com/who</a>
-                <a style="margin-left:10px"><img src="images/facebook.png"></a>
-                <a style="margin-left:10px"><img src="images/twitter.png"></a>
-                <a style="margin-left:10px"><img src="images/youtube.png"></a>
-                <a style="margin-left:10px"><img src="images/instagram.png"></a>
-                <a style="margin-left:10px"><img src="images/linkdin.png"></a>
+            <p><a href="http://www.produ.com" style="font-weight:bold; color:#000;">produ.com</a><span style="margin:0px 5px;">|</span><a href="http://www.produ.com/who"  style="font-weight:bold; margin-right:15px; color:#000;">produ.com/who</a>
+                <?php if ($seccion=='pub'){
+                    $redes_output='<a href="https://www.facebook.com/PRODUpublicidad/" style="margin-left:10px"><img src="images/facebook.png"></a>
+                                   <a href="https://twitter.com/PRODUpublicidad" style="margin-left:10px"><img src="images/twitter.png"></a>';
+                } else if ($seccion=='tv'){
+                    $redes_output='<a href="https://www.facebook.com/PRODUnews/" style="margin-left:10px"><img src="images/facebook.png"></a>
+                                   <a href="https://twitter.com/PRODUnews" style="margin-left:10px"><img src="images/twitter.png"></a>
+                                   <a href="https://www.youtube.com/user/RichardIzarra" style="margin-left:10px"><img src="images/youtube.png"></a>
+                                   <a href="https://www.instagram.com/produnews_/" style="margin-left:10px"><img src="images/instagram.png"></a>';
+                } else if ($seccion=='tec'){
+                    $redes_output='<a href="https://www.facebook.com/PRODUTecnologia/" style="margin-left:10px"><img src="images/facebook.png"></a>
+                                   <a href="https://twitter.com/PRODUtecnologia" style="margin-left:10px"><img src="images/twitter.png"></a>';
+                }
+                
+                ?>
+                <?php echo $redes_output; ?>
+                <a href="https://www.linkedin.com/company/920732?trk=prof-exp-company-name" style="margin-left:10px"><img src="images/linkdin.png"></a>
             </p>
         </td>
     </tr>

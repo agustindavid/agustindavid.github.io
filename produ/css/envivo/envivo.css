@@ -1,10 +1,8 @@
 .inline {
-    display: inline;
+    display: inline !important;
 }
 
-.navbar-brand {
-    width: 100% !important;
-}
+
 
 .black-video {
     background: #000;
@@ -14,22 +12,22 @@
 
 .black-video h2 {
     margin: 0 0 25px 0;
-    font-weight: 900;
+    font-weight: 700;
     font-family: 'Open Sans', sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     position: relative;
-    margin-left: 60px;
+    margin-left: 30px;
     line-height: 1;
-    letter-spacing: -2px;
+    letter-spacing: -4px;
 }
-.black-video h2:before, .historic-vivos h2:before {
+.black-video h2:before {
     position: absolute;
     content: '';
-    background-color: #fed700;
+    background-color: #7224ac;
     width: 25px;
     height: 40px;
     bottom: 6px;
-    left: -60px;
+    left: -30px;
 }
 
 .black-video hr {
@@ -39,14 +37,13 @@
 }
 
 .video-wrap{
-    border-bottom: 7px solid #fed700;
+
 }
 
 .video-info-box {
     background: #141414;
     padding: 15px 30px;
     border-bottom: 10px solid #fed700;
-    margin-top: -8px;
 }
 
 h3.video-title {
@@ -63,22 +60,48 @@ p.video-date {
     margin: 0;
 }
 
+.share-big {
+    padding: 15px;
+}
+
+.share-big .small-share {
+    margin-bottom: 20px;
+}
+
+.share-big a {
+    color: #fff;
+    font-size: 22px;
+    margin: 0 5px;
+}
+
 .historic-vivos {
     padding: 25px 0;
 }
 
+
 .historic-vivos h2 {
-    font-weight: 900;
+    font-weight: 700;
     font-family: 'Open Sans', sans-serif;
     font-size: 40px;
     position: relative;
-    margin-left: 60px;
-    letter-spacing: -2px;
+    margin-left: 30px;
+    letter-spacing: -4px;
+    margin-bottom: 50px;
+}
+
+.historic-vivos h2:before {
+    position: absolute;
+    content: '';
+    background-color: #7224ac;
+    width: 25px;
+    height: 40px;
+    bottom: 6px;
+    left: -30px;
 }
 
 .historic-vivos hr {
     margin-top: 50px;
-    width: 90%;
+    width: 100%;
     margin-left: 0;
     border-top: 1px solid #fed700;
 }
@@ -119,20 +142,25 @@ p.video-date {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .small-vid-info {
     position: absolute;
     width: 90%;
-    bottom: 25px;
+    bottom: 15px;
 }
 
 .small-share {
     font-size: 13px;
     font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
 }
 
+img.share-icon {
+    margin-right: 10px;
+    vertical-align: middle;
+}
 
 .play-icon-holder {
     position: absolute;
@@ -181,7 +209,7 @@ p.video-date {
     line-height: 1;
     text-align: center;
     color: #333;
-    top: -90px;
+    top: -60px;
     text-shadow: none;
     padding-top: 5px;
 }
@@ -198,4 +226,126 @@ p.video-date {
 .videos-carousel .right.carousel-control {
     left: auto;
     right: 15px;
+}
+
+.share-thumb {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 9;
+    background-color: rgba(255,255,255,0.9);
+    text-align: center;
+}
+
+.sn-wrap {
+    position: absolute;
+    width: 100%;
+    transform: translateY(-50%);
+    top: 50%;
+    font-size: 24px;
+}
+
+.sn-wrap a {
+    color: #000;
+    margin: 0 10px;
+    transform: scale(0);
+    transition: 0.2s transform ease-in;
+    transition-delay: 0.25s;
+    transform-origin: center;
+    display: inline-block;
+}
+
+.share-thumb {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 9;
+    background-color: rgba(255,255,255,0.9);
+    text-align: center;
+    transform: translateY(-100%);
+    transition: 0.25s all ease-out;
+}
+
+span.close-share {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 25px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.share-thumb.visible{
+    transform: translateY(0%);
+}
+
+.share-thumb.visible .sn-wrap a{
+    transform: scale(1);
+}
+
+
+.icon-facebook:hover{
+    color: #3b5999;
+}
+
+.icon-whatsapp:hover{
+    color: #25d366;
+}
+
+.icon-twitter:hover{
+    color: #55acee;
+}
+
+.icon-linkdin:hover{
+    color: #0077b5;
+}
+
+.icon-mail:hover{
+    color: #7e7e7e;
+}
+
+a{
+    transition: 0.2s all;
+}
+
+
+
+@media (min-width:992px){
+    .navbar-brand {
+    width: 100%;
+}
+    
+    .share-big {
+    padding: 100px 0 0 0;
+}
+    
+    .historic-vivos h2 {
+  
+    font-size: 40px;
+    margin-left: 50px;
+        margin-bottom: 0;
+}
+
+ .historic-vivos h2:before {
+
+    bottom: 6px;
+    left: -50px;
+}
+    
+    .black-video h2 {
+    font-size: 50px;
+    margin-left: 50px;
+}
+.black-video h2:before {
+    left: -50px;
+}
+    
+    .videos-carousel .carousel-control {
+    top: -90px;
+    }
+
 }

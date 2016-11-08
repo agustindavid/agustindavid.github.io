@@ -1,0 +1,159 @@
+.inline {
+    display: inline !important;
+}
+
+
+
+.black-video {
+    background: #000;
+    color: #fff;
+    padding: 25px 0;
+}
+
+.black-video h2 {
+    margin: 0 0 25px 0;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    position: relative;
+    margin-left: 30px;
+    line-height: 1;
+    letter-spacing: -4px;
+}
+.black-video h2:before {
+    position: absolute;
+    content: '';
+    background-color: #7224ac;
+    width: 25px;
+    height: 40px;
+    bottom: 6px;
+    left: -30px;
+}
+
+.black-video hr {
+    margin-bottom: 0;
+    margin-top: 40px;
+    border-top: 1px solid #fcd530;
+}
+
+.video-wrap{
+
+}
+
+.single-info{
+    margin-top: -55px;
+}
+
+.single-info-box {
+    background: #fff;
+    padding: 15px 30px;
+    border-bottom: 10px solid #7224ac;
+}
+
+h3.single-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    color: #333;
+}
+
+p.video-date {
+    font-family: 'Open Sans';
+    font-size: 13px;
+    margin: 0;
+}
+
+.share-big {
+    padding: 15px;
+}
+
+.share-big .small-share {
+    margin-bottom: 20px;
+}
+
+.share-big a {
+    color: #000;
+    font-size: 22px;
+    margin: 0 5px;
+}
+
+.single-content {
+    margin-top: 50px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+}
+
+.single-content p {
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.quotation {
+    position: relative;
+    width: 70%;
+    float: right;
+    color: #7224ac;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 40px 0;
+}
+
+.quotation:before {
+    width: 190px;
+    height: 130%;
+    background-color: #7224ac;
+    content: '';
+    position: absolute;
+    left: -219px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.quotation:after {
+    position: absolute;
+    content: url(../images/quotes.png);
+    left: -90px;
+    bottom: -15px;
+}
+
+ul.single-links {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    display: table;
+    width: 100%;
+}
+
+.single-links-wrap {
+    margin: 40px 0;
+}
+
+.single-links li {
+    display: table-cell;
+    list-style: none;
+}
+
+.single-links li>a {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.single-links li>a>img {
+    margin-right: 10px;
+    vertical-align: bottom;
+}
+
+@media (min-width:992px){
+    .navbar-brand {
+    width: 100%;
+}
+    
+    .share-big {
+    padding:60px 0 0 0;
+}
+}

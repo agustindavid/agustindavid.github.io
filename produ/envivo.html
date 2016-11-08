@@ -16,12 +16,8 @@
 
     <link href="css/bootstrap.css" rel="stylesheet">
     <script src="js/bootstrap.min.js" ></script> 
-    <script src="js/scripts.js" ></script> 
-    <script src="js/jquery.waypoints.min.js" ></script> 
-    <link rel="stylesheet" type="text/css" href="css/component.css" />
-    <script src="js/modernizr.custom.js"></script>
+    <script src="js/envivo/main.js" ></script> 
     <script src="https://use.fontawesome.com/c70b78400b.js"></script>
-    <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -60,17 +56,17 @@
     <div class="black-video">
         <div class="container">
             <div class="row">
-            <div class="col-md-5">
-                <h2>En vivo Ahora</h2>
+            <div class="col-md-4">
+                <h2>En vivo ahora</h2>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-8">
                 <hr>
             </div>
             </div>
             <div class="row">
             <div class="col-md-8">
                 <div class="embed-responsive embed-responsive-16by9 video-wrap">
-                    <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/187831587?title=0&byline=0&portrait=0"></iframe>
+                    <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/187831587?title=0&byline=0&portrait=0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                 </div>
                 <div class="row">
                  <div class="col-md-12 video-info">
@@ -78,6 +74,15 @@
                         <h3 class="video-title">AZTECA 7 SE TRANSFORMA- Nacho Ruiz de Ojeda de Mercadeo y Programación</h3>
                         <p class="video-date">lunes 3 de octubre de 2015</p>
                     </div>
+                     <div class="col-md-4">
+                        <div class="share-big">
+                            <div class="small-share"><img src="images/envivo/share-icon.png" class="share-icon">Compartir</div>                                                            <a class="icon-mail"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>                     
+                             <a class="icon-facebook" onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.google.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                              <a class="icon-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                              <a class="icon-linkdin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                              <a class="icon-whatsapp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                        </div>
+                     </div>
                  </div>
                 </div>
             </div>
@@ -90,24 +95,34 @@
     <div class="historic-vivos">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
-                    <h2>Vivos Históricos</h2>
+                <div class="col-md-4">
+                    <h2>Vivos históricos</h2>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-4 hidden-xs hidden-sm">
                     <hr>
-                </div>
+                </div> 
             </div>
             <div class="row">
                 <div id="videosCarousel" class="carousel slide videos-carousel" data-ride="carousel" data-interval="false">
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-6">
                                 <div class="small-video-wrap">
+                                    <div class="share-thumb">
+                                        <span class="close-share"><i class="fa fa-times" aria-hidden="true"></i></span>
+                                        <div class="sn-wrap">
+                                            <a href="mailto:?Subject=Prueba&Body=prueba" class="icon-mail"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                                            <a class="icon-facebook" onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.google.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            <a class="icon-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            <a class="icon-linkdin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                            <a class="icon-whatsapp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
                                     <div class="thumb-video" style="background-image:url(images/envivo/vid-thumb.jpg)"></div>
                                     <div class="overlay-small-vid">
                                         <div class="small-vid-info">
                                             <h3 class="small-title">AZTECA 7 SE TRANSFORMA- Nacho Ruiz de Ojeda de Mercadeo y Programación: Una nueva manera de comunicación con una pantalla totalmente refrescada</h3>
-                                            <div class="small-share">Compartir</div>
+                                            <div class="small-share"><img src="images/envivo/share-icon.png" class="share-icon">Compartir</div>
                                             <div class="small-play-icon"></div>
                                         </div>
                                     </div>
@@ -117,13 +132,13 @@
                                     <p>8 de agosto de 2016</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-6">
                                 <div class="small-video-wrap">
                                     <div class="thumb-video" style="background-image:url(images/envivo/vid-thumb.jpg)"></div>
                                     <div class="overlay-small-vid">
                                         <div class="small-vid-info">
                                             <h3 class="small-title">AZTECA 7 SE TRANSFORMA- Nacho Ruiz de Ojeda de Mercadeo y Programación: Una nueva manera de comunicación con una pantalla totalmente refrescada</h3>
-                                            <div class="small-share">Compartir</div>
+                                            <div class="small-share"><img src="images/envivo/share-icon.png" class="share-icon">Compartir</div>
                                             <div class="small-play-icon"></div>
                                         </div>
                                     </div>
@@ -133,13 +148,13 @@
                                     <p>8 de agosto de 2016</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-6">
                                 <div class="small-video-wrap">
                                     <div class="thumb-video" style="background-image:url(images/envivo/vid-thumb.jpg)"></div>
                                     <div class="overlay-small-vid">
                                         <div class="small-vid-info">
                                             <h3 class="small-title">AZTECA 7 SE TRANSFORMA- Nacho Ruiz de Ojeda de Mercadeo y Programación: Una nueva manera de comunicación con una pantalla totalmente refrescada</h3>
-                                            <div class="small-share">Compartir</div>
+                                            <div class="small-share"><img src="images/envivo/share-icon.png" class="share-icon">Compartir</div>
                                             <div class="small-play-icon"></div>
                                         </div>
                                     </div>
@@ -149,13 +164,13 @@
                                     <p>8 de agosto de 2016</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-6">
                                 <div class="small-video-wrap">
                                     <div class="thumb-video" style="background-image:url(images/envivo/vid-thumb.jpg)"></div>
                                     <div class="overlay-small-vid">
                                         <div class="small-vid-info">
                                             <h3 class="small-title">AZTECA 7 SE TRANSFORMA- Nacho Ruiz de Ojeda de Mercadeo y Programación: Una nueva manera de comunicación con una pantalla totalmente refrescada</h3>
-                                            <div class="small-share">Compartir</div>
+                                            <div class="small-share"><img src="images/envivo/share-icon.png" class="share-icon">Compartir</div>
                                             <div class="small-play-icon"></div>
                                         </div>
                                     </div>
@@ -165,13 +180,13 @@
                                     <p>8 de agosto de 2016</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-6">
                                 <div class="small-video-wrap">
                                     <div class="thumb-video" style="background-image:url(images/envivo/vid-thumb.jpg)"></div>
                                     <div class="overlay-small-vid">
                                         <div class="small-vid-info">
                                             <h3 class="small-title">AZTECA 7 SE TRANSFORMA- Nacho Ruiz de Ojeda de Mercadeo y Programación: Una nueva manera de comunicación con una pantalla totalmente refrescada</h3>
-                                            <div class="small-share">Compartir</div>
+                                            <div class="small-share"><img src="images/envivo/share-icon.png" class="share-icon">Compartir</div>
                                             <div class="small-play-icon"></div>
                                         </div>
                                     </div>
@@ -181,13 +196,13 @@
                                     <p>8 de agosto de 2016</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-6">
                                 <div class="small-video-wrap">
                                     <div class="thumb-video" style="background-image:url(images/envivo/vid-thumb.jpg)"></div>
                                     <div class="overlay-small-vid">
                                         <div class="small-vid-info">
                                             <h3 class="small-title">AZTECA 7 SE TRANSFORMA- Nacho Ruiz de Ojeda de Mercadeo y Programación: Una nueva manera de comunicación con una pantalla totalmente refrescada</h3>
-                                            <div class="small-share">Compartir</div>
+                                            <div class="small-share"><img src="images/envivo/share-icon.png" class="share-icon">Compartir</div>
                                             <div class="small-play-icon"></div>
                                         </div>
                                     </div>
@@ -197,13 +212,13 @@
                                     <p>8 de agosto de 2016</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-6">
                                 <div class="small-video-wrap">
                                     <div class="thumb-video" style="background-image:url(images/envivo/vid-thumb.jpg)"></div>
                                     <div class="overlay-small-vid">
                                         <div class="small-vid-info">
                                             <h3 class="small-title">AZTECA 7 SE TRANSFORMA- Nacho Ruiz de Ojeda de Mercadeo y Programación: Una nueva manera de comunicación con una pantalla totalmente refrescada</h3>
-                                            <div class="small-share">Compartir</div>
+                                            <div class="small-share"><img src="images/envivo/share-icon.png" class="share-icon">Compartir</div>
                                             <div class="small-play-icon"></div>
                                         </div>
                                     </div>
@@ -213,13 +228,13 @@
                                     <p>8 de agosto de 2016</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-6">
                                 <div class="small-video-wrap">
                                     <div class="thumb-video" style="background-image:url(images/envivo/vid-thumb.jpg)"></div>
                                     <div class="overlay-small-vid">
                                         <div class="small-vid-info">
                                             <h3 class="small-title">AZTECA 7 SE TRANSFORMA- Nacho Ruiz de Ojeda de Mercadeo y Programación: Una nueva manera de comunicación con una pantalla totalmente refrescada</h3>
-                                            <div class="small-share">Compartir</div>
+                                            <div class="small-share"><img src="images/envivo/share-icon.png" class="share-icon">Compartir</div>
                                             <div class="small-play-icon"></div>
                                         </div>
                                     </div>
@@ -229,13 +244,13 @@
                                     <p>8 de agosto de 2016</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-6">
                                 <div class="small-video-wrap">
                                     <div class="thumb-video" style="background-image:url(images/envivo/vid-thumb.jpg)"></div>
                                     <div class="overlay-small-vid">
                                         <div class="small-vid-info">
                                             <h3 class="small-title">AZTECA 7 SE TRANSFORMA- Nacho Ruiz de Ojeda de Mercadeo y Programación: Una nueva manera de comunicación con una pantalla totalmente refrescada</h3>
-                                            <div class="small-share">Compartir</div>
+                                            <div class="small-share"><img src="images/envivo/share-icon.png" class="share-icon">Compartir</div>
                                             <div class="small-play-icon"></div>
                                         </div>
                                     </div>
@@ -248,13 +263,13 @@
                         </div>
                         
                         <div class="item">
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-6">
                                 <div class="small-video-wrap">
                                     <div class="thumb-video" style="background-image:url(images/envivo/vid-thumb.jpg)"></div>
                                     <div class="overlay-small-vid">
                                         <div class="small-vid-info">
                                             <h3 class="small-title">AZTECA 7 SE TRANSFORMA- Nacho Ruiz de Ojeda de Mercadeo y Programación: Una nueva manera de comunicación con una pantalla totalmente refrescada</h3>
-                                            <div class="small-share">Compartir</div>
+                                            <div class="small-share"><img src="images/envivo/share-icon.png" class="share-icon">Compartir</div>
                                             <div class="small-play-icon"></div>
                                         </div>
                                     </div>
@@ -264,13 +279,13 @@
                                     <p>8 de agosto de 2016</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-6">
                                 <div class="small-video-wrap">
                                     <div class="thumb-video" style="background-image:url(images/envivo/vid-thumb.jpg)"></div>
                                     <div class="overlay-small-vid">
                                         <div class="small-vid-info">
                                             <h3 class="small-title">AZTECA 7 SE TRANSFORMA- Nacho Ruiz de Ojeda de Mercadeo y Programación: Una nueva manera de comunicación con una pantalla totalmente refrescada</h3>
-                                            <div class="small-share">Compartir</div>
+                                            <div class="small-share"><img src="images/envivo/share-icon.png" class="share-icon">Compartir</div>
                                             <div class="small-play-icon"></div>
                                         </div>
                                     </div>
@@ -280,13 +295,13 @@
                                     <p>8 de agosto de 2016</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-6">
                                 <div class="small-video-wrap">
                                     <div class="thumb-video" style="background-image:url(images/envivo/vid-thumb.jpg)"></div>
                                     <div class="overlay-small-vid">
                                         <div class="small-vid-info">
                                             <h3 class="small-title">AZTECA 7 SE TRANSFORMA- Nacho Ruiz de Ojeda de Mercadeo y Programación: Una nueva manera de comunicación con una pantalla totalmente refrescada</h3>
-                                            <div class="small-share">Compartir</div>
+                                            <div class="small-share"><img src="images/envivo/share-icon.png" class="share-icon">Compartir</div>
                                             <div class="small-play-icon"></div>
                                         </div>
                                     </div>
@@ -296,13 +311,13 @@
                                     <p>8 de agosto de 2016</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-6">
                                 <div class="small-video-wrap">
                                     <div class="thumb-video" style="background-image:url(images/envivo/vid-thumb.jpg)"></div>
                                     <div class="overlay-small-vid">
                                         <div class="small-vid-info">
                                             <h3 class="small-title">AZTECA 7 SE TRANSFORMA- Nacho Ruiz de Ojeda de Mercadeo y Programación: Una nueva manera de comunicación con una pantalla totalmente refrescada</h3>
-                                            <div class="small-share">Compartir</div>
+                                            <div class="small-share"><img src="images/envivo/share-icon.png" class="share-icon">Compartir</div>
                                             <div class="small-play-icon"></div>
                                         </div>
                                     </div>
@@ -312,13 +327,13 @@
                                     <p>8 de agosto de 2016</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-6">
                                 <div class="small-video-wrap">
                                     <div class="thumb-video" style="background-image:url(images/envivo/vid-thumb.jpg)"></div>
                                     <div class="overlay-small-vid">
                                         <div class="small-vid-info">
                                             <h3 class="small-title">AZTECA 7 SE TRANSFORMA- Nacho Ruiz de Ojeda de Mercadeo y Programación: Una nueva manera de comunicación con una pantalla totalmente refrescada</h3>
-                                            <div class="small-share">Compartir</div>
+                                            <div class="small-share"><img src="images/envivo/share-icon.png" class="share-icon">Compartir</div>
                                             <div class="small-play-icon"></div>
                                         </div>
                                     </div>
@@ -328,13 +343,13 @@
                                     <p>8 de agosto de 2016</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-6">
                                 <div class="small-video-wrap">
                                     <div class="thumb-video" style="background-image:url(images/envivo/vid-thumb.jpg)"></div>
                                     <div class="overlay-small-vid">
                                         <div class="small-vid-info">
                                             <h3 class="small-title">AZTECA 7 SE TRANSFORMA- Nacho Ruiz de Ojeda de Mercadeo y Programación: Una nueva manera de comunicación con una pantalla totalmente refrescada</h3>
-                                            <div class="small-share">Compartir</div>
+                                            <div class="small-share"><img src="images/envivo/share-icon.png" class="share-icon">Compartir</div>
                                             <div class="small-play-icon"></div>
                                         </div>
                                     </div>
@@ -344,13 +359,13 @@
                                     <p>8 de agosto de 2016</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-6">
                                 <div class="small-video-wrap">
                                     <div class="thumb-video" style="background-image:url(images/envivo/vid-thumb.jpg)"></div>
                                     <div class="overlay-small-vid">
                                         <div class="small-vid-info">
                                             <h3 class="small-title">AZTECA 7 SE TRANSFORMA- Nacho Ruiz de Ojeda de Mercadeo y Programación: Una nueva manera de comunicación con una pantalla totalmente refrescada</h3>
-                                            <div class="small-share">Compartir</div>
+                                            <div class="small-share"><img src="images/envivo/share-icon.png" class="share-icon">Compartir</div>
                                             <div class="small-play-icon"></div>
                                         </div>
                                     </div>
@@ -360,13 +375,13 @@
                                     <p>8 de agosto de 2016</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-6">
                                 <div class="small-video-wrap">
                                     <div class="thumb-video" style="background-image:url(images/envivo/vid-thumb.jpg)"></div>
                                     <div class="overlay-small-vid">
                                         <div class="small-vid-info">
                                             <h3 class="small-title">AZTECA 7 SE TRANSFORMA- Nacho Ruiz de Ojeda de Mercadeo y Programación: Una nueva manera de comunicación con una pantalla totalmente refrescada</h3>
-                                            <div class="small-share">Compartir</div>
+                                            <div class="small-share"><img src="images/envivo/share-icon.png" class="share-icon">Compartir</div>
                                             <div class="small-play-icon"></div>
                                         </div>
                                     </div>
@@ -376,13 +391,13 @@
                                     <p>8 de agosto de 2016</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-6">
                                 <div class="small-video-wrap">
                                     <div class="thumb-video" style="background-image:url(images/envivo/vid-thumb.jpg)"></div>
                                     <div class="overlay-small-vid">
                                         <div class="small-vid-info">
                                             <h3 class="small-title">AZTECA 7 SE TRANSFORMA- Nacho Ruiz de Ojeda de Mercadeo y Programación: Una nueva manera de comunicación con una pantalla totalmente refrescada</h3>
-                                            <div class="small-share">Compartir</div>
+                                            <div class="small-share"><img src="images/envivo/share-icon.png" class="share-icon">Compartir</div>
                                             <div class="small-play-icon"></div>
                                         </div>
                                     </div>

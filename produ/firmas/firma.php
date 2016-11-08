@@ -11,6 +11,12 @@
         float:right;
     }
     
+    input[type='radio'] {
+        display: inline;
+        width: auto;
+        margin: 0 25px;
+    }
+    
     .container{
         width:500px; margin:auto;
         font-family:arial;
@@ -30,9 +36,14 @@
         <input type="text" placeholder="cargo" name="cargo">
         <input type="email" name="mail" placeholder="mail">
         <input name="skype" type="text" placeholder="skype">
-        <input type="number" name="tlf" placeholder="tlf">
-        <input type="number" name="celular" placeholder="celular">
+        <input type="text" name="tlf" placeholder="tlf">
+        <input type="text" name="celular" placeholder="celular">
         <input type="file" name="fileToUpload" id="fileToUpload">
+        <div class="input-group">
+            <input type="radio" name="seccion" value="pub" checked>Publicidad
+            <input type="radio" name="seccion" value="tec">Tecnología
+            <input type="radio" name="seccion" value="tv">TV
+        </div>
         <p>Imagen de dimensiones requerido 112px x 112px</p>
         <input type="submit" value="enviar">
     </form>
