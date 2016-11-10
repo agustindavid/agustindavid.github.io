@@ -148,6 +148,128 @@ ul.single-links {
     vertical-align: bottom;
 }
 
+.img-who img {
+    border-radius: 50%;
+    border: 35px solid #7224ac;
+    display: block;
+    margin: auto;
+}
+
+.img-who {
+    position: relative;
+}
+
+.img-who:after {
+    content: '';
+    width: 100px;
+    height: 100px;
+    background: #25b9ab;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+h3.single-subtitle:before {
+    content: '';
+    width: 20px;
+    height: 30px;
+    background: #7224ac;
+    position: absolute;
+    left: -30px;
+    top: -3px;
+}
+h3.single-subtitle {
+    font-family: 'Open Sans' ,sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    position: relative;
+    margin-left: 30px;
+}
+
+hr.single-underline {
+    border-top: 1px solid #fbd500;
+}
+
+.img-who {
+    position: relative;
+    margin: 25px 0;
+}
+
+
+
+.wiw-single {
+    color: #000;
+    border-bottom: 1px solid #898989;
+}
+h3.wiw-name {
+    font-size: 42px;
+    font-weight: 900;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: -1px;
+}
+
+p.wiw-charge {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+p.wiw-company {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+a.wiw-btn {
+    display: inline-block;
+    border: 1px solid #302e34;
+    padding: 5px 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: #302e34;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 60px;
+}
+
+a.wiw-btn {
+    display: inline-block;
+    border: 1px solid #302e34;
+    padding: 5px 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: #302e34;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 60px;
+    transition: 0.2s all;
+}
+
+
+a.wiw-btn:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #302e34;
+}
+
+h3.related-news-title {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Open Sans';
+}
+
+.related-new.row {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.noticia-dia {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+
 @media (min-width:992px){
     .navbar-brand {
     width: 100%;
