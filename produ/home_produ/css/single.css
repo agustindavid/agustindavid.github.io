@@ -42,6 +42,7 @@
 
 .single-info{
     margin-top: -55px;
+    margin-bottom: 15px;
 }
 
 .single-info-box {
@@ -269,6 +270,40 @@ h3.related-news-title {
     margin-top: 20px;
 }
 
+.play-btn-white {
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+    background: #fff;
+    padding: 2px 6px;
+    font-size: 20px;
+    right: 0;
+    color: #7224ac;
+}
+
+
+
+.related-video-wrap h3 {
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.related-video-wrap {
+    margin-bottom: 20px;
+}
+
+.image-video-container {
+    position: relative;
+}
+
+
+.sidebar-pub-wrap {
+    text-align: center;
+    padding: 15px;
+    background: #e8e8e8;
+    margin-bottom: 25px;
+}
 
 @media (min-width:992px){
     .navbar-brand {
