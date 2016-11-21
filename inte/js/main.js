@@ -69,7 +69,7 @@ $(document).ready(function(){
         $('.cat-list').find("[data-slide-to='"+slideTo+"']").addClass('active');
     });
     
-    if($(window).width() > 992){
+    if($(window).width() > 992 && $('.section-premio').length>0) {
     var waypoint = new Waypoint({
         element: $('.section-premio'),
         handler: function(direction) {
