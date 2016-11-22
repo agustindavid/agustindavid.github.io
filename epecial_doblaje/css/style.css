@@ -2,6 +2,10 @@ body{
     font-family: 'Open Sans', sans-serif !important;
 }
 
+.inline{
+    display: inline !important;
+}
+
 /*HEADER*/
 
 
@@ -886,7 +890,52 @@ p.video-date {
     margin: 0 5px;
 }
 
+.widget-link {
+    background-size: cover;
+    min-height: 250px;
+    position: relative;
+    color: #fff;
+    margin-bottom: 20px;
+}
 
+
+.widget-link h3 {
+    margin: 0;
+    font-weight: bold;
+    position: absolute;
+    font-size: 60px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 87%;
+    padding: 15px;
+    letter-spacing: -7px;
+}
+
+.widget-link h3>span {
+    display: block;
+    font-size: 38px;
+    letter-spacing: -4px;
+    margin-top: -14px;
+}
+
+a.widget-link-more {
+    position: absolute;
+    padding: 10px 25px;
+    background: #fff;
+    right: 0;
+    bottom: 0;
+    font-weight: bold;
+    color: #7224ac;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.widget-link h3>span>small {
+    color: #fff;
+    letter-spacing: -2px;
+    margin-left: 5px;
+}
 
 @media (min-width: 992px){
     .share-big {
