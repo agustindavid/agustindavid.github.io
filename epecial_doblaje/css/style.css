@@ -204,7 +204,6 @@ body{
 }
 
 .half-container{
-    width: 585px;
     padding: 30px;
 }
 
@@ -218,10 +217,8 @@ body{
 }
 
 .hero-info {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top: 50%;
+    position: relative;
+    top: 50px;
 }
 
 .hero-info h2 {
@@ -287,23 +284,30 @@ img.share-icon {
 }
 
 .main-posts-wrap {
-    width: 85%;
-    margin: -100px auto 25px auto;
+    width: 100%;
+    margin: 15px auto 25px auto;
     background: #2d2d2d;
-    padding: 25px;
+    padding: 0px;
     z-index: 99;
     position: relative;
 }
 
+.home-post-wrap{
+    margin-bottom: 30px;
+}
+
 .white-info-box {
     background: #fff;
-    margin-top: -50px;
+    margin-top: 0px;
+    padding: 15px;
+    padding-bottom: 5px;
 }
 
 .white-info-box h3 {
     font-weight: bold;
     font-size: 18px;
     line-height: 1.3;
+    margin-top: 0;
 }
 
 .white-info-box h3 a{
@@ -353,15 +357,15 @@ img.share-icon {
 
 .huge-links-section h3 {
     color: #7295d7;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: bold;
     letter-spacing: -8px;
 }
 
 .huge-links-section h4 {
-    font-size: 50px;
+    font-size: 30px;
     color: #fff;
-    margin-top: -40px;
+    margin-top: -30px;
     font-weight: bold;
     margin-left: 8px;
 }
@@ -377,6 +381,7 @@ img.share-icon {
     color: #fff;
     margin-top: 20px;
     line-height: 1.4;
+    font-size: 16px;
 }
 
 a.view-more {
@@ -402,7 +407,7 @@ a.view-more {
 .slide-wiw{
     background-size: cover;
     background-image: url(../images/bg-slide-wiw.jpg);
-    height: 700px;
+    min-height: 700px;
     position: relative;
     padding: 90px 0;
 }
@@ -416,6 +421,7 @@ a.view-more {
     position: absolute;
     bottom: -120px;
     left: 0;
+    display: none;
 }
 
 .slide-wiw:after {
@@ -429,6 +435,7 @@ a.view-more {
     bottom: -120px;
     right: 0;
     background: transparent;
+    display: none;
 }
 
 .wiw-image-wrap {
@@ -449,6 +456,7 @@ a.view-more {
     bottom: -50px;
     z-index: -1;
     left: 0;
+    display: none;
 }
 
 .wiw-image-wrap:after {
@@ -486,6 +494,7 @@ a.view-more {
     margin: 0;
     display: inline-block;
     font-size: 30px;
+    margin-top: 35px;
 }
 
 .wiw-name {
@@ -494,10 +503,10 @@ a.view-more {
     color: #fff;
     text-transform: capitalize;
     padding: 5px 15px;
-    margin-top: 50px;
+    margin-top: 15px;
     display: inline-block;
     font-size: 30px;
-    margin-left: -90px;
+    margin-left: 0px;
     position: relative;
     z-index: 9;
     margin-bottom: 0;
@@ -507,7 +516,7 @@ p.cargo {
     background: #fff;
     padding: 7px 20px;
     margin-top: 0;
-    margin-left: -90px;
+    margin-left: 0px;
     position: relative;
     z-index: 9;
     font-weight: bold;
@@ -519,7 +528,7 @@ h4.wiw-empresa {
     margin-top: 0;
     margin-bottom: 0;
     background: #25b9ab;
-    margin-left: -30px;
+    margin-left: 0px;
     font-weight: bold;
     font-size: 30px;
     padding: 10px;
@@ -543,6 +552,7 @@ h4.wiw-empresa {
     transform: skew(-60deg) rotate(-60deg);
     z-index: 0;
     opacity: 0.4;
+    display: none;
 }
 
 .wiw-info-wrap a.purple-btn {
@@ -558,7 +568,7 @@ h4.wiw-empresa {
 
 .thumb-post-wrap {
     position: relative;
-    margin: 60px 0 60px 0px;
+    margin: 60px 0 100px 0px;
 }
 
 .two-color-infobox h3 {
@@ -626,13 +636,13 @@ h3.wiw-company {
 }
 
 .big-btn-section {
-    padding: 60px 0;
+    padding: 30px 0;
     background: #2d2d2d;
 }
 
 a.main-btns {
     color: #525252;
-    font-size: 62px;
+    font-size:  28px;
     font-weight: bold;
     letter-spacing: -3px;
     line-height: 1;
@@ -641,8 +651,8 @@ a.main-btns {
 
 .main-btns span {
     display: block;
-    font-size: 30px;
-    margin-top: -16px;
+    font-size: 24px;
+    margin-top: -5px;
     color: #8e8e8e;
 }
 
@@ -937,8 +947,136 @@ a.widget-link-more {
     margin-left: 5px;
 }
 
+
+@media(min-width:480px){
+    .huge-links-section h4 {
+    font-size: 50px;
+    color: #fff;
+    margin-top: -40px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.huge-links-section h4 span {
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: -3px;
+    margin-left: -10px;
+}
+    
+.huge-links-section h3 {
+    color: #7295d7;
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: -8px;
+}
+}
+
+@media(min-width:667px){
+    
+    .thumb-post-wrap {
+        position: relative;
+        margin: 60px 0 60px 0px;
+    }
+    
+    
+    .half-container{
+        width: 100%;
+        padding: 30px;
+    }
+    
+    .hero-info {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+    }
+    
+    a.main-btns {
+    color: #525252;
+    font-size: 62px;
+    font-weight: bold;
+    letter-spacing: -3px;
+    line-height: 1;
+    transition: 0.25s all;
+}
+
+.main-btns span {
+    display: block;
+    font-size: 30px;
+    margin-top: -16px;
+    color: #8e8e8e;
+}
+
+    
+
+}
+
 @media (min-width: 992px){
+    
+    .big-btn-section {
+    padding: 30px 0;
+    background: #2d2d2d;
+}
+    
+    .wiw-name {
+        margin-top: 50px;
+    }
+    
+    .wiw-info-wrap h3 {
+        margin-top: 0;
+    }
+    .wiw-name {
+        margin-left: -90px;
+    }
+    
+    .wiw-image-wrap:before {
+        display: block;
+    }
+    
+    .wiw-info-wrap:after {
+        display: block;
+    }
+    
+    h4.wiw-empresa {
+        margin-left: -30px;
+    }
+    
+    .slide-wiw:before, .slide-wiw:after{
+        display: block;
+    }
+    
     .share-big {
         padding: 60px 0 0 0;
+    }
+    
+    .main-posts-wrap {
+        width: 85%;
+        margin: -100px auto 25px auto;
+        padding: 25px;
+    }
+    
+    .white-info-box {
+        margin-top: -50px;
+    }
+    
+    .half-container{
+        width: 485px;
+        padding: 30px;
+    }
+    
+    .home-post-wrap{
+        margin-bottom: 0;
+    }
+    
+    p.cargo {
+        margin-left: -90px;
+    }
+}
+
+@media(min-width:1200px){
+    .half-container{
+        width: 585px;
+        padding: 30px;
     }
 }
