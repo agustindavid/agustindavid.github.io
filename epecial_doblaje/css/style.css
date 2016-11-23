@@ -213,7 +213,7 @@ body{
     background-size: cover;
     transition: 0.25s all ease-in-out;
     position: relative;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 .hero-info {
@@ -407,9 +407,9 @@ a.view-more {
 .slide-wiw{
     background-size: cover;
     background-image: url(../images/bg-slide-wiw.jpg);
-    min-height: 700px;
+    min-height: 600px;
     position: relative;
-    padding: 90px 0;
+    padding: 90px 0 0 0;
 }
 .slide-wiw:before {
     width: 0;
@@ -522,6 +522,7 @@ p.cargo {
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 0;
+    letter-spacing: -1px;
 }
 
 h4.wiw-empresa {
@@ -546,7 +547,7 @@ h4.wiw-empresa {
     height: 440px;
     background: #4d6aac;
     content: '';
-    bottom: -150px;
+    bottom: -75px;
     position: absolute;
     right: 108px;
     transform: skew(-60deg) rotate(-60deg);
@@ -584,7 +585,7 @@ h3.wiw-post-name {
     font-weight: bold;
     width: 100%;
     display: block;
-    padding: 30px 10px 6px 25px;
+    padding: 15px 10px 6px 25px;
     margin-top: 0;
     margin-bottom: 0;
     font-size: 19px;
@@ -948,6 +949,133 @@ a.widget-link-more {
 }
 
 
+.modal-header{
+    padding: 0 !important;
+    border-bottom: 0 !important;
+}
+
+.modal-content {
+    border-radius: 25px !important;
+}
+
+.modal-name-container {
+    background: #383838;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    color: #fff;
+}
+
+.modal-name-container {
+    padding: 20px 15px 20px 30px;
+}
+
+.modal-logo-wrap {
+    padding: 30px;
+}
+
+.empresa-modal-wrap h3:before {
+    content: '';
+    background-color: #25b9ab;
+    position: absolute;
+    width: 9px;
+    height: 30px;
+    left: -15px;
+    bottom: 3px;
+}
+
+.empresa-modal-wrap h3 {
+    font-weight: 800;
+    width: 60%;
+    margin-left: 0px;
+    position: relative;
+}
+
+.empresa-descripcion {
+    color: #000;
+    padding: 15px 15px;
+    font-weight: 500;
+}
+
+div#modalCarousel:after {
+    content: '';
+    background: #25b9ab;
+    position: absolute;
+    top: -15px;
+    width: 60px;
+    height: 60px;
+    right: -15px;
+    z-index: -1;
+}
+div#modalCarousel {
+    margin-top: 45px;
+    z-index: 2;
+}
+
+.modal-name-container h3 {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+#wiwCarousel .carousel-control, #directorioCarousel .carousel-control {
+    background-image: none !important;
+    bottom: 0;
+    height: 45px;
+    position: absolute;
+    top: auto;
+    width: 45px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    opacity: 1;
+    z-index: 999;
+}
+
+div#directorioCarousel {
+    position: relative;
+    padding-bottom: 80px;
+}
+#wiwCarousel .carousel-control span, #directorioCarousel .carousel-control span {
+    font-family: cursive;
+    font-size: 34px;
+    line-height: 1;
+    color: #ccc;
+}
+
+#wiwCarousel .item{
+    min-height: 520px;
+}
+
+    #wiwCarousel .carousel-indicators {
+    bottom: 80px;
+}
+    
+
+
+#wiwCarousel .carousel-control {
+    bottom: 80px;
+}
+#wiwCarousel .left.carousel-control {
+    left: auto;
+    right: 80px;
+}
+
+#directorioCarousel .right.carousel-control {
+    right: 50%;
+    margin-right: -120px;
+}
+#directorioCarousel .left.carousel-control {
+    left: 50%;
+    margin-left: -120px;
+}
+
+div#wiwCarousel {
+    padding-bottom: 80px;
+}
+
+
+/*MEDIA QUERIES*/
+
+
 @media(min-width:480px){
     .huge-links-section h4 {
     font-size: 50px;
@@ -973,6 +1101,15 @@ a.widget-link-more {
 }
 
 @media(min-width:667px){
+    
+    #wiwCarousel .carousel-indicators {
+    bottom: 80px;
+}
+    
+    .modal-dialog {
+        width: 620px !important;
+        margin: 30px auto;
+    }
     
     .thumb-post-wrap {
         position: relative;
@@ -1013,9 +1150,13 @@ a.widget-link-more {
 }
 
 @media (min-width: 992px){
+    .hero-banner{
+
+    background-attachment: fixed;
+}
     
     .big-btn-section {
-    padding: 30px 0;
+    padding: 60px 0;
     background: #2d2d2d;
 }
     
