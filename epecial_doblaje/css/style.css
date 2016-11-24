@@ -232,9 +232,11 @@ body{
 
 .hero-info h3 {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 21px;
     letter-spacing: -1px;
-    background: #fff;
+    background: transparent;
+    color: #fff;
+    width: 100%;
 }
 
 .hero-info h3 span {
@@ -1115,10 +1117,12 @@ div#wiwCarousel {
     background: #fff;
     padding: 2px 15px;
     margin-top: -1px;
+        color: #000;
 }
     
     .hero-info h3{
         background-color: transparent;
+        width: 60%;
     }
     
     .hero-info h2 {
@@ -1170,6 +1174,10 @@ div#wiwCarousel {
     color: #8e8e8e;
 }
 
+        .hero-banner{
+        min-height: 780px;
+    background-attachment: fixed;
+}
     
 
 }
@@ -1180,10 +1188,7 @@ div#wiwCarousel {
 
     }
     
-    .hero-banner{
-        min-height: 780px;
-    background-attachment: fixed;
-}
+
     
     .big-btn-section {
     padding: 60px 0;
