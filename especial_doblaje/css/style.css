@@ -122,6 +122,8 @@ body{
 .navbar-brand {
     width: 100%;
 }
+    
+
 }
 
 @media (min-width: 1200px){
@@ -633,6 +635,7 @@ h3.wiw-company {
     display: block;
 }
 
+
 .info-btn {
     right: 0;
     position: absolute;
@@ -646,6 +649,13 @@ h3.wiw-company {
     padding: 20px;
     width: 30%;
     cursor: pointer;
+    transition: 0.25s all;
+}
+
+.info-btn:hover {
+    color: #25b9ab;
+    background: #fff;
+    text-decoration: none;
 }
 
 .two-color-infobox {
@@ -668,7 +678,24 @@ a.main-btns {
     font-weight: bold;
     letter-spacing: -3px;
     line-height: 1;
-    transition: 0.25s all;
+    transition: 0.1s all;
+}
+
+
+
+a.main-btns:after {
+    position: absolute;
+    content: '';
+    bottom: -42px;
+    background: #5b4fa1;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    z-index: 99;
+    left: 0;
+    border: 5px solid #2d2d2d;
+    opacity: 0;
+    transition: 0.25s all ease-in;
 }
 
 .main-btns span {
@@ -1069,7 +1096,7 @@ div#modalCarousel {
     margin-bottom: 0;
 }
 
-#wiwCarousel .carousel-control, #directorioCarousel .carousel-control {
+#modalCarousel .carousel-control, #wiwCarousel .carousel-control, #directorioCarousel .carousel-control {
     background-image: none !important;
     bottom: 0;
     height: 45px;
@@ -1082,15 +1109,22 @@ div#modalCarousel {
     z-index: 999;
 }
 
+#modalCarousel .carousel-control {
+    bottom: -70px;
+}
+
 div#directorioCarousel {
     position: relative;
     padding-bottom: 80px;
 }
-#wiwCarousel .carousel-control span, #directorioCarousel .carousel-control span {
+#modalCarousel .carousel-control span , #wiwCarousel .carousel-control span, #directorioCarousel .carousel-control span {
     font-family: cursive;
     font-size: 34px;
     line-height: 1;
     color: #ccc;
+}
+#modalCarousel .carousel-control span img,  #wiwCarousel .carousel-control span img, #directorioCarousel .carousel-control span img {
+    max-width: 20px;
 }
 
 #wiwCarousel .item{
@@ -1228,18 +1262,29 @@ div#wiwCarousel {
 
 }
 
+
+@media(min-width:992px){
+    a.main-btns:hover::after{
+        opacity: 1;
+    }
+}
+
 @media (min-width: 1200px){
     .wrapper-empresas {
         background-image: url(../images/bg-listado.jpg);
 
     }
     
-
+    a.main-btns:after {
+        bottom: -74px;
+    }
     
     .big-btn-section {
     padding: 60px 0;
     background: #2d2d2d;
 }
+    
+
     
     .wiw-name {
         margin-top: 50px;
