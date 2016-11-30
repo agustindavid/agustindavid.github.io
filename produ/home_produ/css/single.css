@@ -43,7 +43,7 @@ body{
 }
 
 .single-info{
-    margin-top: -55px;
+    margin-top: 0px;
     margin-bottom: 15px;
 }
 
@@ -69,6 +69,7 @@ h3.single-title {
     margin-top: 15px;
     margin-bottom: 0px;
     color: #333;
+    letter-spacing: -1px;
 }
 
 p.video-date {
@@ -78,7 +79,12 @@ p.video-date {
 }
 
 .share-big {
-    padding: 15px;
+    padding: 15px 0;
+}
+
+img.share-icon {
+    margin-right: 10px;
+    vertical-align: bottom;
 }
 
 .share-big .small-share {
@@ -92,7 +98,7 @@ p.video-date {
 }
 
 .single-content {
-    margin-top: 50px;
+    margin-top: 25px;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     color: #444;
@@ -198,6 +204,7 @@ h3.single-subtitle {
     font-size: 22px;
     position: relative;
     margin-left: 30px;
+    letter-spacing: -1px;
 }
 
 hr.single-underline {
@@ -209,11 +216,13 @@ hr.single-underline {
     margin: 25px 0;
 }
 
-
+.wiw-info-wrap {
+    text-align: center;
+}
 
 .wiw-single {
     color: #000;
-    border-bottom: 1px solid #898989;
+    border-bottom: 0px solid #898989;
 }
 h3.wiw-name {
     font-size: 42px;
@@ -232,16 +241,6 @@ p.wiw-company {
     font-weight: bold;
 }
 
-a.wiw-btn {
-    display: inline-block;
-    border: 1px solid #302e34;
-    padding: 5px 15px;
-    font-family: 'Open Sans', sans-serif;
-    color: #302e34;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 60px;
-}
 
 a.wiw-btn {
     display: inline-block;
@@ -251,7 +250,8 @@ a.wiw-btn {
     color: #302e34;
     text-transform: uppercase;
     font-weight: bold;
-    margin-top: 60px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     transition: 0.2s all;
 }
 
@@ -267,6 +267,7 @@ h3.related-news-title {
     font-size: 18px;
     font-weight: bold;
     font-family: 'Open Sans';
+    letter-spacing: -1px;
 }
 
 .related-new.row {
@@ -281,6 +282,9 @@ h3.related-news-title {
     margin-top: 20px;
 }
 
+
+
+
 .play-btn-white {
     position: absolute;
     bottom: 0;
@@ -292,12 +296,11 @@ h3.related-news-title {
     color: #7224ac;
 }
 
-
-
 .related-video-wrap h3 {
-    font-size: 13px;
+    font-size: 18px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
+    letter-spacing: -1px;
 }
 
 .related-video-wrap {
@@ -362,11 +365,36 @@ h3.inverted-heading {
 }
 
 @media (min-width:992px){
+    
+    .related-video-wrap h3 {
+    font-size: 13px;
+}
+    
+    .single-content {
+    margin-top: 50px;
+}
+    
+    .wiw-single {
+        border-bottom: 1px solid #898989;
+    }
+    
+a.wiw-btn {
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+    
+    .wiw-info-wrap {
+    text-align: left;
+    }
     .navbar-brand {
     width: 100%;
 }
     
     .share-big {
     padding:60px 0 0 0;
+}
+    
+    .single-info{
+    margin-top: -55px;
 }
 }
