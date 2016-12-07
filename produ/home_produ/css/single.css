@@ -60,6 +60,7 @@ body{
     background: #fff;
     padding: 15px 30px;
     border-bottom: 10px solid #7224ac;
+    min-height: 150px !important;
 }
 
 h3.single-title {
