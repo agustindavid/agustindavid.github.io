@@ -305,6 +305,93 @@ img.share-icon {
     position: relative;
 }
 
+.home-post-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.share-thumb {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 9;
+    background-color: rgba(255,255,255,0.9);
+    text-align: center;
+}
+
+.sn-wrap {
+    position: absolute;
+    width: 100%;
+    transform: translateY(-50%);
+    top: 50%;
+    font-size: 24px;
+}
+
+.sn-wrap a {
+    color: #000;
+    margin: 0 10px;
+    transform: scale(0);
+    transition: 0.2s transform ease-in;
+    transition-delay: 0.25s;
+    transform-origin: center;
+    display: inline-block;
+}
+
+.share-thumb {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 9;
+    background-color: rgba(255,255,255,0.9);
+    text-align: center;
+    transform: translateY(-100%);
+    transition: 0.25s all ease-out;
+}
+
+span.close-share {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 25px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.share-thumb.visible{
+    transform: translateY(0%);
+}
+
+.share-thumb.visible .sn-wrap a{
+    transform: scale(1);
+}
+
+
+.icon-facebook:hover{
+    color: #3b5999;
+}
+
+.icon-whatsapp:hover{
+    color: #25d366;
+}
+
+.icon-twitter:hover{
+    color: #55acee;
+}
+
+.icon-linkdin:hover{
+    color: #0077b5;
+}
+
+.icon-mail:hover{
+    color: #7e7e7e;
+}
+
+
+
 .home-post-wrap{
     margin-bottom: 30px;
 }
@@ -347,6 +434,7 @@ img.share-icon {
 .purple-share {
     font-size: 12px;
     padding: 20px 0;
+    cursor: pointer;
 }
 
 .purple-share img {
@@ -423,6 +511,29 @@ a.view-more:hover{
     background-size: cover;
     padding: 60px 30px;
     height: 470px;
+}
+
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 /*WIW*/
@@ -1133,7 +1244,9 @@ div#modalCarousel {
 div#directorioCarousel {
     position: relative;
     padding-bottom: 80px;
+    margin-top: -100px;
 }
+
 #modalCarousel .carousel-control span , #wiwCarousel .carousel-control span, #directorioCarousel .carousel-control span {
     font-family: cursive;
     font-size: 34px;
@@ -1170,6 +1283,20 @@ div#directorioCarousel {
     left: 50%;
     margin-left: -120px;
 }
+
+#directorioCarousel .carousel-inner>.next, #directorioCarousel .carousel-inner>.prev {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+}
+
+#directorioCarousel .carousel-inner {
+    position: relative;
+    width: 100%;
+    padding-top: 100px;
+}
+
+
 
 div#wiwCarousel {
     padding-bottom: 80px;

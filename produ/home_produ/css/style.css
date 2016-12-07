@@ -180,8 +180,8 @@ ul.main-menu {
     color: #000;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 16px;
-    letter-spacing: 0;
+    font-size: 17px;
+    letter-spacing: -1px;
 }
 
 .main-menu li:after {
