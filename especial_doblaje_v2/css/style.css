@@ -1237,7 +1237,7 @@ div#modalCarousel {
     z-index: 999;
 }
 
-#directorioCarousel .carousel-control {
+#directoriohomeCarousel .carousel-control {
 bottom: 260px;
 }
 
@@ -1250,6 +1250,12 @@ bottom: 260px;
 }
 
 div#directorioCarousel {
+    position: relative;
+    padding-bottom: 80px;
+    margin-top: -60px;
+}
+
+div#directoriohomeCarousel {
     position: relative;
     padding-bottom: 20px;
     margin-top: -100px;
