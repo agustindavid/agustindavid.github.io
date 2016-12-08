@@ -1293,7 +1293,7 @@ div#directoriohomeCarousel {
     right: 50%;
     margin-right: -120px;
 }
-#directoriohomeCarousel .right.carousel-control , #directorioCarousel .left.carousel-control {
+#directoriohomeCarousel .left.carousel-control , #directorioCarousel .left.carousel-control {
     left: 50%;
     margin-left: -120px;
 }
