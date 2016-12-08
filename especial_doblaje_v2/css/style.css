@@ -1224,7 +1224,7 @@ div#modalCarousel {
     margin-bottom: 0;
 }
 
-#modalCarousel .carousel-control, #wiwCarousel .carousel-control, #directorioCarousel .carousel-control  {
+#modalCarousel .carousel-control, #wiwCarousel .carousel-control, #directorioCarousel .carousel-control,  #directoriohomeCarousel .carousel-control  {
     background-image: none !important;
     bottom: 0;
     height: 45px;
@@ -1261,13 +1261,13 @@ div#directoriohomeCarousel {
     margin-top: -100px;
 }
 
-#modalCarousel .carousel-control span , #wiwCarousel .carousel-control span, #directorioCarousel .carousel-control span {
+#modalCarousel .carousel-control span , #wiwCarousel .carousel-control span, #directorioCarousel .carousel-control span, #directoriohomeCarousel .carousel-control span {
     font-family: cursive;
     font-size: 34px;
     line-height: 1;
     color: #ccc;
 }
-#modalCarousel .carousel-control span img,  #wiwCarousel .carousel-control span img, #directorioCarousel .carousel-control span img {
+#modalCarousel .carousel-control span img,  #wiwCarousel .carousel-control span img, #directorioCarousel .carousel-control span img, #directoriohomeCarousel .carousel-control span img {
     max-width: 20px;
 }
 
@@ -1289,22 +1289,22 @@ div#directoriohomeCarousel {
     right: 80px;
 }
 
-#directorioCarousel .right.carousel-control {
+#directoriohomeCarousel .right.carousel-control , #directorioCarousel .right.carousel-control {
     right: 50%;
     margin-right: -120px;
 }
-#directorioCarousel .left.carousel-control {
+#directoriohomeCarousel .right.carousel-control , #directorioCarousel .left.carousel-control {
     left: 50%;
     margin-left: -120px;
 }
 
-#directorioCarousel .carousel-inner>.next, #directorioCarousel .carousel-inner>.prev {
+#directoriohomeCarousel .carousel-inner>.next, #directoriohomeCarousel .carousel-inner>.prev {
     position: absolute;
     top: 100px;
     width: 100%;
 }
 
-#directorioCarousel .carousel-inner {
+#directoriohomeCarousel .carousel-inner {
     position: relative;
     width: 100%;
     padding-top: 100px;
