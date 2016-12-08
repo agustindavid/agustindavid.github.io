@@ -298,7 +298,7 @@ img.share-icon {
 
 .main-posts-wrap {
     width: 100%;
-    margin: 15px auto 25px auto;
+    margin: 15px auto 0px auto;
     background: #2d2d2d;
     padding: 0px;
     z-index: 99;
@@ -1476,11 +1476,11 @@ div#wiwCarousel {
         padding: 60px 0 0 0;
     }
     
-    .main-posts-wrap {
-        width: 85%;
-        margin: -100px auto 25px auto;
-        padding: 25px;
-    }
+.main-posts-wrap {
+    width: 85%;
+    margin: -100px auto 0px auto;
+    padding: 25px 25px 15px 25px;
+}
     
     .white-info-box {
         margin-top: -50px;
