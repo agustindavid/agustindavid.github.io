@@ -6,6 +6,10 @@ body{
     display: inline !important;
 }
 
+:focus{
+    outline: 0;
+}
+
 /*HEADER*/
 
 
@@ -986,6 +990,10 @@ h2.single-title {
 
 .carousel-item{
     cursor: pointer;
+}
+
+.carousel-item:focus {
+    outline: 0 !important;
 }
 
 .leyenda-imagen {
