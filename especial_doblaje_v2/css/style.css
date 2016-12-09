@@ -1036,6 +1036,17 @@ ul.single-links {
     margin-bottom: 15px;
 }
 
+hr.info-sep {
+    margin-top: 10px;
+    margin-bottom: 0;
+    border-top-color: #dcdcdc;
+}
+
+.date-author {
+    margin-top: 15px;
+    color: #828282;
+}
+
 .single-info-programacionn{
     
 }
@@ -1331,6 +1342,7 @@ div#wiwCarousel {
     color: #000;
     letter-spacing: -1px;
     transition: 0.25s all;
+    margin-bottom: 30px;
 }
 
 .show-more:hover {
@@ -1383,6 +1395,7 @@ div#wiwCarousel {
 
 @media(min-width:667px){
     
+
     .hero-info p{
         width: 70%;
     }
@@ -1458,6 +1471,12 @@ div#wiwCarousel {
 
 
 @media(min-width:992px){
+    
+        .show-more {
+        margin-bottom: 0;
+}
+    
+    
     a.main-btns:hover::after{
         opacity: 1;
     }
