@@ -1279,8 +1279,14 @@ bottom: 260px;
     padding-top: 115px;
 }
 
+
+
 #modalCarousel .carousel-control {
-    bottom: -70px;
+    bottom: 10px;
+}
+
+#modalCarousel{
+    padding-bottom: 60px;
 }
 
 div#directorioCarousel {
@@ -1515,6 +1521,14 @@ div#wiwCarousel {
 
 
 @media(min-width:992px){
+    
+    #modalCarousel .carousel-control {
+        bottom: -70px;
+    }
+
+    #modalCarousel{
+        padding-bottom: 0px;
+    }
     
         .show-more {
         margin-bottom: 0;
