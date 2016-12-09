@@ -984,6 +984,10 @@ h2.single-title {
     position: relative;
 }
 
+.carousel-item{
+    cursor: pointer;
+}
+
 .leyenda-imagen {
     position: absolute;
     width: 100%;
@@ -1512,6 +1516,16 @@ div#wiwCarousel {
     a.main-btns:hover::after{
         opacity: 1;
     }
+    
+        .share-big {
+        padding: 60px 0 0 0;
+    }
+    
+    .share-big a {
+    color: #000;
+    font-size: 22px;
+    margin: 0 3px;
+}
 }
 
 @media (min-width: 1200px){
@@ -1558,9 +1572,7 @@ div#wiwCarousel {
         display: block;
     }
     
-    .share-big {
-        padding: 60px 0 0 0;
-    }
+
     
 .main-posts-wrap {
     width: 85%;
@@ -1584,6 +1596,10 @@ div#wiwCarousel {
     p.cargo {
         margin-left: -90px;
     }
+}
+
+@media(min-width:992 and max-width:1199){
+    
 }
 
 @media(min-width:1200px){
