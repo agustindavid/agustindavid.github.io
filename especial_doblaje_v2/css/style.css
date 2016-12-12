@@ -1247,7 +1247,7 @@ div#modalCarousel:after {
     z-index: -1;
 }
 div#modalCarousel {
-    margin-top: 45px;
+    margin-top: 15px;
     z-index: 2;
 }
 
@@ -1263,11 +1263,15 @@ div#modalCarousel {
     position: absolute;
     top: auto;
     width: 45px;
-    border: 2px solid #ccc;
+    border: 1px solid #000;
     border-radius: 50%;
     opacity: 1;
     z-index: 999;
 }
+
+ #wiwCarousel .carousel-control, #directorioCarousel .carousel-control,  #directoriohomeCarousel .carousel-control{
+    border: 1px solid #fff;
+ }
 
 #directoriohomeCarousel .carousel-control {
 bottom: 260px;
@@ -1391,8 +1395,15 @@ div#wiwCarousel {
     opacity: 1;
 }
 
-
-
+.modal-header .close {
+    margin-top: -2px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 5;
+    font-size: 26px;
+    opacity: 1;
+}
 /*MEDIA QUERIES*/
 
 
@@ -1585,6 +1596,11 @@ div#wiwCarousel {
 
 
 @media(min-width:992px){
+    
+    div#modalCarousel {
+        margin-top: 45px;
+        z-index: 2;
+    }
     
     #modalCarousel .carousel-control {
         bottom: -70px;
