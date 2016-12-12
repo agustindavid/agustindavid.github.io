@@ -1404,6 +1404,10 @@ div#wiwCarousel {
     font-size: 26px;
     opacity: 1;
 }
+
+.modal-header .close img{
+    max-width: 40px;
+}
 /*MEDIA QUERIES*/
 
 
