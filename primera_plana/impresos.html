@@ -23,7 +23,7 @@
     <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default hidden">
   <div class="container banner-wrapper">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -91,12 +91,13 @@
                         <h3>Chile Media y MipCancú 2016</h3>
                          <div class="purple-info-box">
                              <p>PRODU is the leading B2B content information provider for the Spanish - Speaking television, advertising and technology industries since 1989</p>
+                             <div class="hidden-xs hidden-sm hidden-md">
                              <p>• 28 years covering the Spanish language TV industry</p>
                              <p>• The most comprehensive news source, and editorial force in the region</p>
                              <p>• Covering all major Spanish language TV news including Production, Programming, and Technology</p>
                              <p>• Headquarters in Miami with offices in Mexico, Argentina, Colombia and Venezuela</p>
                              <p>• Covers Latin American, Spain and the U.S. Hispanic Market</p>
-                             
+                             </div>
                              <div class="main-item-share">
                             <p><img src="images/share-icon.png" class="share-icon">Compartir</p>
                             <a class="icon-mail"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>                     
@@ -251,20 +252,37 @@
     $(this).slick({
                 slide: "#" + carouselId +" .carousel-item",
         infinite: true,
-        slidesToShow: 4,
+        slidesToShow: 5,
+         centerMode: true,
         slidesToScroll: 1,
          appendArrows: "#" + carouselId + " .prev_next",
         prevArrow: '<a class="slick-btn"><img src="images/left.png"></a>',
        nextArrow: '<a class="slick-btn"><img src="images/right.png"></a>',
-         responsive: [
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
     {
       breakpoint: 667,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true
+        slidesToScroll: 1
       }
     }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
   ]
     });
      });

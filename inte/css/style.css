@@ -66,6 +66,7 @@ button.navbar-toggle {
     position: relative;
     background-repeat: no-repeat;
     transition: 0.2s all;
+    min-height: 600px;
 }
 
 .header-info {
