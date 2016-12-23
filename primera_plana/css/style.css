@@ -370,6 +370,10 @@ input.search-head {
     margin-top: 30px;
 }
 
+.main-item-share a:last-child {
+    margin-right: 0;
+}
+
 .share-icon {
     margin-right: 10px;
     vertical-align: sub;
