@@ -309,7 +309,7 @@ input.search-head {
 .intro-stripe h2 {
     font-size: 50px;
     font-weight: 700;
-    letter-spacing: -8px;
+    letter-spacing: -5px;
     color: #fff;
     position: relative;
     margin: 0;
@@ -333,7 +333,7 @@ input.search-head {
 }
 
 .main-img-wrap {
-    margin-top: -55px;
+    margin-top: -40px;
     left: 0;
     z-index: 2;
 }
@@ -814,12 +814,19 @@ a.load-historic:hover {
 
 @media(min-width:992px){
     
+    .main-img-wrap {
+    margin-top: -55px;
+}
+
+    
     h3.related-news-title{
         margin-top: 0;
     }
     
     .intro-stripe h2 {
     font-size: 80px;
+        letter-spacing: -8px;
+    
     }
     
     .main-img-wrap img{
