@@ -307,7 +307,7 @@ input.search-head {
 }
 
 .intro-stripe h2 {
-    font-size: 80px;
+    font-size: 50px;
     font-weight: 700;
     letter-spacing: -8px;
     color: #fff;
@@ -355,7 +355,7 @@ input.search-head {
     padding: 25px 10px 20px 10px !important;
     z-index: 0;
     text-align: center;
-    margin-top: 25px;
+
 }
 
 .main-item-text h3 {
@@ -547,7 +547,7 @@ hr.single-underline {
 }
 
 h3.related-news-title {
-    margin-top: 0px;
+    margin-top: 15px;
     font-size: 16px;
     font-weight: bold;
     font-family: 'Open Sans';
@@ -561,7 +561,7 @@ h3.related-news-title {
     background-size: cover;
     background-image: url(../images/bg_hero_impresos.jpg);
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 75px;
 }
 
 .hero-impresos h2 {
@@ -813,6 +813,14 @@ a.load-historic:hover {
 
 
 @media(min-width:992px){
+    
+    h3.related-news-title{
+        margin-top: 0;
+    }
+    
+    .intro-stripe h2 {
+    font-size: 80px;
+    }
     
     .main-img-wrap img{
         margin: 0;
