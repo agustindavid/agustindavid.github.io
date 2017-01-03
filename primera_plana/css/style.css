@@ -78,7 +78,7 @@ body{
     margin: 0;
     line-height: 1;
     margin-left: 45px;
-    z-index: 5;
+    z-index: 1;
 }
 
 .intro-stripe h2:before {
