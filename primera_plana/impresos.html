@@ -10,6 +10,9 @@
 <title>Produ</title>
 
 <link rel='stylesheet'  href='css/style.css' type='text/css' media='all' />
+    <link rel='stylesheet'  href='css/base.css' type='text/css' media='all' />
+<link rel='stylesheet'  href='css/layout.css' type='text/css' media='all' />
+<link rel='stylesheet'  href='css/nav.css' type='text/css' media='all' />
     <script src="js/jquery-2.2.4.min.js" ></script>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -23,58 +26,135 @@
     <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-default hidden">
-  <div class="container banner-wrapper">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><img src="images/logo-header.png"></a>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav ibc-nav">
-        <li><a href="#">¿Quiénes Somos?</a></li>
-        <li><a href="#">Hazte miembro</a></li>
-        <li><a href="#">Login</a></li>
-        <li><input type="search" placeholder="Buscar" class="search-head"></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-    <div class="color-stripe-wrap">
-        <div class="container">
-            <div class="col-xs-2 color-stripe purple"></div>
-            <div class="col-xs-2 color-stripe cyan"></div>
-            <div class="col-xs-2 color-stripe green"></div>
-            <div class="col-xs-2 color-stripe yellow"></div>
-            <div class="col-xs-2 color-stripe orange"></div>
-            <div class="col-xs-2 color-stripe black"></div>
-        </div>
-    </div>
-    <div class="white-nav">
-        <div class="container">
-            <ul class="main-menu">
-                <li><a href="#">Television</a></li>
-                <li><a href="#">Publicidad</a></li>
-                <li><a href="#">Tecnología</a></li>
-                <li><a href="#">Países</a></li>
-                <li><a href="#">English</a></li>
-                <li class="social-top">
-                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                    
-</li>
-            </ul>
-        </div>
-    </div>
-</nav>
+
+	<header class="header">
+
+		<div class="inner">
+
+			<div class="clearfix header-inner">
+
+				<h1 class="no-margin logo-image"><a href="index.php" title="Your site"><img alt="Your site" src="images/produ-logo.png"  /></a></h1>
+
+				<div class="header-right">
+
+					<p class="date-header right"><strong>Mar</strong> 9 de agosto, 2016</p>
+
+					<div class="header-right-nav clearfix">
+
+						<ul class="list-reset nav-top">
+							<li><a href="#">¿Quiénes Somos?</a></li>
+							<li><a href="#">Hazte Miembro</a></li>
+							<li><a href="#">Login</a></li>
+						</ul><!-- nav-top-->
+
+						<form method="post" action="#" class="search-header">
+
+							<fieldset>
+
+								<input type="text" id="txt-search-header" class="txt-search-pro" placeholder="Buscar">
+								<button type="submit" id="submit-search-header"><i class="fa fa-search" aria-hidden="true"></i></button>
+
+							</fieldset>
+
+						</form><!-- search-header -->
+
+						<a id="nav-toggle" class="nav-toggle" href="#"><span></span></a>
+
+					</div><!-- header-right-nav-->
+
+				</div><!-- header-right-nav-->
+
+			</div><!-- header-inner-->
+
+		</div><!-- header-inner-->
+
+	</header>
+
+
+	
+	<nav id="nav" class="nav clearfix">
+		<div class="inner">
+
+			<ul id="nav-menu" class="list_reset clearfix main-menu">
+				<li class="main-menu-1 menu-item-has-children">
+					<a href="#" title=""><span>Televisión</span> <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+					<span class="arrow-sub-level"></span>
+					<ul class="sub-menu">
+						<li class="menu-item-has-children">
+							<a href="#">Países</a>
+							<span class="arrow-sub-level"></span>
+							<ul class="sub-menu">
+								<li><a href="#">Argentina</a></li>
+								<li><a href="#">Colombia</a></li>
+								<li><a href="#">México</a></li>
+							</ul>
+						</li>
+						<li><a href="#">OTT/VOD</a></li>
+						<li><a href="#">Ratings</a></li>
+						<li><a href="#">Novelas al aire</a></li>
+						<li><a href="#">Estrenos y Finales</a></li>
+						<li><a href="#">Videos</a></li>
+						<li><a href="#">Galerías</a></li>
+					</ul>
+				<li>
+				<li class="main-menu-2 menu-item-has-children">
+					<a href="#" title=""><span>Publicidad</span> <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+					<span class="arrow-sub-level"></span>
+					<ul class="sub-menu">
+						<li><a href="#">US Hispanic</a></li>
+						<li><a href="#">Media</a></li>
+						<li><a href="#">Agencias</a></li>
+						<li><a href="#">Marcas</a></li>
+						<li><a href="#">Producción</a></li>
+						<li><a href="#">Eventos</a></li>
+						<li><a href="#">Videos</a></li>
+						<li><a href="#">Galerías</a></li>
+					</ul>
+				<li>
+				<li class="main-menu-3 menu-item-has-children">
+					<a href="#" title=""><span>Tecnología</span> <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+					<span class="arrow-sub-level"></span>
+					<ul class="sub-menu">
+						<li><a href="#">Argentina</a></li>
+						<li><a href="#">Colombia</a></li>
+						<li><a href="#">México</a></li>
+						<li><a href="#">Videos</a></li>
+						<li><a href="#">Galerías</a></li>
+					</ul>
+				<li>
+				<li class="main-menu-4 menu-item-has-children">
+					<a href="#" title=""><span>Países</span> <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+					<span class="arrow-sub-level"></span>
+					<ul class="sub-menu">
+						<li><a href="#">Argentina</a></li>
+						<li><a href="#">Colombia</a></li>
+						<li><a href="#">México</a></li>
+						<li><a href="#">Videos</a></li>
+						<li><a href="#">Galerías</a></li>
+					</ul>
+				<li>
+				<li class="main-menu-5 menu-item-has-children">
+					<a href="#" title=""><span>English</span> <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+					<span class="arrow-sub-level"></span>
+					<ul class="sub-menu">
+						<li><a href="#">US HISPANIC TV</a></li>
+						<li><a href="#">US HISPANIC ADVERTISING</a></li>
+					</ul>
+				<li>
+			</ul><!-- main-menu-->
+
+			<div class="social-box">
+
+				<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+
+			</div><!-- social-header-->
+
+		</div>
+	</nav>
     <div class="content-wrap">
         <div class="hero-impresos">
             <div class="container">
@@ -373,32 +453,183 @@
         </div>
     </div>
 
-<footer>
-    <div class="footer-gray">
-        <div class="container">
-            <div class="row text-center">
-                <img src="images/logo.png">
-                <p>Síguenos</p>
-                <a><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            </div>    
-        </div>
-    </div>
-    <div class="footer-black">
-        <div class="container">
-            <div class="row">
-                <ul>
-                    <li><a>Televisión</a></li>
-                    <li><a>Tecnología</a></li>
-                    <li><a>Publicidad</a></li>
-                    <li><a>Who's Who</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    </footer>
+
+	<footer class="footer">
+
+		<div class="footer-top">
+
+			<div class="inner-2">
+
+				<div class="footer-top-inner clearfix">
+
+					<a class="logo-footer" href="index.php" title="Produ"><img alt="Produ" src="images/produ-logo-footer.png"  /></a>
+
+					<div class="col-footer col-footer-1 col-footer-2x">
+
+						<p>
+							<strong>Televisión</strong>
+						</p>
+
+						<div class="clearfix list-footer-content">
+
+							<ul class="list-reset fleft">
+								<li><a href="#">Primera plana</a></li>
+								<li><a href="#">OTT/VOD</a></li>
+								<li><a href="#">Ratings</a></li>
+								<li><a href="#">Investigación</a></li>
+								<li><a href="#">Videos</a></li>
+								<li><a href="#">Revistas </a></li> 
+								<li><a href="#">Eventos / Galerías</a></li>
+							</ul>
+
+							<ul class="list-reset fright">
+								<li><a href="#">Especiales</a></li>
+								<li><a href="#">Semana</a></li>
+								<li><a href="#">Who’s Who</a></li>
+								<li><a href="#">Tops</a></li>
+								<li><a href="#">Estrenos y Finales</a></li>
+								<li><a href="#">Foros</a></li>
+								<li><a href="#">Aniversarios</a></li>
+								<li><a href="#">Diarios</a></li>
+							</ul>
+
+						</div>
+
+
+					</div><!-- col-footer-->
+
+					<div class="col-footer col-footer-2 col-footer-2x col-footer-2x-last">
+
+						<p>
+							<strong>Publicidad</strong>
+						</p>
+
+						<div class="clearfix list-footer-content">
+
+							<ul class="list-reset fleft">
+								<li><a href="#">Primera Plana</a></li>
+								<li><a href="#">US Hispanic</a></li>
+								<li><a href="#">Media</a></li>
+								<li><a href="#">Especiales</a></li>
+								<li><a href="#">Eventos / Galerías</a></li>
+								<li><a href="#">Foros</a></li>								
+							</ul>
+
+							<ul class="list-reset fright">
+								<li><a href="#">Marcas</a></li>
+								<li><a href="#">Agencias</a></li>
+								<li><a href="#">Aniversarios</a></li>
+								<li><a href="#">Producción</a></li>
+								<li><a href="#">Revista</a></li>
+								<li><a href="#">Semana</a></li>
+								<li><a href="#">Videos</a></li>
+							</ul>
+
+						</div>
+
+
+					</div><!-- col-footer-->
+
+
+					<div class="col-footer col-footer-3">
+
+						<p>
+							<strong>Tecnología</strong>
+						</p>
+
+						<div class="clearfix list-footer-content">
+
+							<ul class="list-reset">
+								<li><a href="#">Primera Plana</a></li>
+								<li><a href="#">Tutorial</a></li>
+								<li><a href="#">Aniversarios </a></li>
+								<li><a href="#">Revista</a></li>
+								<li><a href="#">White Paper</a></li>
+								<li><a href="#">Especiales </a></li>
+								<li><a href="#">Eventos / Galerías</a></li>
+								<li><a href="#">Foros</a></li>
+								<li><a href="#">Videos</a></li>
+							</ul>
+
+						</div>
+
+
+					</div><!-- col-footer-->
+
+					<div class="col-footer col-footer-4">
+
+						<p>
+							<strong>Países</strong>
+						</p>
+
+						<div class="clearfix list-footer-content">
+
+							<ul class="list-reset">
+								<li><a href="#">US Hispanic (English)</a></li>
+								<li><a href="#">México</a></li>
+								<li><a href="#">Colombia</a></li>
+								<li><a href="#">Argentina</a></li>
+							</ul>
+
+						</div>
+
+
+					</div><!-- col-footer-->
+
+					<div class="col-footer col-footer-5 col-footer-last">
+
+						<p>
+							<strong>English</strong>
+						</p>
+
+						<div class="clearfix list-footer-content">
+
+							<ul class="list-reset">
+								<li><a href="#">US Hispanic TV</a></li>
+								<li><a href="#">US Hispanic Advertising</a></li>							
+							</ul>
+
+						</div>
+
+
+					</div><!-- col-footer-->
+
+				</div><!-- footer-top-inner-->
+
+
+			</div>
+
+		</div><!-- footer-top-->
+
+		<div class="footer-bottom">
+
+			<div class="inner">
+
+				<ul class="list-reset main-menu-footer">
+					<li><a href="#" title="">Acerca de PRODU</a><li>
+					<li><a href="#" title="">Anuncios en PRODU</a><li>
+					<li><a href="#" title="">Terminos y condiciones</a><li>
+					<li><a href="#" title="">Ayuda</a><li>
+					<li><a href="#" title="">Politicas de privacidad</a><li>
+					<li><a href="#" title="">Preguntas frecuentes</a><li>
+					<li><a href="#" title="">Contacto</a><li>	
+				</ul><!-- main-menu-->
+
+				<div class="social-box">
+
+					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+
+				</div><!-- social-header-->
+
+			</div>	
+
+		</div><!-- footer-bottom -->
+		
+	 </footer>
     <script>
      $('.multiple-items').each(function (idx, item) {
    var carouselId = "carousel" + idx;

@@ -1,0 +1,299 @@
+
+
+
+.nav, 
+.nav li {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+}
+
+.nav {
+  margin: 0;
+  z-index: 2;
+  height: 52px;
+  background: #FFF;
+  border-bottom: 2px solid #EAEAEA;
+  position: relative;
+  -webkit-box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.24);
+  -moz-box-shadow:    0px 1px 6px 0px rgba(50, 50, 50, 0.24);
+  box-shadow:         0px 1px 6px 0px rgba(50, 50, 50, 0.24);
+}
+
+.nav .main-menu {
+  width: 81%;
+  max-width: 918px;
+  float: left;
+  position: relative;
+  left: -1px;
+}
+
+.social-box {
+  float: right;  
+  width: 19%;
+  text-align: right;
+}
+
+.social-box a {
+  display: inline-block;
+  margin: 0 10px 0;
+  font-size: 1.5em;
+  padding: 12px 0 0;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+    color: #000;
+}
+
+.social-box a:hover {
+  opacity: 0.5;
+}
+
+
+
+.main-menu {
+          margin: 0;
+          padding: 0;
+          border-left: 2px solid #EAEAEA;
+          border-right: 2px solid #EAEAEA;
+}
+
+.main-menu >li {
+          float:left;
+          position: relative;
+          width: 20%;
+          margin: 0;
+          border-left: 1px solid #EAEAEA;
+}
+
+.main-menu > li:nth-child(1) {
+  border: 0;
+}
+
+
+.nav .main-menu > li > a {
+      display: block;
+      height: 50px;
+      line-height: 50px;
+      text-align: left;
+      color: #000;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 0 14px;
+      text-transform: uppercase;
+      text-decoration: none;
+      background-color: #FFF;
+      -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+}
+
+.nav .main-menu > li > a:before {
+          position: absolute;
+          width: 101%;
+          height: 5px;
+          left: 0;
+          top: -5px;
+          content: "";
+          /*border-left: 1px solid #EAEAEA;*/
+}
+
+.nav .main-menu > .main-menu-1 > a:before,
+.col-footer-1 p strong:before {
+  background-color: #7224AC;
+}
+
+.nav .main-menu > .main-menu-2 > a:before,
+.col-footer-2 p strong:before {
+  background-color: #3449E4;
+}
+
+.nav .main-menu > .main-menu-3 > a:before,
+.col-footer-3 p strong:before {
+  background-color: #25B9AB;
+}
+
+.nav .main-menu > .main-menu-4 > a:before,
+.col-footer-4 p strong:before {
+  background-color: #FCD530;
+}
+
+.nav .main-menu > .main-menu-5 > a:before,
+.col-footer-5 p strong:before {
+  background-color: #FC602F;
+}
+
+.nav .main-menu a span,
+.nav .main-menu a i {
+  display: inline-block;
+}
+
+.nav .main-menu a span {
+  margin: 0 0.75em 0 0;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.nav .main-menu a i {
+  font-size: 1.1em;
+  position: relative;
+  top: -1px;
+}
+
+.main-menu li .active span,
+.main-menu li .over span,
+.main-menu li a:hover span,
+.main-menu li.current_page_item a span,
+.main-menu li.current-post-ancestor a span,
+.main-menu li.current-post-parent a span {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.main-menu > li > .children,
+.main-menu > li > .sub-menu {
+          margin: 0;
+          padding: 0;
+          position: absolute;
+          left: -1px;
+          top: 49px;
+          width: 101%;
+          z-index: 2;
+          border-top: 0;
+          visibility: hidden;
+          opacity: 0;
+          transform: translateY(-2em);
+          z-index: -1;
+          transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+          margin: 0;
+}
+
+.nav .sub-menu .sub-menu {
+  left: 100%;
+  top: 0;
+  width: 200px;
+  margin: 0;
+  position: absolute;
+  opacity: 0;
+  /*transform: translateX(-2em);*/
+  z-index: -1;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.main-menu > li:hover > .sub-menu {
+  visibility: visible; /* shows sub-menu */
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+
+.main-menu .sub-menu > li:hover > .sub-menu {
+  visibility: visible; /* shows sub-menu */
+  opacity: 1;
+  z-index: 1;
+  /*transform: translateX(0%);*/
+  transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+
+.nav .children li,
+.nav .sub-menu li {
+          float: none;
+          margin: 0;
+          position: relative;
+}
+
+.nav .children a,
+.nav .sub-menu a {
+    display: block;
+    background: #000;
+    border-top: 1px solid #FFF;
+    padding: 8px 14px;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.nav .children a:hover,
+.nav .sub-menu a:hover {
+          background: #FFF;
+          color: #000;
+}
+
+/* menu mobile */
+
+.nav-toggle {
+     width: 35px;
+     height: 35px;
+     display: block;
+     float: right;
+     cursor: pointer;
+     position: relative;
+     top: 0;
+     display: none;
+     background: gray;
+}
+
+.nav-toggle span,
+.nav-toggle span:before,
+.nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: white;
+    position: absolute;
+    display: block;
+    content: '';
+}
+.nav-toggle span:before {
+    top: -10px;
+}
+.nav-toggle span:after {
+    bottom: -10px;
+}
+.nav-toggle span,
+.nav-toggle span:before,
+.nav-toggle span:after {
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.nav-toggle.active span {
+    background-color: transparent;
+}
+
+.nav-toggle.active span:before,
+.nav-toggle.active span:after {
+    top: 0;
+}
+.nav-toggle.active span:before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.nav-toggle.active span:after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.list-reset, .list-reset li {
+    list-style: none;
+}
