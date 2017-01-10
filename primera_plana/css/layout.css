@@ -54,6 +54,7 @@ body {
   height: 137px;
   background: #2D2D2D;
   border-bottom: 5px solid #000;
+    z-index: 99;
 }
 
 .logo-image {
