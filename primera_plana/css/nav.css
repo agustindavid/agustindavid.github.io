@@ -10,7 +10,7 @@
 
 .nav {
   margin: 0;
-  z-index: 2;
+  z-index: 99;
   height: 52px;
   background: #FFF;
   border-bottom: 2px solid #EAEAEA;
