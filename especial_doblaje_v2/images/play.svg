@@ -1,1 +1,23 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.02 90.02"><defs><style>.cls-1{fill:#fff;}</style></defs><title>play</title><path class="cls-1" d="M84,22.5A45,45,0,1,0,67.5,84,45.11,45.11,0,0,0,84,22.5ZM63,76.2A36,36,0,1,1,76.2,27,36.1,36.1,0,0,1,63,76.2Zm-1.8-33L37.6,29.4c-2.1-1.3-3.9-.3-3.9,2.2l0.1,27.3c0,2.5,1.8,3.5,3.9,2.2L61.1,47.6C63.3,46.4,63.3,44.4,61.2,43.2Z" transform="translate(0.01 0.01)"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 150 150" style="enable-background:new 0 0 150 150;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#7224AC;}
+</style>
+<g id="Layer_1">
+	<g>
+		<rect x="-2.7" y="-15" class="st0" width="169.3" height="176.7"/>
+	</g>
+</g>
+<g id="Play_button_inside_a_circle">
+	<g>
+		<g id="play-circle-outline">
+			<path class="st1" d="M68.5,92.9L91.1,76L68.5,59V92.9z M76,38.3c-20.7,0-37.7,17-37.7,37.7s17,37.7,37.7,37.7
+				s37.7-16.9,37.7-37.7S96.7,38.3,76,38.3z M76,106.1c-16.6,0-30.1-13.6-30.1-30.1S59.4,45.9,76,45.9s30.1,13.6,30.1,30.1
+				S92.6,106.1,76,106.1z"/>
+		</g>
+	</g>
+</g>
+</svg>
