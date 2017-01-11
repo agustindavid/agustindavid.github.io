@@ -2,17 +2,6 @@
 $(document).ready(function(){
     
 
-    var waypoint = new Waypoint({
-        element: $('.fichas-wrap'),
-        handler: function(direction) {
-            if(direction=='down'){
-                $('.sticky-menu').addClass('shown');
-            } else {
-                $('.sticky-menu').removeClass('shown');
-            }
-        }
-    })
-    
 
     
 

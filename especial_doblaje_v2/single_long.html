@@ -16,14 +16,87 @@
     <script src="js/bootstrap.min.js" ></script> 
     <script src="js/scripts.js" ></script> 
 
-    <link rel="stylesheet" type="text/css" href="css/component.css" />
+
     <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
-    <script src="js/modernizr.custom.js"></script>
+
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="https://use.fontawesome.com/c70b78400b.js"></script>
     <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300' rel='stylesheet' type='text/css'>
     <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+    <style>
+        .picture-overlay {
+            position: absolute;
+            text-align: center;
+            background: rgba(0,0,0,0.3);
+            width: 100%;
+            height: 100%;
+            z-index: 9;
+            left: 0;
+            color: #fff;
+        }
+        .picture-overlay a {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color: #efefef;
+            opacity: 0.7;
+            cursor: pointer;
+        }
+        
+        .single-info{
+            z-index: 9;
+        }
+        
+        .foto-gone{
+            height: 0 !important;
+            transform: translateY(100%) !important;
+            position: absolute;
+            top: 0;
+        }
+        
+        .no-opacity{
+            opacity: 0;
+        }
+        
+        .video-frame {
+            position: relative;
+            z-index: 9;
+            height: 0;
+            width: 100%;
+            transition: all 1s ease-in-out;
+            height: 100%;
+            transform: scaleY(0);
+            transform-origin: center;
+            padding-bottom: 0;
+        }
+
+        .video-frame-visible{
+            padding-bottom: 56.25% !important;
+            transform: scale(1);
+        }
+        
+        span.close-video {
+            display: block;
+            padding: 5px 15px;
+            color: #fff;
+            background: #000;
+            z-index: 9999;
+            top: 15px;
+            position: absolute;
+            left: 10px;
+            font-family: 'Open Sans', sans-serif;
+            text-transform: uppercase;
+            opacity: 0.5;
+            cursor: pointer;
+        }
+
+        span.close-video:hover {
+            opacity: 1;
+        }
+
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-default">
@@ -60,10 +133,14 @@
         <div class="single-wrap row">
         <div class="col-md-8">
             <div class="main-image-wrap">
-             <img src="images/studio.jpg" class="img-responsive">
+                 <div class="picture-overlay"><a class="play-btn " data-src="http://quick.produ.com/av/2016/TelefeAdda-0916/AddaHD.mp4"><img src="images/play.svg" width="75" height="75"></a></div>
+                <div class="video-frame embed-responsive">
+                    <span class="close-video">Cerrar</span>
+<iframe class="embed-responsive-item player-iframe" src="" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+             <img src="images/studio.jpg" class="img-responsive foto-single">
                 <div class="leyenda-imagen">
                     <h3>Estudio de grabacion de La Pirada en Buenos Aires, Argentina</h3>
-
                 </div>
             </div>    
             
@@ -271,6 +348,28 @@
         $(this).addClass('hidden');
         $('.hidden-news').addClass('visible');      
       });
+      
+        $('.play-btn').click(function(){
+        var video_src=$(this).data('src');
+        $('.picture-overlay').addClass('no-opacity');
+        $('.foto-single').addClass('foto-gone');
+        $('.video-frame').addClass('video-frame-visible');
+        $('.player-iframe').attr('src', video_src);
+        $('.single-content').addClass('visible');
+        $('.single-info').css('margin-top', 0);    
+    });
+    
+        $('.close-video').click(function(){
+        $('.foto-single').removeClass('foto-gone');
+        $('.video-frame').removeClass('video-frame-visible');
+        $('.player-iframe').attr('src', '');
+        $('.single-info').css('margin-top', '-55px');      
+        $('.single-content').removeClass('visible');
+              setTimeout(function(){
+        $('.picture-overlay').removeClass('no-opacity');
+                  },1000);
+    });
+
   });
 </script>
 </body>
