@@ -407,6 +407,7 @@ span.close-share {
     margin-top: 0px;
     padding: 15px;
     padding-bottom: 5px;
+    min-height: 105px;
 }
 
 .white-info-box h3 {
@@ -578,6 +579,10 @@ a.view-more:hover{
     display: none;
 }
 
+#wiwCarousel .carousel-indicators li {
+    margin: 1px 5px;
+}
+
 .wiw-image-wrap {
     position: relative;
     z-index: 1;
@@ -618,9 +623,10 @@ a.view-more:hover{
     border-style: solid;
     content: '';
     position: absolute;
-    top: -25px;
-    z-index: -1;
-    right: 0;
+    top: -50px;
+    z-index: 0;
+    left: 50%;
+    margin-left: -4px;
     border-width: 50px 86.6px 50px 0;
     border-color: transparent #25b9ab transparent transparent;
 }
@@ -632,9 +638,11 @@ a.view-more:hover{
     text-transform: uppercase;
     padding: 5px 15px;
     margin: 0;
-    display: inline-block;
+    display: block;
     font-size: 30px;
     margin-top: 35px;
+    max-width: 120px;
+    text-align: center;
 }
 
 .wiw-name {
@@ -644,7 +652,7 @@ a.view-more:hover{
     text-transform: capitalize;
     padding: 5px 15px;
     margin-top: 15px;
-    display: inline-block;
+    display: block;
     font-size: 30px;
     margin-left: 0px;
     position: relative;
@@ -678,9 +686,7 @@ h4.wiw-empresa {
     z-index: 9;
 }
 
-.wiw-info-wrap a.purple-btn {
-    margin-top: 60px;
-}
+
 
 .wiw-info-wrap:after {
     width: 260px;
@@ -697,7 +703,7 @@ h4.wiw-empresa {
 }
 
 .wiw-info-wrap a.purple-btn {
-    margin-top: 60px;
+    margin-top: 25px;
     z-index: 99;
     position: relative;
 }
@@ -725,11 +731,18 @@ h3.wiw-post-name {
     font-weight: bold;
     width: 100%;
     display: block;
-    padding: 15px 10px 6px 25px;
     margin-top: 0;
     margin-bottom: 0;
     font-size: 19px;
     position: relative;
+}
+
+h3.wiw-post-name span {
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 90%;
+    bottom: 10px;
 }
 
 h3.wiw-post-name:before {
@@ -1317,15 +1330,15 @@ div#directoriohomeCarousel {
     min-height: 520px;
 }
 
-    #wiwCarousel .carousel-indicators {
-    bottom: 80px;
+#wiwCarousel .carousel-indicators {
+    display: none;
 }
     
-
-
 #wiwCarousel .carousel-control {
-    bottom: 80px;
+    bottom: 15px;
 }
+
+
 #wiwCarousel .left.carousel-control {
     left: auto;
     right: 80px;
@@ -1419,6 +1432,13 @@ div#wiwCarousel {
     font-weight: bold;
     margin-left: 8px;
 }
+    
+    .wiw-info-wrap a.purple-btn {
+    margin-top: 60px;
+    z-index: 99;
+    position: relative;
+}
+
 
 .huge-links-section h4 span {
     font-size: 30px;
@@ -1433,6 +1453,11 @@ div#wiwCarousel {
     font-weight: bold;
     letter-spacing: -8px;
 }
+    
+
+    #wiwCarousel .carousel-control {
+        bottom: 80px;
+    }
 }
 
 /* prettyPhoto styling for small screens */
@@ -1491,7 +1516,14 @@ div#wiwCarousel {
     }
 }
 
+
 @media(min-width:667px){
+    
+        #wiwCarousel .carousel-indicators {
+        bottom: 80px;
+        display: block;
+    }
+    
     
     .small-iternal-img.pull-right {
     position: relative;
