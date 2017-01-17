@@ -455,6 +455,10 @@ span.close-share {
     padding-bottom: 30px;
 }
 
+.pub-banner-wrap img {
+    margin: 0 auto;
+}
+
 .dark-gray-home {
     background: #212121;
 }
@@ -971,7 +975,7 @@ h2.single-title {
 }
 
 .main-image-wrap .leyenda-imagen {
-    padding-bottom: 60px;
+    padding-bottom: 15px;
 }
 
 .big-image-single:before {
@@ -1066,7 +1070,7 @@ ul.single-links {
 }
 
 .single-info{
-    margin-top: -55px;
+    margin-top: 0px;
     margin-bottom: 15px;
 }
 
@@ -1287,11 +1291,11 @@ div#modalCarousel {
  }
 
 #directoriohomeCarousel .carousel-control {
-bottom: 260px;
+bottom: 0px;
 }
 
 .bottom-banner {
-    padding-top: 115px;
+    padding-top: 25px;
 }
 
 
@@ -1375,6 +1379,11 @@ div#wiwCarousel {
     position: absolute;
     bottom: 20px;
     right: 15px;
+}
+
+.multiple-items .expand-icon {
+    right: 30px;
+    bottom: 10px;
 }
 
 .show-more {
@@ -1518,6 +1527,13 @@ div#wiwCarousel {
 
 
 @media(min-width:667px){
+    #directoriohomeCarousel .carousel-control {
+bottom: 260px;
+}
+
+    .bottom-banner {
+    padding-top: 115px;
+}
     
         #wiwCarousel .carousel-indicators {
         bottom: 80px;
@@ -1628,6 +1644,15 @@ div#wiwCarousel {
         display: table-cell;
         list-style: none;
     }
+    
+    .single-info{
+    margin-top: -55px;
+    margin-bottom: 15px;
+}
+    
+    .main-image-wrap .leyenda-imagen {
+    padding-bottom: 60px;
+}
 }
 
 
