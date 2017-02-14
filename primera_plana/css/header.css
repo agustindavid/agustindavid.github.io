@@ -45,8 +45,26 @@
     top: 50%;
     margin-top: -6px;
     right: 10px;
+    
+}
+
+#sub-television li>a i{
     color: #7224ac;
 }
+
+#sub-publicidad li>a i{
+    color: #3449E4;
+}
+
+#sub-tecnologia li>a i{
+    color: #25B9AB;
+}
+
+#sub-paises li>a i{
+    color: #FCD530;
+}
+
+
 
 .nav-sidebar>ul>li>a {
     color: #fff;
@@ -65,8 +83,21 @@
     background: #fff;
     color: #2d2d2d;
     text-decoration: none;
-    border-left: 10px solid #7224ac;
 } 
+
+#sub-television>li>a.active{
+    border-left: 10px solid #7224ac;
+}
+#sub-publicidad>li>a.active{
+    border-left: 10px solid #3449E4;
+}
+#sub-tecnologia>li>a.active{
+    border-left: 10px solid #25B9AB;
+}
+#sub-paises>li>a.active{
+    border-left: 10px solid #FCD530;
+}
+
 
 .nav-sidebar ul li .sublist {
     position: absolute;

@@ -126,7 +126,7 @@
 					</ul>
 				<li>
 				<li class="main-menu-4 menu-item-has-children">
-					<a href="#" title=""><span>Países</span> <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+					<a href="#" title="" data-submenu="sub-paises"><span>Países</span> <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
 					<span class="arrow-sub-level"></span>
 					<ul class="sub-menu">
 						<li><a href="#">Argentina</a></li>
@@ -267,6 +267,26 @@
                     </ul>
                 </li>
             </ul>
+            <ul id="sub-paises">
+                <li class="has-child"><a>México<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <ul class="sublist">
+                        <li><a>Televisión</a></li>
+                        <li><a>Publicidad</a></li>
+                    </ul>
+                </li>
+                <li class="has-child"><a>Colombia<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <ul class="sublist">
+                        <li><a>Televisión</a></li>
+                        <li><a>Publicidad</a></li>
+                    </ul>
+                </li>
+                <li class="has-child"><a>Argentina<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <ul class="sublist">
+                        <li><a>Televisión</a></li>
+                        <li><a>Publicidad</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
         <div class="sub-navigation-items" >
             <div class="sub-navigation-group" id="test">
@@ -403,6 +423,7 @@
         $('.menu-item-has-children').mouseenter(function(){
             $('.sub-navigation-container').addClass('shown');
             var id_sidebar=$('a', this).data('submenu');
+            console.log(id_sidebar);
             $('.nav-sidebar>ul').removeClass('active');
             $('#'+id_sidebar).addClass('active');
             });
