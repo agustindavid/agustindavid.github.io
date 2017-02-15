@@ -63,6 +63,9 @@
 #sub-paises li>a i{
     color: #FCD530;
 }
+#sub-lang li>a i{
+    color: #FC602F;
+}
 
 
 
@@ -96,6 +99,9 @@
 }
 #sub-paises>li>a.active{
     border-left: 10px solid #FCD530;
+}
+#sub-lang>li>a.active{
+    border-left: 10px solid #FC602F;
 }
 
 
