@@ -83,6 +83,17 @@
 					<a href="#" title="" data-submenu="sub-television"><span>Televisión</span> <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
 					<span class="arrow-sub-level"></span>
 					<ul class="sub-menu">
+                        <li><a class="active">Primera Plana</a></li>
+                        <li><a class="active">OTT/VOD</a></li>
+                        <li><a class="active">Ratings</a></li>
+                        <li><a class="active">Investigación</a></li>
+                        <li><a class="active">Videos</a></li>
+                        <li><a>Diarios</a></li>
+                        <li><a>Eventos/Galerías</a></li>
+                        <li><a>Especiales</a></li>
+                        <li><a>Who's who</a></li>
+                        <li><a>Semana</a></li>
+                        <li><a>Otras Categorías</a></li>
 						<li class="menu-item-has-children">
 							<a href="#">Países</a>
 							<span class="arrow-sub-level"></span>
@@ -92,38 +103,40 @@
 								<li><a href="#">México</a></li>
 							</ul>
 						</li>
-						<li><a href="#">OTT/VOD</a></li>
-						<li><a href="#">Ratings</a></li>
-						<li><a href="#">Novelas al aire</a></li>
-						<li><a href="#">Estrenos y Finales</a></li>
-						<li><a href="#">Videos</a></li>
-						<li><a href="#">Galerías</a></li>
 					</ul>
 				<li>
 				<li class="main-menu-2 menu-item-has-children">
 					<a href="#" title=""  data-submenu="sub-publicidad"><span>Publicidad</span> <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
 					<span class="arrow-sub-level"></span>
 					<ul class="sub-menu">
-						<li><a href="#">US Hispanic</a></li>
-						<li><a href="#">Media</a></li>
-						<li><a href="#">Agencias</a></li>
-						<li><a href="#">Marcas</a></li>
-						<li><a href="#">Producción</a></li>
-						<li><a href="#">Eventos</a></li>
-						<li><a href="#">Videos</a></li>
-						<li><a href="#">Galerías</a></li>
+                        <li><a class="active">Primera Plana</a></li>
+                        <li><a>US Hispanic</a></li>
+                        <li><a>Media</a></li>
+                        <li><a>Especiales</a></li>
+                        <li><a>Eventos/Galerías</a></li>
+                        <li><a>Foros</a></li>
+                        <li><a>Marcas</a></li>
+                        <li><a>Agencias</a></li>
+                        <li><a>Aniversarios</a></li>
+                        <li><a>Producción</a></li>
+                        <li><a>Revista</a></li>
+                        <li><a>Videos</a></li>
+                        <li><a>Semana</a></li>
 					</ul>
 				<li>
 				<li class="main-menu-3 menu-item-has-children">
 					<a href="#" title=""  data-submenu="sub-tecnologia"><span>Tecnología</span> <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
 					<span class="arrow-sub-level"></span>
 					<ul class="sub-menu">
-						<li><a href="#">Argentina</a></li>
-						<li><a href="#">Colombia</a></li>
-						<li><a href="#">México</a></li>
-						<li><a href="#">Videos</a></li>
-						<li><a href="#">Galerías</a></li>
-					</ul>
+                        <li><a>Tutorial</a></li>
+                        <li><a>Aniversarios</a></li>
+                        <li><a>Revista</a></li>
+                        <li><a>White Paper</a></li>
+                        <li><a>Especiales</a></li>
+                        <li><a>Eventos/Galerías</a></li>
+                        <li><a>Foros</a></li>
+                        <li><a>Videos</a></li>
+				    </ul>
 				<li>
 				<li class="main-menu-4 menu-item-has-children">
 					<a href="#" title="" data-submenu="sub-paises"><span>Países</span> <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
@@ -132,8 +145,6 @@
 						<li><a href="#">Argentina</a></li>
 						<li><a href="#">Colombia</a></li>
 						<li><a href="#">México</a></li>
-						<li><a href="#">Videos</a></li>
-						<li><a href="#">Galerías</a></li>
 					</ul>
 				<li>
 				<li class="main-menu-5 menu-item-has-children">
@@ -456,6 +467,7 @@
 </div>
         <script>
     $(document).ready(function(){    
+     if($(window).width() > 720){
         $('.menu-item-has-children').mouseenter(function(){
             $('.sub-navigation-container').addClass('shown');
             var id_sidebar=$('a', this).data('submenu');
@@ -470,7 +482,6 @@
             $('.nav-sidebar>ul').removeClass('active');
             $('.sublist').removeClass('active');
             });
-        });
             
         $('.nav-sidebar>ul>li').mouseenter(function(){
             $('.nav-sidebar>ul>li>a').removeClass('active');
@@ -494,7 +505,11 @@
                 $('#'+content_id).addClass('active');
                 
             }
+        
         });
+     }
+    });
+            
         
     </script>
 </body>

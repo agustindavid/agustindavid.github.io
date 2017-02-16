@@ -213,13 +213,14 @@
 
 .nav .children a,
 .nav .sub-menu a {
-    display: block;
-    background: #000;
+display: block;
+    background: #2d2d2d;
     border-top: 1px solid #FFF;
     padding: 8px 14px;
-    color: #FFF;
+    color: #d4d4d4;
     text-decoration: none;
-    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 500;
     font-size: 13px;
     -o-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
