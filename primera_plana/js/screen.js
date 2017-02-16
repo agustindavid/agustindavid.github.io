@@ -23,11 +23,7 @@ jQuery(function() {
   	   menu.slideToggle();
   	});
 
-   $('.arrow-sub-level').after().click(function(e) {
-        $(this).toggleClass('arrow-sub-level-active');
-        //$('.header').toggleClass('no-fixed'); 
-        $(this).next('.sub-menu').toggleClass('active');
-   });
+
 
    $('.share-link-list').on('click', function(e) {
       e.preventDefault();
