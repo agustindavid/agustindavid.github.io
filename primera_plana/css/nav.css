@@ -81,7 +81,7 @@
       color: #000;
       font-weight: 700;
       font-size: 15px;
-      padding: 0 14px;
+      padding: 0 22px;
       text-transform: uppercase;
       text-decoration: none;
       background-color: #FFF;
@@ -298,4 +298,30 @@ display: block;
 
 .list-reset, .list-reset li {
     list-style: none;
+}
+
+.login-mobile {
+    background: #000;
+    color: #fff;
+    padding: 15px;
+    display: none;
+}
+
+.login-mobile ul {
+    margin: 0;
+}
+
+.login-mobile ul li a {
+    padding: 5px 0;
+    display: block;
+    font-weight: 700;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    
 }

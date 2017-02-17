@@ -79,6 +79,18 @@
 
 }
 
+@media (max-width: 1024px){
+           .nav .social-box {
+                    display: block;
+          }   
+}
+
+@media (min-width: 1024px) and  (max-width: 1137px){
+           .nav .social-box {
+                    display: none;
+          }   
+}
+
 @media (max-width: 1137px) {
 
           .nav-top li {
@@ -86,9 +98,6 @@
                     display: inline-block;
           }
 
-          .nav .social-box {
-                    display: none;
-          }
 
           .nav .main-menu {
               width: 100%;
@@ -145,7 +154,7 @@
           }
 
           .nav .main-menu > li:nth-child(1) > a {
-              padding: 0 14px 0 0;
+              padding: 0 22px 0 0;
           }
 
           .nav-top {
@@ -236,6 +245,10 @@
 } 
 
 @media (max-width: 1024px) {
+    
+    .login-mobile{
+        display: block;
+    }
 
           /*.menu-item-has-children:after*/
 
@@ -356,7 +369,7 @@
         }
 
         .nav .main-menu > li:nth-child(1) > a {
-          padding: 0 14px;
+          padding: 0 22px;
         }
 
         .main-menu > li > .children,
