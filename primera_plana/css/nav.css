@@ -32,6 +32,8 @@
   float: right;  
   width: 19%;
   text-align: right;
+    padding-bottom: 0;
+    padding-left: 0;
 }
 
 .social-box a {
@@ -312,7 +314,7 @@ display: block;
 }
 
 .login-mobile ul li a {
-    padding: 5px 0;
+    padding: 10px 0;
     display: block;
     font-weight: 700;
     color: #FFF;

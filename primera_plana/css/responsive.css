@@ -82,6 +82,9 @@
 @media (max-width: 1024px){
            .nav .social-box {
                     display: block;
+                    padding-bottom: 10px;
+               text-align: left;
+               padding-left: 15px;
           }   
 }
 
