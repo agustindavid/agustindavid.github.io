@@ -259,7 +259,7 @@
             opacity: 1 !important;
           }
 
-          .menu-item-has-children:after {
+          .menu-item-has-children>a:after {
             content: "\f078";
             color: #555;
             text-align: center;
@@ -278,8 +278,8 @@
             border-bottom: 1px solid #eee;
           }
 
-          .arrow-sub-level-active:after {
-            content: "\f077";
+          .sub-menu-active:after {
+            content: "\f077" !important;
           }
 
           .nav {

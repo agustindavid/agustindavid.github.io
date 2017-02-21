@@ -92,6 +92,7 @@
       -moz-transition: all 0.5s ease;
       -webkit-transition: all 0.5s ease;
       transition: all 0.5s ease;
+    position: relative;
 }
 
 .nav .main-menu > li > a:before {

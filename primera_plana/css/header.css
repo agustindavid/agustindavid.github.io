@@ -1,9 +1,10 @@
 .sub-navigation-container {
     background-color: #f4f3f3;
-    position: relative;
+    position: absolute;
     transform: translateY(-150%);
     transition: 0.4s all;
     opacity: 0;
+    width: 100%;
 }
 
 .sub-navigation-container.shown{
