@@ -23,6 +23,10 @@ body{
     font-family: 'Open-Sans', sans-serif;
 }
 
+h1, .h1, h2, .h2, h3, .h3{
+    font-family: 'Open-Sans', sans-serif;
+}
+
 .banner-wrapper {
     padding: 10px 0;
 }
@@ -556,6 +560,10 @@ h2.noticia-title {
     position: absolute;
 }
 
+.personajes-section {
+    padding: 35px 0;
+}
+
 .personaje-info {
     width: 80%;
     margin: auto;
@@ -582,6 +590,21 @@ h2.noticia-title {
     font-size: 20px;
     margin: 0;
     margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.personaje-small .personaje-info {
+    width: 85%;
+    padding: 10px;
+}
+
+.personaje-small .personaje-info h3 {
+    font-size: 23px;
+    letter-spacing: -2px;
+}
+
+.personaje-small .personaje-info h5 {
+    font-size: 15px;
 }
 
 .footer-gray {
@@ -779,4 +802,207 @@ h2.noticia-title {
 }
 
 
+.slick-list{
+    overflow-x: hidden;
+}
+
+.carousel-item{
+    position: relative;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c1b82+0,170519+100&0+0,1+100 */
+    transform: scale(0.99);
+   
     
+}
+
+.carousel-item-gradient{
+    background: linear-gradient(to bottom,  rgba(76,27,130,0) 0%,rgba(23,5,25,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.carousel-item:before{
+    content: '';
+    width: 15px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #7224ac;
+    position: absolute;
+    transition: 0.2s all;
+}
+
+.carousel-item:hover::before{
+    display: none;
+}
+
+.imagen-estreno{
+    width: 100%;
+}
+
+.estrenos-overlay {
+    background-color: #853c8a;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.2s;
+    opacity: 0;
+}
+
+.carousel-item:hover .estrenos-overlay {
+    opacity: 0.6;
+}
+
+.estreno-main-info {
+    z-index: 3;
+    position: absolute;
+    top: 70%;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    padding: 15px 25px;
+    transition: 0.2s all;
+}
+
+.carousel-item:hover .estreno-main-info {
+    bottom: auto;
+    top: 80px;
+}
+
+.estreno-info {
+    position: absolute;
+    bottom: -300px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 3;
+    transition: 0.2s all;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+.carousel-item:hover .estreno-info {
+    position: absolute;
+    bottom: 20px;
+    height: auto;
+    opacity: 1;
+    padding: 15px 25px;
+}
+
+
+
+.estreno-info h2 {
+    color: #fed200;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: -1px;
+}
+
+.estreno-info p {
+    margin-bottom: 8px;
+    line-height: 1;
+}
+
+p.fecha-estreno {
+    font-weight: 100;
+    font-size: 13px;
+}
+
+
+
+.especial-big {
+    height: 445px;
+    position: relative;
+    border-left: 10px solid #fed700;
+}
+
+.especial-overlay {
+    position: absolute;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    background: #3347e0;
+}
+
+.img-especial {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+}
+
+.small-especial {
+    padding: 15px;
+    border: 1px solid #eee;
+    border-left: 5px solid #3449e4;
+    max-height: 210px;
+    min-height: 210px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.content-small-especial{
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.content-small-especial h1 {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin-top: 0;
+}
+
+p.small-especial-desc {
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+p.small-especial-fecha {
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.especial-big-content {
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    color: #fff;
+    padding: 15px 25px;
+}
+
+.especial-big-content h1 {
+    font-weight: bold;
+    letter-spacing: -2px;
+    font-size: 44px;
+    line-height: 0.9;
+    width: 70%;
+}
+
+p.especial-desc {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+p.especial-fecha {
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.galeria-eventos {
+    background-color: #2d2d2d;
+    padding: 50px;
+}
