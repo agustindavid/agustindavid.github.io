@@ -32,235 +32,6 @@ h1, .h1, h2, .h2, h3, .h3{
 }
 
 
-.navbar-nav {
-    float: right !important;
-}
-
-.navbar-default {
-    background-color: #2d2d2d !important;
-    border-color: #e7e7e7 !important;
-    border: 0 !important;
-    min-height: 130px !important;
-    padding:  0px 0 0px 0 !important;
-    margin-bottom: 30px !important;
-}
-
-.navbar-toggle{
-    padding: 20px 20px !important;
-    margin-top: 35px !important;
-}
-
-.navbar-default .navbar-brand{
-    margin-top: 15px;
-    height: auto !important;
-}
-
-.navbar-brand{
-    width: 60%;
-}
-
-.navbar-brand>img{
-    width: 70%
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: #fff !important;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    font-size: 14px;
-}
-
-.navbar-default .navbar-nav>li>a:after{
-    position: absolute;
-    content: '';
-    background-color: #fcd501;
-    width: 0%;
-    height: 5px;
-    left: 0;
-    bottom: 5px;
-    transition: 0.25s all;
-}
-
-.navbar-default .navbar-nav>li>a:hover::after{
-    width: 100%;
-}
-
-
-.nav>li>a {
-    position: relative;
-    display: block;
-    padding: 10px 10px !important;
-}
-
-
-.social-header {
-    float: right;
-    margin-top: 55px;
-    text-align: right;
-    font-size: 14px;
-    display: none;
-}
-
-.social-header p {
-    font-family: 'Open Sans', sans-serif;
-    font-style: italic;
-    padding-right: 20px;
-}
-
-.social-header a{
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    font-size: 21px;
-    border-radius: 50%;
-    border: 1px solid #000;
-    padding: 5px 0px 3px 0px;
-    text-align: center;
-    margin-left: 10px;
-    color: #000;
-}
-
-.color-stripe-wrap {
-    background: #000;
-}
-
-.color-stripe {
-    height: 5px;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-
-.purple{
-    background-color: #7224ac;   
-}
-
-.cyan{
- background-color: #3449e4;
-}
-
-.green{
-   background-color: #25b9ab; 
-}
-
-.yellow{
-    background-color: #fcd530;
-}
-
-.orange{
-    background-color: #fc6030;
-}
-
-.black{
-    background-color: #000;
-}
-
-.white-nav {
-    background: #fff;
-    -webkit-box-shadow: 0px 2px 15px -4px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 2px 15px -4px rgba(0,0,0,0.75);
-    box-shadow: 0px 2px 15px -4px rgba(0,0,0,0.75);
-}
-
-ul.main-menu {
-    padding: 0;
-    list-style: none;
-    width: 100%;
-    display: table;
-    margin-bottom: 0;
-}
-
-.main-menu li {
-    display: table-cell;
-    width: 15%;
-    border: 1px solid #ededed;
-    border-top: 0;
-    border-bottom: 0;
-    padding: 10px 5px 10px 10px;
-}
-
-.main-menu li>a {
-    color: #000;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 17px;
-    letter-spacing: -1px;
-}
-
-.main-menu li:after {
-    content:url(../images/caret.png);
-    margin-left: 15px;
-}
-
-li.social-top {
-    border-right: 0;
-}
-
-li.social-top:after {
-    display: none;
-}
-
-.social-top a {
-    font-size: 20px !important;
-    margin-right: 10px;
-}
-
-input.search-head {
-    margin-top: 5px;
-    border: 0;
-    padding: 5px 10px;
-    border-radius: 6px;
-    background-image:url(../images/zoom.png);
-    background-repeat: no-repeat;
-    background-position: 90%;
-}
-
-@media (min-width: 560px){
-
-    .social-header {
-        margin-top: 15px;
-    }
-
-}
-
-@media (min-width: 737px){
-    .social-header {
-    display: block;
-    }
-
-}
-
-@media (min-width: 768px){
-
-    
-    .navbar-brand>img{
-        width: 100%
-    }
-}
-
-@media (min-width: 992px){
-.navbar-brand {
-    width: 100%;
-}
-    
-
-}
-
-@media (min-width: 1200px){
-.navbar-nav>li {
-    float: left;
-    margin-left: 50px;
-    margin-top: 60px;
-}
-    
-    .navbar-default .navbar-nav>li>a{
-        letter-spacing: -1px;
-    }
-}
-
-
-
 body{
     font-family: 'Open Sans', sans-serif;
 }
@@ -288,13 +59,19 @@ h3,h2,h1{
 }
 
 .small-new .feat-image {
-    min-height: 230px;
+    min-height: 225px;
     background-size: cover;
     position: absolute;
     height: 100%;
     width: 100%;
     left: 0;
     top: 0;
+}
+
+.share-icon {
+    vertical-align: sub;
+    margin-right: 10px;
+    height: 17px;
 }
 
 .overlay {
@@ -340,11 +117,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     line-height: 1.4;
 }
 
-.category-sticker.cat-television {
+.category-sticker{
     position: absolute;
     display: block;
     padding: 10px 16px;
-    background: rgba(107, 46, 133,0.8);
     left: 0;
     top: 0;
     font-weight: bold;
@@ -354,9 +130,64 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     font-family: 'Open Sans', sans-serif;
 }
 
+.cat-television{
+     background: rgba(107, 46, 133,0.8);
+} 
+
+.cat-publicidad{
+     background: rgba(52, 73, 228,0.8);
+} 
+
+.cat-tecnologia{
+     background: rgba(37, 185, 171,0.8);
+} 
+
+.television-wrap{
+     border-bottom:5px solid rgb(107, 46, 133);
+} 
+
+.publicidad-wrap{
+     border-bottom:5px solid rgb(52, 73, 228);
+} 
+
+.tecnologia-wrap{
+     border-bottom:5px solid rgb(37, 185, 171);
+} 
+
 .big-new-date, .share-new {
     font-weight: lighter;
     font-size: 12px;
+}
+
+.section-noticias, .section-primera-plana{
+    padding: 40px 0;
+}
+
+.section-noticias h2, .section-primera-plana h2 {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: -3px;
+    margin-left: 30px;
+    color: #000;
+    line-height: 1;
+    margin-top: 0;
+}
+
+.section-noticias h2:before, .section-primera-plana h2:before {
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    background-color: #7224ac;
+    content: '';
+    left: -30px;
+    top: 15px;
+}
+
+hr.yellow-line {
+    border-top: 1px solid #fed700;
+    margin-top: 40px;
 }
 
 .primera-info {
@@ -427,10 +258,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     margin-bottom: 10px;
 }
 
-.section-noticias {
-    padding: 30px 0;
-}
-
 .noticia-wrap {
     position: relative;
     min-height: 210px;
@@ -472,8 +299,29 @@ h2.noticia-title {
     color: #fff;
 }
 
+.video-full-section h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: -2px;
+    position: relative;
+    margin-left: 35px;
+    margin-top: 0;
+}
+
+.video-full-section h2:before {
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    background-color: rgb(37, 185, 171);
+    content: '';
+    left: -30px;
+    top: 15px;
+}
+
 .video-container{
     position: relative;
+    margin-top: 45px;
 }
 
 .big-video-info {
@@ -1005,4 +853,97 @@ p.especial-fecha {
 .galeria-eventos {
     background-color: #2d2d2d;
     padding: 50px;
+}
+
+.galeria-wrap {
+    position: relative;
+}
+
+.big-galeria-img{
+
+}
+
+.slider-for .slick-track{
+    padding-bottom: 70px;
+}
+
+.description-box {
+    position: absolute;
+    bottom: -70px;
+    right: 0;
+    width: 70%;
+    color: #fff;
+    background-color: #000;
+    padding: 25px;
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: 8px solid #25b9ab;
+}
+
+
+.description-box h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+p.descipcion-item-galeria {
+    font-size: 12px;
+}
+
+p.fecha-galeria {
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.thumb-evento{
+    opacity: 0.4;
+}
+
+.slick-current .thumb-evento{
+    opacity: 1;
+}
+
+
+.revista-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item-text {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    padding: 25px;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 52%, rgba(0,0,0,0.65) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 52%,rgba(0,0,0,0.65) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 52%,rgba(0,0,0,0.65) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+    transition: 0.25s all ease-in;
+}
+
+.carousel-item-text h4 {
+    font-size: 16px;
+    font-family: 'Open sans', sans-serif;
+    margin: 5px 0;
+}
+
+.carousel-item-text h3 {
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-size: 36px;
+}
+
+.revista-item:hover img {
+    transform: scale(1.05);
+}
+
+.revista-item img {
+    width: 100%;
+    transition: 0.2s all ease-out;
+}
+
+.revista-item:hover .carousel-item-text {
+    padding-bottom: 45px;
 }
