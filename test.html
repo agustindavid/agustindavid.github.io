@@ -1,0 +1,46 @@
+<video id="player" controls autoplay></video>
+<button id="capture">Capturar</button>
+<canvas id="snapshot" width=320 height=240></canvas>
+<div id="startLat"></div>
+<div id="startLon"></div>
+<script>
+
+window.onload = function() {
+  var startPos;
+  var geoSuccess = function(position) {
+    startPos = position;
+    document.getElementById('startLat').innerHTML = startPos.coords.latitude;
+    document.getElementById('startLon').innerHTML = startPos.coords.longitude;
+  };
+  var geoError = function(error) {
+    console.log('Error occurred. Error code: ' + error.code);
+    // error.code can be:
+    //   0: unknown error
+    //   1: permission denied
+    //   2: position unavailable (error response from location provider)
+    //   3: timed out
+  };
+  navigator.geolocation.getCurrentPosition(geoSuccess, geoError);
+
+  var player = document.getElementById('player');
+  var snapshotCanvas = document.getElementById('snapshot');
+  var captureButton = document.getElementById('capture');
+
+  var handleSuccess = function(stream) {
+    // Attach the video stream to the video element and autoplay.
+    player.srcObject = stream;
+  };
+
+  captureButton.addEventListener('click', function() {
+    var context = snapshot.getContext('2d');
+    // Draw the video frame to the canvas.
+    context.drawImage(player, 0, 0, snapshotCanvas.width,
+        snapshotCanvas.height);
+    alert(startPos.coords.latitude)
+    
+  });
+
+  navigator.mediaDevices.getUserMedia({video: true})
+      .then(handleSuccess);
+};
+</script>
